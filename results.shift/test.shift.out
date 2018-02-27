@@ -1,0 +1,256 @@
+DMTAU.model_alma_band_6_2_500it.output
+1;86 Phosphaethyne;0.179245283019
+2;2 Nitrous Oxide;0.0534591194969
+3;0 Dimethyl ether;0.0062893081761
+DMTAU.model_alma_band_6_full_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+DMTAU.model_alma_band_6_full_expanded_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+DMTAU.model_alma_band_6_tr_500it.output
+1;107 Amidogen;0.22641509434
+2;0 Dimethyl ether;0.0062893081761
+3;1 Butatrienylidene;0.0062893081761
+DMTAU.model_hot_cores_2_500it.output
+1;9 Iminomethylium;0.224615384615
+2;0 Isocyanic Acid;0.00923076923077
+3;1 Propenal;0.00923076923077
+DMTAU.model_hot_cores_full_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+DMTAU.model_hot_cores_full_expanded_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+DMTAU.model_hot_cores_tr_500it.output
+1;8 Methyliumylidene;0.209230769231
+2;11 2-Propynal;0.0246153846154
+3;0 Isocyanic Acid;0.00923076923077
+DMTAU2.model_alma_band_6_2_500it.output
+1;69 Carbon Monosulfide;0.13074204947
+2;0 Dimethyl ether;0.00706713780919
+3;1 Butatrienylidene;0.00706713780919
+DMTAU2.model_alma_band_6_full_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+DMTAU2.model_alma_band_6_full_expanded_500it.output
+1;60 Acetone;0.0276679841897
+2;0 Dimethyl ether;0.00790513833992
+3;1 Butatrienylidene;0.00790513833992
+DMTAU2.model_alma_band_6_tr_500it.output
+1;107 Amidogen;0.0600706713781
+2;83 Isocyanic Acid;0.0424028268551
+3;66 Formaldehyde;0.0247349823322
+DMTAU2.model_hot_cores_2_500it.output
+1;12 Carbon Monosulfide;0.131034482759
+2;0 Isocyanic Acid;0.0103448275862
+3;1 Propenal;0.0103448275862
+DMTAU2.model_hot_cores_full_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+DMTAU2.model_hot_cores_full_expanded_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+DMTAU2.model_hot_cores_tr_500it.output
+1;45 Cyanobutadiyne;0.0965517241379
+2;0 Isocyanic Acid;0.0448275862069
+3;1 Propenal;0.0103448275862
+HD163296.model_alma_band_6_2_500it.output
+1;25 Carbon Monoxide Ion;0.312849162011
+2;0 Dimethyl ether;0.00558659217877
+3;1 Butatrienylidene;0.00558659217877
+HD163296.model_alma_band_6_full_500it.output
+1;36 Carbon Monoxide;0.0820895522388
+2;0 Dimethyl ether;0.00746268656716
+3;1 Butatrienylidene;0.00746268656716
+HD163296.model_alma_band_6_full_expanded_500it.output
+1;36 Carbon Monoxide;0.0820895522388
+2;0 Dimethyl ether;0.00746268656716
+3;1 Butatrienylidene;0.00746268656716
+HD163296.model_alma_band_6_tr_500it.output
+1;19 Diazenylium;0.27094972067
+2;26 Sodium Cyanide;0.0195530726257
+3;69 Carbon Monosulfide;0.0195530726257
+HD163296.model_hot_cores_2_500it.output
+1;26 Trihydrogen ion;0.366292134831
+2;45 Cyanobutadiyne;0.0741573033708
+3;0 Isocyanic Acid;0.00674157303371
+HD163296.model_hot_cores_full_500it.output
+1;68 Carbon Monoxide;0.0836363636364
+2;0 Isocyanic Acid;0.0109090909091
+3;1 Propenal;0.0109090909091
+HD163296.model_hot_cores_full_expanded_500it.output
+1;61 Fluoromethyliumylidene;0.0836363636364
+2;0 Isocyanic Acid;0.0109090909091
+3;1 Propenal;0.0109090909091
+HD163296.model_hot_cores_tr_500it.output
+1;54 Cyanic acid;0.411235955056
+2;16 Methyl formate vt01;0.0292134831461
+3;0 Isocyanic Acid;0.00674157303371
+IRC2.model_alma_band_6_2_500it.output
+1;40 Aluminum Monofluoride;0.33152173913
+2;0 Dimethyl ether;0.0054347826087
+3;1 Butatrienylidene;0.0054347826087
+IRC2.model_alma_band_6_full_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+IRC2.model_alma_band_6_full_expanded_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+IRC2.model_alma_band_6_tr_500it.output
+1;96 Hydrogen Isocyanide;0.304347826087
+2;28 3-Thioxo-1,2-Propadieylidene;0.0190217391304
+3;43 Aminoacetonitrile;0.0190217391304
+IRC2.model_hot_cores_2_500it.output
+1;9 Iminomethylium;0.580444444444
+2;61 Fluoromethyliumylidene;0.198222222222
+3;0 Isocyanic Acid;0.00266666666667
+IRC2.model_hot_cores_full_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+IRC2.model_hot_cores_full_expanded_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+IRC2.model_hot_cores_tr_500it.output
+1;61 Fluoromethyliumylidene;0.776
+2;0 Isocyanic Acid;0.00266666666667
+3;1 Propenal;0.00266666666667
+IRS43.model_alma_band_6_2_500it.output
+1;9 para-Oxidaniumyl;0.357702349869
+2;0 Dimethyl ether;0.00522193211488
+3;1 Butatrienylidene;0.00522193211488
+IRS43.model_alma_band_6_full_500it.output
+1;75 Formylium;0.046511627907
+2;0 Dimethyl ether;0.0077519379845
+3;1 Butatrienylidene;0.0077519379845
+IRS43.model_alma_band_6_full_expanded_500it.output
+1;75 Formylium;0.046511627907
+2;0 Dimethyl ether;0.0077519379845
+3;1 Butatrienylidene;0.0077519379845
+IRS43.model_alma_band_6_tr_500it.output
+1;30 Ethyne Isocyanide;0.344647519582
+2;88 Methylene amidogen;0.0182767624021
+3;0 Dimethyl ether;0.00522193211488
+IRS43.model_hot_cores_2_500it.output
+1;9 Iminomethylium;0.469473684211
+2;0 Isocyanic Acid;0.00631578947368
+3;1 Propenal;0.00631578947368
+IRS43.model_hot_cores_full_500it.output
+1;24 Formylium;0.0490566037736
+2;0 Isocyanic Acid;0.011320754717
+3;1 Propenal;0.011320754717
+IRS43.model_hot_cores_full_expanded_500it.output
+1;24 Formylium;0.0490566037736
+2;0 Isocyanic Acid;0.011320754717
+3;1 Propenal;0.011320754717
+IRS43.model_hot_cores_tr_500it.output
+1;4 Thioformylium;0.469473684211
+2;0 Isocyanic Acid;0.00631578947368
+3;1 Propenal;0.00631578947368
+ORIONKL.model_alma_band_6_2_500it.output
+1;73 Silicon monosulfide;0.145833333333
+2;0 Dimethyl ether;0.00694444444444
+3;1 Butatrienylidene;0.00694444444444
+ORIONKL.model_alma_band_6_full_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+ORIONKL.model_alma_band_6_full_expanded_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+ORIONKL.model_alma_band_6_tr_500it.output
+1;56 Methylidyne;0.128472222222
+2;43 Aminoacetonitrile;0.0243055555556
+3;0 Dimethyl ether;0.00694444444444
+ORIONKL.model_hot_cores_2_500it.output
+1;28 Nitrous Oxide;0.565517241379
+2;0 Isocyanic Acid;0.0051724137931
+3;1 Propenal;0.0051724137931
+ORIONKL.model_hot_cores_full_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+ORIONKL.model_hot_cores_full_expanded_500it.output
+1;60 Hydrogen Cyanide;0.0836363636364
+2;0 Isocyanic Acid;0.0109090909091
+3;1 Propenal;0.0109090909091
+ORIONKL.model_hot_cores_tr_500it.output
+1;8 Methyliumylidene;0.565517241379
+2;0 Isocyanic Acid;0.0051724137931
+3;1 Propenal;0.0051724137931
+TWHydraCO.model_alma_band_6_2_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraCO.model_alma_band_6_full_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraCO.model_alma_band_6_full_expanded_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraCO.model_alma_band_6_tr_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraCO.model_hot_cores_2_500it.output
+1;50 Hydrochloric acid;0.28
+2;0 Isocyanic Acid;0.00857142857143
+3;1 Propenal;0.00857142857143
+TWHydraCO.model_hot_cores_full_500it.output
+1;68 Carbon Monoxide;0.0666666666667
+2;0 Isocyanic Acid;0.0111111111111
+3;1 Propenal;0.0111111111111
+TWHydraCO.model_hot_cores_full_expanded_500it.output
+1;68 Carbon Monoxide;0.0666666666667
+2;0 Isocyanic Acid;0.0111111111111
+3;1 Propenal;0.0111111111111
+TWHydraCO.model_hot_cores_tr_500it.output
+1;4 Thioformylium;0.251428571429
+2;27 Methanimine;0.0228571428571
+3;46 Sulfur Dioxide;0.0228571428571
+TWHydraHCO.model_alma_band_6_2_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraHCO.model_alma_band_6_full_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraHCO.model_alma_band_6_full_expanded_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraHCO.model_alma_band_6_tr_500it.output
+1;0 Dimethyl ether;0.00806451612903
+2;1 Butatrienylidene;0.00806451612903
+3;2 Nitrous Oxide;0.00806451612903
+TWHydraHCO.model_hot_cores_2_500it.output
+1;61 Fluoromethyliumylidene;0.269565217391
+2;0 Isocyanic Acid;0.00869565217391
+3;1 Propenal;0.00869565217391
+TWHydraHCO.model_hot_cores_full_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+TWHydraHCO.model_hot_cores_full_expanded_500it.output
+1;0 Isocyanic Acid;0.0117647058824
+2;1 Propenal;0.0117647058824
+3;2 Ketene;0.0117647058824
+TWHydraHCO.model_hot_cores_tr_500it.output
+1;8 Methyliumylidene;0.269565217391
+2;0 Isocyanic Acid;0.00869565217391
+3;1 Propenal;0.00869565217391

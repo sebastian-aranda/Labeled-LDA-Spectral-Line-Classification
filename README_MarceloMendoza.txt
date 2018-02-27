@@ -1,0 +1,28 @@
+1. Compiling splat2.data (in /models):
+> g++ -std=c++0x -o splat2data.o splat2data.cpp
+
+2. Running splat2data:
+> ./splat2data.o foo_ch.raw > foo_ch.dat
+
+where:
+ - foo in {agb_ppn_pn, comets, dark_clouds, diffuse_clouds, extragalactic, hot_cores, planetary}
+ - ch in {tr, 2, full}
+
+Eg.: ./splat2data.o planetary_tr.raw > planetary_tr.dat
+
+Then zip foo_ch.dat:
+
+> gzip -f planetary_tr.dat > planetary_tr.dat.gz
+
+3. Model estimation:
+> java -mx512M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -est -alpha 5 -beta 0.01 -ntopics 21 -niters 1000 -twords 10 -dir $
+
+4. Model inference (LabeledLDA) (in /JGibbLabeledLDA-master, models/ in JGibbLabeledLDA):
+> java -mx512M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -inf -dir models/ -model planetary_tr -niters 100 -twords 10 -dfil$
+
+5. Fitting consistency (in /models):
+> gunzip -d planetary_tr.dat.planetary_tr.theta.gz
+> ./softmax.o planetary_tr.dat.planetary_tr.theta > foo.pred
+> gunzip -d planetary_tr.dat.gz
+> cat planetary_tr.dat | awk '{print $1}' > foo.act
+> ./accuracy.o foo.act foo.pred
