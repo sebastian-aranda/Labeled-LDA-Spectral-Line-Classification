@@ -4,16 +4,15 @@ import shutil
 import os
 #import subprocess
 if (len(sys.argv) != 6):
-	print("You must give 5 parameters: model_path, channeling, restfreq[GHz], fits_path, labels_path")
-	print("e.g. python auto.shift.py llda_models/hot_cores_2_1000/ 2 244.9355 casa_spectrums/CO_2_1_HD163296.dat llda_train_input/hot_cores_2_labelmap.sub")
+	print("You must give 5 parameters: model_path, labels_path, channeling, fits_path")
+	print("e.g. python auto-full.py llda_models/hot_cores_2_1000/ llda_train_input/hot_cores_2_labelmap.sub 2 mFits.fits")
 	sys.exit(1)
 
 model = os.path.basename(os.path.normpath(sys.argv[1]))
-channeling = sys.argv[2]
-rest_freq = sys.argv[3]
+labels = os.path.basename(os.path.normpath(sys.argv[2]))
+channeling = sys.argv[3]
 fits_path = sys.argv[4]
 filename = os.path.basename(os.path.normpath(sys.argv[4]))
-labels = os.path.basename(os.path.normpath(sys.argv[5]))
 
 #Parsing output from Spectral Profile Tool of CASA Viewer
 temp_filename = "spectrum_document" #Same as spectral_file_out variable in llda_input_parser_CASA

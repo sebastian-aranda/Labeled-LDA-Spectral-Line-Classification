@@ -8,16 +8,16 @@ import os
 import operator
 import sys
 
-if len(sys.argv) != 4:
-        print("e.g. python llda_parser.py fits_file.fits 2 244.93555(GHz)")
+if len(sys.argv) != 3:
+        print("e.g. python llda_parser.py fits_file.fits 2")
         sys.exit(0)
 
 fileName = sys.argv[1]
 #fileName = os.path.basename(os.path.normpath(sys.argv[1]))
 channeling = int(sys.argv[2])
-rest_freq = float(sys.argv[3])*10**9 #Input de rest frecuencia se incorpora en GHz, aqui se transforma a Hz
 
 spectral_file_out = "./spectrum_document.dat"
+c = 299792458
 
 hdulist = fits.open(fileName)
 hdu_primary = hdulist[0]
@@ -29,6 +29,7 @@ data_array = hdu_data[0,:,:,:] if hdu_header['NAXIS'] == 4 else hdu_data
 naxis1 = hdu_header['NAXIS1'] #Ra
 naxis2 = hdu_header['NAXIS2'] #Dec
 naxis3 = hdu_header['NAXIS3'] #Frequency
+rest_freq = hdu_header['RESTFRQ'] #Rest freq
 
 #Determining regions of interest
 """
@@ -120,7 +121,7 @@ energy_list = []
 for n_chan in range(len(data_array)):
     freq = float(hdu_header['CRVAL3']+hdu_header['CDELT3']*n_chan)
     
-    mLambda = 299792458/freq
+    mLambda = c/freq
     theta_square = hdu_header['BMAJ']*hdu_header['BMIN']
     intensity = int(np.sum(data_array[n_chan,190:220,190:220])) if np.sum(data_array[n_chan,190:220,190:220]) > 0 else 0 #Revisar
     energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*3600**2)*intensity
@@ -132,9 +133,15 @@ for n_chan in range(len(data_array)):
 data_list = zip(freq_list, energy_list)
 
 #Frequency Red-Shiftting
-freq_max, energy_max = max(data_list,key=operator.itemgetter(1))
-freq_delta = rest_freq-freq_max
-shifted_freq_list = [freq+freq_delta for freq in freq_list]
+#freq_max, energy_max = max(data_list,key=operator.itemgetter(1))
+#freq_delta = rest_freq-freq_max
+#shifted_freq_list = [freq+freq_delta for freq in freq_list]
+
+#Adjust to Doppler Effect
+shifted_freq_list = []
+for freq in freq_list:
+    deltavelocity = float((rest_freq - freq)/freq*c)
+    shifted_freq_list.append(float(freq*c/(c+deltavelocity)/(1/math.sqrt(1-deltavelocity**2/c**2))))
 
 #Channeling
 channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in shifted_freq_list]
