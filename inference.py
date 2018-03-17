@@ -10,7 +10,7 @@ if (len(sys.argv) != 5):
 
 model = os.path.basename(os.path.normpath(sys.argv[1]))
 labels = os.path.basename(os.path.normpath(sys.argv[2]))
-channeling = int(sys.argv[3])
+channeling = sys.argv[3]
 fits_path = sys.argv[4]
 filename = os.path.basename(os.path.normpath(sys.argv[4]))
 

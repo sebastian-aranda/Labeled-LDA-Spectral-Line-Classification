@@ -1,6 +1,5 @@
 import astropy.units as u
 import numpy as np
-from spectral_cube import SpectralCube
 from astropy.io import fits
 
 import math
@@ -123,7 +122,7 @@ for n_chan in range(len(data_array)):
     
     mLambda = c/freq
     theta_square = hdu_header['BMAJ']*hdu_header['BMIN']
-    intensity = int(np.sum(data_array[n_chan,190:220,190:220])) if np.sum(data_array[n_chan,190:220,190:220]) > 0 else 0 #Revisar
+    intensity = int(np.sum(data_array[n_chan])) if np.sum(data_array[n_chan]) > 0 else 0 #Revisar
     energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*3600**2)*intensity
     
     #print("F:"+str(freq)+" - I:"+str(intensity)+" - K:"+str(energy_kelvin))
