@@ -5,3 +5,4 @@ results.*
 train_batch.*
 models_frequency_expansion.sh
 README_MarceloMendoza.txt
+*.fits

@@ -2,24 +2,24 @@ import sys
 import gzip
 import shutil
 import os
-#import subprocess
-if (len(sys.argv) != 6):
-	print("You must give 5 parameters: model_path, labels_path, channeling, fits_path")
-	print("e.g. python auto-full.py llda_models/hot_cores_2_1000/ llda_train_input/hot_cores_2_labelmap.sub 2 mFits.fits")
+
+if (len(sys.argv) != 5):
+	print("You must give 4 parameters: model_path, labels_path, channeling, fits_path")
+	print("e.g. python inference.py llda_models/hot_cores_2_1000/ llda_train_input/hot_cores_2_labelmap.sub 2 ./FITS/DMTau.CS_5-4.image.fits")
 	sys.exit(1)
 
 model = os.path.basename(os.path.normpath(sys.argv[1]))
 labels = os.path.basename(os.path.normpath(sys.argv[2]))
-channeling = sys.argv[3]
+channeling = int(sys.argv[3])
 fits_path = sys.argv[4]
 filename = os.path.basename(os.path.normpath(sys.argv[4]))
 
-#Parsing output from Spectral Profile Tool of CASA Viewer
-temp_filename = "spectrum_document" #Same as spectral_file_out variable in llda_input_parser_CASA
-#shutil.copyfile("./casa_spectrums/"+filename,"./scripts/"+filename)
-shutil.copyfile(fits_path, ./scripts/"+filename)
+temp_filename = "spectrum_document"
+
+shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
-os.system("python llda_parser.py "+filename+" "+channeling+" "+rest_freq)
+os.system("python llda_parser.py "+filename+" "+channeling)
+
 print("Used model")
 print(model)
 with open(temp_filename+".dat", 'rb') as f_in, gzip.open(temp_filename+".dat.gz", 'wb') as f_out: #Must copy to "./llda_models/models/" beacause of some rules that read files in JGibbLabeledLDA

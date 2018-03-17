@@ -133,22 +133,25 @@ for n_chan in range(len(data_array)):
 data_list = zip(freq_list, energy_list)
 
 #Frequency Red-Shiftting
-#freq_max, energy_max = max(data_list,key=operator.itemgetter(1))
-#freq_delta = rest_freq-freq_max
-#shifted_freq_list = [freq+freq_delta for freq in freq_list]
+freq_max, energy_max = max(data_list,key=operator.itemgetter(1))
+redshift = (rest_freq-freq_max)/freq_max
+#print("Redshift: "+str(redshift)+" Restfreq of spectral line: "+str(rest_freq))
+shifted_freq_list = [freq*(1+redshift) for freq in freq_list]
 
-#Adjust to Doppler Effect
-shifted_freq_list = []
-for freq in freq_list:
-    deltavelocity = float((rest_freq - freq)/freq*c)
-    shifted_freq_list.append(float(freq*c/(c+deltavelocity)/(1/math.sqrt(1-deltavelocity**2/c**2))))
+#print("Original Frequency List")
+#print(freq_list)
+#print("\n")
+#print("Doppler correction")
+#print(shifted_freq_list)
+#print("\n")
+#sys.exit(1)
 
 #Channeling
 channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in shifted_freq_list]
 
 #Amplify intensity for spectrums with low intensity
 if (energy_max < 1):
-        energy_list = [energy*2 for energy in energy_list]
+        energy_list = [energy*3 for energy in energy_list]
 
 data_list = zip(channeled_freq_list, energy_list)
 
@@ -161,7 +164,7 @@ energy_std = np.std(energy_array)
 words = []
 for freq, energy in data_list:
         #tf = 0
-        tf = int(math.ceil(np.log2(energy))) if energy >= 1 else 0
+        #tf = int(math.ceil(np.log2(energy))) if energy >= 1 else 0
         tf = int(math.ceil(np.log2(energy))) if energy >= energy_std*3 else 0
         words.extend([str(freq) for i in range(tf)])
 
