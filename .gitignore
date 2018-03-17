@@ -1,5 +1,5 @@
 catalogo_raw/
-llda_train_input/
+llda_train_input/*.dat
 codes/boost_1_65_1/
 results.*
 train_batch.*
