@@ -20,6 +20,7 @@ channeling = int(sys.argv[2])
 spectral_file_out = "./spectrum_document.dat"
 c = 299792458
 
+print("Parsing Fits: "+fileName)
 hdulist = fits.open(fileName)
 hdu_primary = hdulist[0]
 hdu_header = hdu_primary.header
@@ -100,6 +101,7 @@ clusters_intensity_sum = list(map(np.sum,clusters_intensity))
 cluster_index_selected = clusters_intensity_sum.index(max(clusters_intensity_sum))
 intensitiy_values = clusters_intensity[cluster_index_selected]
 intensitiy_values = [intensitiy_value/sum(intensitiy_values) for intensitiy_value in intensitiy_values]
+#intensitiy_values = [intensitiy_value/(intensitiy_values) for intensitiy_value in intensitiy_values]
 
 freq_list = []
 energy_list = []
@@ -112,7 +114,6 @@ for n_chan in range(len(data_array)):
     intensity = intensitiy_values[n_chan]
     #intensity = int(np.sum(data_array[n_chan])) if np.sum(data_array[n_chan]) > 0 else 0 #Revisar
     energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*3600**2)*(intensity*1000)
-    #energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*(3600**2))*intensity
     
     #print("F:"+str(freq)+" - I:"+str(intensity)+" - K:"+str(energy_kelvin))
     freq_list.append(freq)
@@ -133,8 +134,8 @@ channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in shif
 
 #Amplify intensity for spectrums with low intensity
 if (energy_max < 1):
-        print("Low energy cube")
-        energy_list = [energy*4 for energy in energy_list]
+        print("Low energy cube. Amplifying Energy List x4")
+        energy_list = [energy*5 for energy in energy_list]
 
 data_list = zip(channeled_freq_list, energy_list)
 
@@ -146,8 +147,8 @@ energy_std = np.std(energy_array)
 #TF Representation
 words = []
 for freq, energy in data_list:
-        #tf = int(math.ceil(np.log2(energy))) if energy >= 1 else 0
-        tf = int(math.ceil(np.log2(energy))) if energy >= energy_std*3 else 0
+        tf = int(math.ceil(np.log2(energy))) if energy >= 1 else 0
+        #tf = int(math.ceil(np.log2(energy))) if energy >= energy_std*3 else 0
         words.extend([str(freq) for i in range(tf)])
 
 mFile_out = open(spectral_file_out,'w')
