@@ -1,32 +1,32 @@
 0 Dimethyl ether
 1 Butatrienylidene
-2 Nitrous Oxide
-3 Methyl Acetylene
-4 2,4,6-Heptatriynenitrile
-5 2,4-Pentadiynylidyne
-6 Ethylene Glycol
-7 Methyl Cyanide
-8 Thioformylium
-9 para-Oxidaniumyl
-10 Hydrogen Cyanide
+2 Trihydrogen ion
+3 Nitrous Oxide
+4 Methyl Acetylene
+5 Ethylene Glycol
+6 Methyl Cyanide
+7 Thioformylium
+8 para-Oxidaniumyl
+9 Hydrogen Cyanide
+10 Titanium monoxide
 11 Cyanide Radical
 12 Formic Acid
 13 Nitric sulfide
 14 Iminomethylium
-15 Nitrosyl hydride
-16 Propynylidynium
-17 Magnesium Cyanide
-18 1,3-Butadiynyl anion
-19 Diazenylium
-20 Methylamine
-21 Chloronium
-22 Phosphorus Monoxide
+15 Aluminum monoxide
+16 Methyl isocyanate
+17 Nitrosyl hydride
+18 Propynylidynium
+19 Magnesium Cyanide
+20 Diazenylium
+21 Methylamine
+22 Chloronium
 23 Silicon monosulfide
-24 Cyclopropenone
-25 Carbon Monoxide Ion
-26 Sodium Cyanide
-27 Nitric oxide
-28 3-Thioxo-1,2-Propadieylidene
+24 Phosphorus Monoxide
+25 Cyclopropenone
+26 Carbon Monoxide Ion
+27 Sodium Cyanide
+28 Nitric oxide
 29 Silicon Cyanide
 30 Ethyne Isocyanide
 31 Sodium Chloride
@@ -34,91 +34,84 @@
 33 Sulfur Monoxide
 34 Aluminum Isocyanitrile
 35 Cyanobutadiyne
-36 Carbon Monoxide
-37 Silicon Mononitride
+36 Silicon Mononitride
+37 Carbon Monoxide
 38 Propadienylidene
 39 Methanimine
 40 Aluminum Monofluoride
 41 Formamide
-42 1,3,5,7-Octatetraynyl anion
-43 Aminoacetonitrile
-44 Ammonia
-45 gauche-Ethanol
-46 Protonate 2-proynenitrile
-47 Carbonyl Sulfide
-48 Thioxoethenylidene
+42 Aminoacetonitrile
+43 Ammonia
+44 gauche-Ethanol
+45 Protonate 2-proynenitrile
+46 Carbonyl Sulfide
+47 Thioxoethenylidene
+48 Ethyl cyanide
 49 Water
 50 Methyl Formate
 51 Acetaldehyde
 52 Ketenimine
 53 Propenal
 54 Methyl isocyanide
-55 Protonated Carbon Dioxide
-56 Methylidyne
-57 Ketene
-58 4-Cyano-1,3-Butadiynyl
-59 Silicon Monoxide
-60 Acetone
-61 3-Imino-1,2 Propadienylidene
+55 iso-propyl cyanide
+56 Hydrogen cyanide
+57 Protonated Carbon Dioxide
+58 Methylidyne
+59 Ketene
+60 Silicon Monoxide
+61 Acetone
 62 Vinyl Cyanide
-63 Cyclopropenylidene
-64 2,4,6-Heptatriynylidyne
+63 Silicon monoxide (global fit)
+64 Cyclopropenylidene
 65 Magnesium Isocyanide
-66 Formaldehyde
-67 Cyanobutadiynylide anion
-68 Fulminic acid
-69 Carbon Monosulfide
-70 1,3,5-Hexatriynyl
-71 1,3-Butadiynyl radical
-72 1,3,5-Hexatriynyl anion
-73 Silicon monosulfide
-74 Silicon Carbide
-75 Formylium
-76 Ethylene Oxide
-77 Sulfur dioxide
-78 Carbon Monophosphide
-79 Sulfur Monoxide ion
-80 Methanol
-81 Sulfur Dioxide
-82 Cyanoformaldehyde
-83 Isocyanic Acid
-84 Silicon Isocyanide
-85 Silicon Monocarbide
-86 Phosphaethyne
-87 Carbon Monosulfide
-88 Methylene amidogen
-89 Aluminum Monochloride
-90 3-Oxo-1,2-Propadienylidene
-91 Cyanoallene
-92 Methyl diacetylene
-93 Cyanomethylene
-94 Cyanomethyl
-95 Phosphapropynylidyne
-96 Hydrogen Isocyanide
-97 Hydrogen sulfide
-98 Hydroxyl
-99 Glycolaldehyde
-100 2-Propynal
-101 Ethynyl
-102 Phosphorous nitride
-103 Potassium chloride
-104 Silicon tetracarbide
-105 Ethyl Cyanide
-106 Cyanamide
-107 Amidogen
-108 Formyl Radical
-109 Vinyl Alcohol
-110 ortho-Oxidaniumyl
-111 Cyanoethynylide ion
-112 Oxoethenylidene
-113 2-Butynenitrile
-114 3-Silanetetrayl-1,2-Propadienyli
-115 Cyanoethynyl
-116 3-Cyano-1,2-propadienylidene
-117 Acetylene
-118 Hydroxymethylium ion
-119 Methyl formate vt01
-120 Thioformaldehyde
-121 Isothiocyanic acid
-122 Butyronitrile
-123 Cyanic acid
+66 Cyanobutadiynylide anion
+67 Formaldehyde
+68 Carbon Monosulfide
+69 Fulminic acid
+70 trans-Ethanol
+71 Silicon Carbide
+72 Formylium
+73 Ethylene Oxide
+74 Sulfur dioxide
+75 Carbon Monophosphide
+76 Sulfur Monoxide ion
+77 Methanol
+78 Sulfur Dioxide
+79 Cyanoformaldehyde
+80 Isocyanic Acid
+81 Silicon Isocyanide
+82 Methylene amidogen
+83 Silicon Monocarbide
+84 Phosphaethyne
+85 Aluminum Monochloride
+86 Cyanoallene
+87 Methyl diacetylene
+88 Cyanomethylene
+89 Phosphapropynylidyne
+90 Cyanomethyl
+91 Hydrogen Isocyanide
+92 Hydrogen sulfide
+93 Hydroxyl
+94 Glycolaldehyde
+95 Cyanide anion
+96 2-Propynal
+97 Ethynyl
+98 Phosphorous nitride
+99 Magnesium hydride isocyanide
+100 Potassium chloride
+101 Silicon tetracarbide
+102 Ethyl Cyanide
+103 Cyanamide
+104 Amidogen
+105 Hydroxymethylidyne
+106 Formyl Radical
+107 Vinyl Alcohol
+108 ortho-Oxidaniumyl
+109 Cyanoethynylide ion
+110 Oxoethenylidene
+111 2-Butynenitrile
+112 Cyanoethynyl
+113 Hydroxymethylium ion
+114 Thioformaldehyde
+115 Isothiocyanic acid
+116 Cyanic acid

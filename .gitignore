@@ -1,8 +1,10 @@
 catalogo_raw/
-llda_train_input/*.dat
 codes/boost_1_65_1/
+
+llda_train_input/*.dat
+
 results.*
-train_batch.*
-models_frequency_expansion.sh
+results*/
+
 README_MarceloMendoza.txt
 *.fits

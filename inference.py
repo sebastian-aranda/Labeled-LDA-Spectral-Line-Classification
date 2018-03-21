@@ -3,9 +3,9 @@ import gzip
 import shutil
 import os
 
-if (len(sys.argv) != 5):
-	print("You must give 4 parameters: model_path, labels_path, channeling, fits_path")
-	print("e.g. python inference.py llda_models/hot_cores_2_1000/ llda_train_input/hot_cores_2_labelmap.sub 2 ./FITS/DMTau.CS_5-4.image.fits")
+if (len(sys.argv) != 6):
+	print("You must give 5 parameters: model_path, labels_path, channeling, fits_path, species_no")
+	print("e.g. python inference.py llda_models/hot_cores_2_1000/ llda_train_input/hot_cores_2_labelmap.sub 2 ./FITS/DMTau.CS_5-4.image.fits 32")
 	sys.exit(1)
 
 model = os.path.basename(os.path.normpath(sys.argv[1]))
@@ -18,6 +18,15 @@ temp_filename = "spectrum_document"
 
 shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
+
+#Fix1.2
+"""
+if ("alma_band_6" in model):
+	print("Aplying Fix1.2")
+	os.system("python llda_parser.fix1.2.py "+filename+" "+channeling)
+else:
+	os.system("python llda_parser.py "+filename+" "+channeling)
+"""
 os.system("python llda_parser.py "+filename+" "+channeling)
 
 print("Used model")

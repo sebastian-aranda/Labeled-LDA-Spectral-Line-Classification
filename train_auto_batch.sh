@@ -1,7 +1,15 @@
-python train_auto.py llda_train_input/planetary_tr.dat.gz 2.4 0.003 21 500 model_planetary_tr_500it
-python train_auto.py llda_train_input/planetary_2.dat.gz 2.4 0.0009 21 500 model_planetary_2_500it
-python train_auto.py llda_train_input/planetary_full.dat.gz 2.4 0.0009 21 500 model_planetary_full_500it
-python train_auto.py llda_train_input/planetary_full_expanded_3-0.001.dat.gz 2.4 0.0002 21 500 model_planetary_full_expanded_3-0.001_500it
+#python train_auto.py llda_train_input/hot_cores_tr.dat.gz 0.6 0.009 85 500 model_hot_cores_tr_500it
+#python train_auto.py llda_train_input/hot_cores_2.dat.gz 0.6 0.0005 85 500 model_hot_cores_2_500it
+
+#python train_auto.py llda_train_input/alma_band_6_tr.dat.gz 0.4 1.8 117 500 model_alma_band_6_tr_500it
+#python train_auto.py llda_train_input/alma_band_6_2.dat.gz 0.4 0.02 117 500 model_alma_band_6_2_500it
+#python train_auto.py llda_train_input/alma_band_6_full.dat.gz 0.4 0.002 117 500 model_alma_band_6_full_500it
+#python train_auto.py llda_train_input/alma_band_6_full_expanded.dat.gz 0.4 0.0005 117 500 model_alma_band_6_full_expanded_500it
+
+#python train_auto.py llda_train_input/planetary_tr.dat.gz 2.4 0.003 21 500 model_planetary_tr_500it
+#python train_auto.py llda_train_input/planetary_2.dat.gz 2.4 0.0009 21 500 model_planetary_2_500it
+#python train_auto.py llda_train_input/planetary_full.dat.gz 2.4 0.0009 21 500 model_planetary_full_500it
+#python train_auto.py llda_train_input/planetary_full_expanded_3-0.001.dat.gz 2.4 0.0002 21 500 model_planetary_full_expanded_3-0.001_500it
 
 #python train_auto.py llda_train_input/dark_clouds_tr.dat.gz 0.9 0.006 58 500 model_dark_clouds_tr_500it
 #python train_auto.py llda_train_input/dark_clouds_2.dat.gz 0.9 0.0005 58 500 model_dark_clouds_2_500it

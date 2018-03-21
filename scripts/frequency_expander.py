@@ -41,7 +41,7 @@ with open(dataFile) as f:
 		freqs_count = [freqs.count(freq) for freq in freqs]
 		freqs_dict = dict(zip(freqs, freqs_count))
 		
-		for freq, count in freqs_dict.iteritems():
+		for freq, count in freqs_dict.items():
 			normal = stats.norm(freq,(resolution*expansion)/2)
 			
 			for i in range(expansion):

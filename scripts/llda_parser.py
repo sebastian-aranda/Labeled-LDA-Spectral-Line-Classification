@@ -39,7 +39,7 @@ def collapseImage(args):
        lenY = args[1]
        nchan = args[2]
        dataa = args[3]
-       print("Collapsing Image, parameters  lenX:" +str(lenX) + " lenY: "+str(lenY)+" nchan: "+str(nchan)+" dataa: "+str(dataa.shape))
+       #print("Collapsing Image, parameters  lenX:" +str(lenX) + " lenY: "+str(lenY)+" nchan: "+str(nchan)+" dataa: "+str(dataa.shape))
        collapsedImage = np.zeros((lenX,lenY), dtype=np.float)
        for slice in dataa:
            collapsedImage = np.add(collapsedImage,slice)
@@ -63,17 +63,17 @@ db = DBSCAN(eps=int(0.1*naxis1), min_samples=4).fit(regionPoints)
 result_labels = db.labels_
 n_clusters_ = len(set(result_labels)) - (1 if -1 in result_labels else 0)
 unique_labels = set(result_labels)
-print('Estimated number of clusters: %d' % n_clusters_)
-#cmap = get_cmap(n_clusters_+1)
+#print('Estimated number of clusters: %d' % n_clusters_)
 
 clusteredPoints = []
-for point in regionPoints:
+for i,point in enumerate(regionPoints):
     currentCluster = result_labels[i]
     if currentCluster == -1:
-        col = 'white'
+        continue
     else:
         clusteredPoints.append([point,currentCluster])
 
+clusters_intensity = []
 for cluster in range(n_clusters_):
     points = [t[0] for t in clusteredPoints if t[1] == cluster]
     intensity_array = []
@@ -85,11 +85,21 @@ for cluster in range(n_clusters_):
         intensity_array.append(sumValues)
     
     intensitiy_values = np.array(intensity_array)
+    clusters_intensity.append(intensitiy_values)
     
     #sumValues = np.sum(intensitiy_values)
-    #avgJ = np.ndarray.mean(intensitiy_values)
-    #sigma = np.ndarray.std(intensitiy_values)
+    #avgJ = np.mean(intensitiy_values)
+    #sigma = np.std(intensitiy_values)
     #threeSigma= 2.5*sigma
+
+#print("SumValues\n"+str(list(map(np.sum,clusters_intensity))))
+#print("Avg\n"+str(list(map(np.mean,clusters_intensity))))
+#print("Sigma\n"+str(list(map(np.std,clusters_intensity))))
+
+clusters_intensity_sum = list(map(np.sum,clusters_intensity))
+cluster_index_selected = clusters_intensity_sum.index(max(clusters_intensity_sum))
+intensitiy_values = clusters_intensity[cluster_index_selected]
+intensitiy_values = [intensitiy_value/sum(intensitiy_values) for intensitiy_value in intensitiy_values]
 
 freq_list = []
 energy_list = []
@@ -101,7 +111,8 @@ for n_chan in range(len(data_array)):
     theta_square = hdu_header['BMAJ']*hdu_header['BMIN']
     intensity = intensitiy_values[n_chan]
     #intensity = int(np.sum(data_array[n_chan])) if np.sum(data_array[n_chan]) > 0 else 0 #Revisar
-    energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*3600**2)*intensity
+    energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*3600**2)*(intensity*1000)
+    #energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*(3600**2))*intensity
     
     #print("F:"+str(freq)+" - I:"+str(intensity)+" - K:"+str(energy_kelvin))
     freq_list.append(freq)
@@ -115,12 +126,15 @@ redshift = (rest_freq-freq_max)/freq_max
 #print("Redshift: "+str(redshift)+" Restfreq of spectral line: "+str(rest_freq))
 shifted_freq_list = [freq*(1+redshift) for freq in freq_list]
 
+#print("Freq/Energy Max: "+str(freq_max)+"/"+str(energy_max))
+
 #Channeling
 channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in shifted_freq_list]
 
 #Amplify intensity for spectrums with low intensity
 if (energy_max < 1):
-        energy_list = [energy*3 for energy in energy_list]
+        print("Low energy cube")
+        energy_list = [energy*4 for energy in energy_list]
 
 data_list = zip(channeled_freq_list, energy_list)
 
