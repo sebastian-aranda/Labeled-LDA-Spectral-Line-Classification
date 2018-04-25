@@ -22,7 +22,7 @@ dataFile = sys.argv[1]
 expansion = int(sys.argv[2])
 resolution = sys.argv[3]
 
-outputFile = dataFile.split('.')[0]+'_expanded_'+str(expansion)+'-'+str(resolution)+'.'+dataFile.split('.')[1]
+outputFile = dataFile.split('.')[0]+'_expanded'+'.'+dataFile.split('.')[1]
 
 if (sys.argv[1].split('.')[0].split('_')[-1] == '3'):
 	resolution = int(float(resolution)*1e3)
@@ -45,8 +45,12 @@ with open(dataFile) as f:
 			normal = stats.norm(freq,(resolution*expansion)/2)
 			
 			for i in range(expansion):
-				new_freq = freq+(i+1)*resolution 
-				new_count = int(count/normal.pdf(freq)*normal.pdf(new_freq))
-				freqs.extend([new_freq for i in range(new_count)])
+				new_freq_plus = freq+(i+1)*resolution 
+				new_freq_minus = freq-(i+1)*resolution 
+				new_count_plus = int(count/normal.pdf(freq)*normal.pdf(new_freq_plus))
+				new_count_minus = int(count/normal.pdf(freq)*normal.pdf(new_freq_minus))
+				freqs.extend([new_freq_plus for i in range(new_count_plus)])
+				freqs.extend([new_freq_minus for i in range(new_count_minus)])
+		freqs.sort()
 		mFile.write(line.split()[0]+" "+" ".join(map(str,freqs))+"\n")
 	mFile.close()

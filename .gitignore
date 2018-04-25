@@ -1,12 +1,9 @@
 catalogo_raw/
-codes/boost_1_65_1/
-
-llda_train_input/*.dat
+codes/
 
 test_data/
+results*
 
-results.*
-results*/
+llda_train_input/
 
 README_MarceloMendoza.txt
-*.fits

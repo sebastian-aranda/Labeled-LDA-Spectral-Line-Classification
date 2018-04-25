@@ -3,16 +3,19 @@ import gzip
 import shutil
 import os
 
-if (len(sys.argv) != 6):
-	print("You must give 5 parameters: model_path, labels_path, channeling, fits_path, species_no")
-	print("e.g. python inference.py llda_models/hot_cores_2_1000/ llda_train_input/hot_cores_2_labelmap.sub 2 ./FITS/DMTau.CS_5-4.image.fits 32")
+if (len(sys.argv) != 7):
+	print("You must give 6 parameters: model_path, features_path, labels_path, channeling, fits_path, species_no")
+	print("e.g. python inference.py llda_models/model_hot_cores_full_500it/ llda_train_input/hot_cores_full_features.dat llda_train_input/hot_cores_full_labelmap.sub 5 ../FITS/DMTau.CS_5-4.image.fits 12")
 	sys.exit(1)
 
 model = os.path.basename(os.path.normpath(sys.argv[1]))
-labels = os.path.basename(os.path.normpath(sys.argv[2]))
-channeling = sys.argv[3]
-fits_path = sys.argv[4]
-filename = os.path.basename(os.path.normpath(sys.argv[4]))
+features = os.path.basename(os.path.normpath(sys.argv[2]))
+labels = os.path.basename(os.path.normpath(sys.argv[3]))
+channeling = sys.argv[4]
+fits_path = sys.argv[5]
+species_no = sys.argv[6]
+
+filename = os.path.basename(os.path.normpath(fits_path))
 
 temp_filename = "spectrum_document"
 
@@ -27,7 +30,8 @@ if ("alma_band_6" in model):
 else:
 	os.system("python llda_parser.py "+filename+" "+channeling)
 """
-os.system("python llda_parser.py "+filename+" "+channeling)
+
+os.system("python llda_parser.py "+filename+" "+channeling+" "+"../llda_train_input/"+features)
 
 print("Used model")
 print(model)
@@ -53,3 +57,24 @@ shutil.copyfile("../llda_train_input/"+labels,labels)
 os.system("python llda_output_theta_parser.py "+temp_filename+".dat."+model+".theta.gz "+labels+" > ../output.dat")
 os.remove(labels)
 os.remove(temp_filename+".dat."+model+".theta.gz")
+
+os.chdir("../")
+#Prediccion
+match = False
+os.remove("matches.out")
+with open('output.dat') as f:
+	for i,line in enumerate(f):
+		if i>=5:
+			break
+		no = line.split()[0].split(';')[1]
+		prob = line.split()[-1].split(';')[1]
+		
+		if no == species_no:
+			response = "¡MATCH! Model["+model+"] FITS["+filename+"]: "+prob+"\n"
+			with open("matches.out","a") as fileMatch:
+				fileMatch.write(response)
+			print(response)
+			match = True
+if (not match):
+	print("No se encontró la transición")
+

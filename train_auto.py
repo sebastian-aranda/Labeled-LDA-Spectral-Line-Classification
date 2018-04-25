@@ -18,7 +18,7 @@ model_name = sys.argv[6]
 
 os.chdir("./JGibbLabeledLDA-master/")
 shutil.copyfile("../llda_train_input/"+data_train,data_train)
-os.system("java -mx4096M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -est -alpha "+alpha+" -beta "+beta+" -ntopics "+number_of_topics+" -niters "+number_of_iterations+" -twords 10 -model "+model_name+" -dir . -dfile "+data_train)
+os.system("java -mx8192M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -est -alpha "+alpha+" -beta "+beta+" -ntopics "+number_of_topics+" -niters "+number_of_iterations+" -twords 10 -model "+model_name+" -dir . -dfile "+data_train)
 os.mkdir("../llda_models/"+model_name)
 os.system("mv "+model_name+".* ../llda_models/"+model_name+"/")
 os.remove(data_train)
