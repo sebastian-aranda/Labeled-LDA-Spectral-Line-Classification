@@ -12,10 +12,10 @@ files.sort()
 objects = list(set(['.'.join(file.split('.')[:-2]) for file in files]))
 
 if input_model != 'test':
-	models = ['model_'+input_model+'_tr_500it','model_'+input_model+'_2_500it','model_'+input_model+'_full_500it']
+	models = ['model_'+input_model+'_tr_500it','model_'+input_model+'_2_500it','model_'+input_model+'_full_500it','model_'+input_model+'_full_expanded_00002_500it','model_'+input_model+'_full_expanded_00010_500it']
 else:
 	models = ['model_test_2_500it']
-#models = ['model_'+input_model+'_tr_500it','model_'+input_model+'_2_500it','model_'+input_model+'_full_500it','model_'+input_model+'_full_expanded_500it']
+models = ['model_'+input_model+'_tr_500it'] #for testing
 
 targets = list(itertools.product(objects,models))
 for obj,model in targets:

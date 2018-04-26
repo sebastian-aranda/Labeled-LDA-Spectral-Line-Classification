@@ -15,11 +15,11 @@ channeling = sys.argv[4]
 fits_path = sys.argv[5]
 species_no = sys.argv[6]
 
-filename = os.path.basename(os.path.normpath(fits_path))
-
+#filename = os.path.basename(os.path.normpath(fits_path))
+filename = fits_path
 temp_filename = "spectrum_document"
 
-shutil.copyfile(fits_path,"./scripts/"+filename)
+#shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
 
 #Fix1.2
@@ -38,13 +38,13 @@ print(model)
 with open(temp_filename+".dat", 'rb') as f_in, gzip.open(temp_filename+".dat.gz", 'wb') as f_out: #Must copy to "./llda_models/models/" beacause of some rules that read files in JGibbLabeledLDA
     shutil.copyfileobj(f_in, f_out)
 os.remove(temp_filename+".dat")
-os.remove(filename)
+#os.remove(filename)
 os.rename(temp_filename+".dat.gz","../llda_models/"+model+"/"+temp_filename+".dat.gz")
 
 #Model Inference
 #Labeled LDA in Java Copyright (C) 2008-2013 Myle Ott (Labeled LDA), Xuan-Hieu Phan and Cam-Tu Nguyen (JGibbLDA)
 os.chdir("../JGibbLabeledLDA-master/")
-os.system("java -mx4096M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -inf -dir ../llda_models/"+model+"/ -model "+model+" -niters 500 -twords 10 -dfile "+temp_filename+".dat.gz")
+os.system("java -mx8192M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -inf -dir ../llda_models/"+model+"/ -model "+model+" -niters 30 -twords 10 -dfile "+temp_filename+".dat.gz")
 
 os.chdir("../llda_models/"+model+"/")
 os.remove(temp_filename+".dat.gz")
@@ -61,7 +61,6 @@ os.remove(temp_filename+".dat."+model+".theta.gz")
 os.chdir("../")
 #Prediccion
 match = False
-os.remove("matches.out")
 with open('output.dat') as f:
 	for i,line in enumerate(f):
 		if i>=5:

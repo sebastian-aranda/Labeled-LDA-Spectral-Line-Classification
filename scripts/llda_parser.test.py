@@ -62,7 +62,7 @@ with open(corpus) as f:
 vocabulary = sorted(list(words), key=int)
 vocabulary = [int(word) for word in vocabulary]
 
-casted_freq_list = [takeClosest(vocabulary,freq) for freq in channeled_freq_list]  
+casted_freq_list = [takeClosest(vocabulary,freq) for freq in channeled_freq_list]
 
 data_list = zip(casted_freq_list, energy_list)
 #data_list = zip(channeled_freq_list, energy_list)
@@ -82,6 +82,8 @@ for freq, energy in data_list:
         tf = int(np.log2(math.ceil(energy+1)))
         words.extend([str(freq) for i in range(tf)])
 
+words = [227, 227, 227, 227, 227, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 237, 237, 237, 237, 237, 239, 241, 241, 241, 241, 241, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 243, 244, 244, 244, 244, 244, 272, 272, 272, 272, 272, 272]
+words = [str(word) for word in words]
 mFile_out = open(spectral_file_out,'w')
 print("Generated File:")
 print(" ".join(words)+"\n")

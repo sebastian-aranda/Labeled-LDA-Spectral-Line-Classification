@@ -4,6 +4,6 @@ codes/
 test_data/
 results*
 
-llda_train_input/
+llda_train_input/*.dat
 
 README_MarceloMendoza.txt

@@ -54,7 +54,7 @@ features = sys.argv[3]
 
 spectral_file_out = "./spectrum_document.dat"
 c = 299792458
-sigma_thresshold = 3.0
+sigma_thresshold = 1.0
 
 print("Parsing Fits: "+fileName)
 hdulist = fits.open(fileName)
@@ -144,11 +144,13 @@ for n_chan in range(len(data_array)):
     energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*3600**2)*(intensity*1000)
     
     #Amplify energy
-    energy_kelvin = energy_kelvin*1e3
+    #energy_kelvin = energy_kelvin*1e2
 
-    print("F:"+str(freq)+" - I:"+str(intensity)+" - K:"+str(energy_kelvin))
+    #print("F:"+str(freq)+" - I:"+str(intensity)+" - K:"+str(energy_kelvin))
     freq_list.append(freq)
     energy_list.append(energy_kelvin)
+
+hdulist.close()
 
 data_list = zip(freq_list, energy_list)
 
@@ -169,31 +171,35 @@ with open(features) as f:
     tokens = f.readline().split()
     vocabulary = [int(token) for token in tokens]
 
-casted_freq_list = [takeClosest(vocabulary,freq) for freq in channeled_freq_list]  
-
-data_list = zip(casted_freq_list, energy_list)
-
-#Amplify intensity for spectrums with low intensity
-#if (energy_max < 1):
-#        print("Low energy cube. Amplifying Energy List x4")
-#        energy_list = [energy*10 for energy in energy_list]
-
-data_list = zip(casted_freq_list, energy_list)
+#Not compatible with TF vX.X.2
+casted_freq_list = [takeClosest(vocabulary,freq) for freq in channeled_freq_list]
 
 #Calculating Mean & Standard Deviation
 energy_array = np.array(energy_list)
 energy_mean = np.mean(energy_list)
 energy_std = np.std(energy_array)
-
 print("Sigma: "+str(sigma_thresshold)+"x"+str(energy_std))
 
 #TF Representation
 words = []
+data_list = zip(casted_freq_list, energy_list)
+#data_list = zip(channeled_freq_list, energy_list)
 for freq, energy in data_list:
-        #tf = int(np.log2(math.ceil(energy)))
-        #tf = int(np.log2(math.ceil(energy+1)))
-        #tf = int(np.log2(math.ceil(energy))) if energy >= energy_std*sigma_thresshold else 0
-        tf = int(np.log2(math.ceil(energy))+1) #Mendoza Style
+        #tf = int(np.log2(math.ceil(energy))) if energy > 0 else 0 #TF v1.1.1
+        #tf = int(np.log2(math.ceil(energy))) if energy > 0 else 1 #TF v1.1.2
+        #tf = int(np.log2(math.ceil(energy))) if energy > energy_std*sigma_thresshold else 0 #TF v1.2.1
+        #tf = int(np.log2(math.ceil(energy))) if energy > energy_std*sigma_thresshold else 1 #TF v1.2.2
+
+        #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 0  #TF v2.1.1
+        #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 1  #TF v2.1.2
+        tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 0  #TF v2.2.1
+        #tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 1  #TF v2.2.2
+        
+        #tf = int(np.log2(math.ceil(energy))+1) if energy > 0 else 0 #TF v3.1.1
+        #tf = int(np.log2(math.ceil(energy))+1) if energy > 0 else 1 #TF v3.1.2
+        #tf = int(np.log2(math.ceil(energy))+1) if energy > energy_std*sigma_thresshold else 0 #TF v3.2.1
+        #tf = int(np.log2(math.ceil(energy))+1) if energy > energy_std*sigma_thresshold else 1 #TF v3.2.2
+        
         
         words.extend([str(freq) for i in range(tf)])
 
