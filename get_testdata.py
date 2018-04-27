@@ -1,7 +1,7 @@
 import sys
 import os
 
-if (len(sys.argv) != 2):
+if (len(sys.argv) != 3):
 	print("e.g. python get_testdata.py ./path/to/folder/ ./llda_train_input/model_labelmap.sub")
 	sys.exit(0)
 

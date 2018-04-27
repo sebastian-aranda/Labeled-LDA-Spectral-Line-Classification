@@ -22,10 +22,10 @@ if model_name == 'hot_cores':
 elif model_name == 'alma_band_6':
         models_array = [
         (0,'llda_models/model_alma_band_6_tr_500it/','llda_train_input/alma_band_6_tr_features.dat','llda_train_input/alma_band_6_tr_labelmap.sub')
-        #,(2,'llda_models/model_alma_band_6_2_500it/','llda_train_input/alma_band_6_2_features.dat','llda_train_input/alma_band_6_2_labelmap.sub')
-        #,(5,'llda_models/model_alma_band_6_full_500it/','llda_train_input/alma_band_6_full_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
-        #,(5,'llda_models/model_alma_band_6_full_expanded_00002_500it','llda_train_input/alma_band_6_full_expanded_00002_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
-        #,(5,'llda_models/model_alma_band_6_full_expanded_00010_500it','llda_train_input/alma_band_6_full_expanded_00010_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
+        ,(2,'llda_models/model_alma_band_6_2_500it/','llda_train_input/alma_band_6_2_features.dat','llda_train_input/alma_band_6_2_labelmap.sub')
+        ,(5,'llda_models/model_alma_band_6_full_500it/','llda_train_input/alma_band_6_full_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
+        ,(5,'llda_models/model_alma_band_6_full_expanded_00002_500it','llda_train_input/alma_band_6_full_expanded_00002_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
+        ,(5,'llda_models/model_alma_band_6_full_expanded_00010_500it','llda_train_input/alma_band_6_full_expanded_00010_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
         ]
 elif model_name == 'agb_ppn_pn':
         models_array = [

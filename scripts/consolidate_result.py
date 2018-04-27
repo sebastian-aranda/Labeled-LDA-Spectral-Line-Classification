@@ -15,7 +15,6 @@ if input_model != 'test':
 	models = ['model_'+input_model+'_tr_500it','model_'+input_model+'_2_500it','model_'+input_model+'_full_500it','model_'+input_model+'_full_expanded_00002_500it','model_'+input_model+'_full_expanded_00010_500it']
 else:
 	models = ['model_test_2_500it']
-models = ['model_'+input_model+'_tr_500it'] #for testing
 
 targets = list(itertools.product(objects,models))
 for obj,model in targets:
@@ -24,5 +23,4 @@ for obj,model in targets:
                 for i,line in enumerate(f):
                         if i >= 5:
                                 break
-                        #print(line.rstrip('\n'))
                         print(obj+";"+model+";"+line.rstrip('\n'))
