@@ -31,6 +31,7 @@ def takeClosest(myList, myNumber):
 
 channeling = int(sys.argv[1])
 corpus = sys.argv[2]
+features = sys.argv[3]
 
 spectral_file_out = "./spectrum_document.dat"
 c = 299792458
@@ -53,34 +54,30 @@ energy_list = [80, 500, 1200]
 #channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in freq_list]
 
 #Frequency Casting
-words = set()
-with open(corpus) as f:
-	for line in f:
-		tokens = line.split()[1:]
-		words.update(tokens)
+#words = set()
+#with open(features) as f:
+#    tokens = f.readline().split()
+#    vocabulary = [int(token) for token in tokens]
 
-vocabulary = sorted(list(words), key=int)
-vocabulary = [int(word) for word in vocabulary]
+#casted_freq_list = [takeClosest(vocabulary,freq) for freq in channeled_freq_list]
 
-casted_freq_list = [takeClosest(vocabulary,freq) for freq in channeled_freq_list]
-
-data_list = zip(casted_freq_list, energy_list)
+#data_list = zip(casted_freq_list, energy_list)
 #data_list = zip(channeled_freq_list, energy_list)
 
 #Calculating Mean & Standard Deviation
-energy_array = np.array(energy_list)
-energy_mean = np.mean(energy_list)
-energy_std = np.std(energy_array)
+#energy_array = np.array(energy_list)
+#energy_mean = np.mean(energy_list)
+#energy_std = np.std(energy_array)
 
-print("Sigma: "+str(sigma_thresshold)+"x"+str(energy_std))
+#print("Sigma: "+str(sigma_thresshold)+"x"+str(energy_std))
 
 #TF Representation
-words = []
-for freq, energy in data_list:
+#words = []
+#for freq, energy in data_list:
         #tf = int(np.log2(math.ceil(energy))) if energy >= energy_std*sigma_thresshold else 0
         #tf = int(np.log2(math.ceil(energy))) if energy >= 1 else 0
-        tf = int(np.log2(math.ceil(energy+1)))
-        words.extend([str(freq) for i in range(tf)])
+        #tf = int(np.log2(math.ceil(energy+1)))
+        #words.extend([str(freq) for i in range(tf)])
 
 words = [227, 227, 227, 227, 227, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 237, 237, 237, 237, 237, 239, 241, 241, 241, 241, 241, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 242, 243, 244, 244, 244, 244, 244, 272, 272, 272, 272, 272, 272]
 words = [str(word) for word in words]
