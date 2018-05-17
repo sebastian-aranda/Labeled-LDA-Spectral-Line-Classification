@@ -3,15 +3,15 @@ from scipy import stats
 from math import floor, ceil
 import sys
 
-#CASA SPECTRUMS FREQUENCY RESOLUTION: DELTA FREQ 0,001 [GHz]
+#BROADENING FREQUENCY RESOLUTION (SPECTRAL LINE BROADENING LENGTH): DELTA FREQ 0,002 [GHz]
 
 if (len(sys.argv) != 4):
 	"""Parameters 
 	llda_input_data: train data file to expand
-	neighborhood_expansion: number of neighbor channels to add
+	neighborhood_expansion: number of neighbor channels to add to each side of the spectral line transition
 	spectrum_resolution: emission lenght
 	"""
-	print("e.g. python frequency_expander.py hot_cores_tr.dat 3 0.00001")
+	print("e.g. python frequency_expander.py hot_cores_tr.dat 3 0.002")
 	sys.exit() 
 
 if (sys.argv[1].split('.')[0].split('_')[-1] == 'tr' or sys.argv[1].split('.')[0].split('_')[-1] == '1' or sys.argv[1].split('.')[0].split('_')[-1] == '2'):
@@ -42,11 +42,11 @@ with open(dataFile) as f:
 		freqs_dict = dict(zip(freqs, freqs_count))
 		
 		for freq, count in freqs_dict.items():
-			normal = stats.norm(freq,(resolution*expansion)/2)
+			normal = stats.norm(freq,resolution/4)
 			
 			for i in range(expansion):
-				new_freq_plus = freq+(i+1)*resolution 
-				new_freq_minus = freq-(i+1)*resolution 
+				new_freq_plus = freq+(i+1)*resolution/2/expansion 
+				new_freq_minus = freq-(i+1)*resolution/2/expansion 
 				new_count_plus = int(count/normal.pdf(freq)*normal.pdf(new_freq_plus))
 				new_count_minus = int(count/normal.pdf(freq)*normal.pdf(new_freq_minus))
 				freqs.extend([new_freq_plus for i in range(new_count_plus)])

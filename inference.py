@@ -59,21 +59,26 @@ os.remove(labels)
 os.remove(temp_filename+".dat."+model+".theta.gz")
 
 os.chdir("../")
-#Prediccion
+#Evaluate Prediction
 match = False
 with open('output.dat') as f:
+	last_pos = f.tell()
+	last_line = f.readlines()[-1]
+	f.seek(last_pos)
 	for i,line in enumerate(f):
 		if i>=5:
 			break
 		no = line.split()[0].split(';')[1]
 		prob = line.split()[-1].split(';')[1]
+		last_prob = last_line.split()[-1].split(';')[1]
 		
-		if no == species_no:
+		if no == species_no and prob != last_prob:
+			print("Prob: "+str(prob)+" Last Prob: "+str(last_prob))
 			response = "¡MATCH! Model["+model+"] FITS["+filename+"]: "+prob+"\n"
 			with open("matches.out","a") as fileMatch:
 				fileMatch.write(response)
 			print(response)
 			match = True
 if (not match):
-	print("No se encontró la transición")
+	print("Transition not found")
 

@@ -15,11 +15,14 @@ rm llda_train_input/alma_band_6_full.dat.gz
 gzip -k llda_train_input/alma_band_6_full_expanded_00002.dat
 python train_auto.py llda_train_input/alma_band_6_full_expanded_00002.dat.gz 0.4 0.1 117 500 model_alma_band_6_full_expanded_00002_500it
 rm llda_train_input/alma_band_6_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/alma_band_6_full_expanded_00010.dat
 python train_auto.py llda_train_input/alma_band_6_full_expanded_00010.dat.gz 0.4 0.1 117 500 model_alma_band_6_full_expanded_00010_500it
 rm llda_train_input/alma_band_6_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/alma_band_6_full_expanded_00200.dat
+python train_auto.py llda_train_input/alma_band_6_full_expanded_00200.dat.gz 0.4 0.1 117 500 model_alma_band_6_full_expanded_00200_500it
+rm llda_train_input/alma_band_6_full_expanded_00200.dat.gz
 ##################### HOT CORES #####################
 :'
 gzip -k llda_train_input/hot_cores_tr.dat
@@ -37,11 +40,14 @@ rm llda_train_input/hot_cores_full.dat.gz
 gzip -k llda_train_input/hot_cores_full_expanded_00002.dat
 python train_auto.py llda_train_input/hot_cores_full_expanded_00002.dat.gz 0.6 0.1 85 500 model_hot_cores_full_expanded_00002_500it
 rm llda_train_input/hot_cores_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/hot_cores_full_expanded_00010.dat
 python train_auto.py llda_train_input/hot_cores_full_expanded_00010.dat.gz 0.6 0.1 85 500 model_hot_cores_full_expanded_00010_500it
 rm llda_train_input/hot_cores_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/hot_cores_full_expanded_00200.dat
+python train_auto.py llda_train_input/hot_cores_full_expanded_00200.dat.gz 0.6 0.1 85 500 model_hot_cores_full_expanded_00200_500it
+rm llda_train_input/hot_cores_full_expanded_00200.dat.gz
 ##################### AGB_PPN_PN #####################
 :'
 gzip -k llda_train_input/agb_ppn_pn_tr.dat
@@ -59,11 +65,14 @@ rm llda_train_input/agb_ppn_pn_full.dat.gz
 gzip -k llda_train_input/agb_ppn_pn_full_expanded_00002.dat
 python train_auto.py llda_train_input/agb_ppn_pn_full_expanded_00002.dat.gz 0.7 0.1 71 500 model_agb_ppn_pn_full_expanded_00002_500it
 rm llda_train_input/agb_ppn_pn_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/agb_ppn_pn_full_expanded_00010.dat
 python train_auto.py llda_train_input/agb_ppn_pn_full_expanded_00010.dat.gz 0.7 0.1 71 500 model_agb_ppn_pn_full_expanded_00010_500it
 rm llda_train_input/agb_ppn_pn_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/agb_ppn_pn_full_expanded_00200.dat
+python train_auto.py llda_train_input/agb_ppn_pn_full_expanded_00200.dat.gz 0.7 0.1 71 500 model_agb_ppn_pn_full_expanded_00200_500it
+rm llda_train_input/agb_ppn_pn_full_expanded_00200.dat.gz
 ##################### PLANETARY #####################
 :'
 gzip -k llda_train_input/planetary_tr.dat
@@ -81,11 +90,14 @@ rm llda_train_input/planetary_full.dat.gz
 gzip -k llda_train_input/planetary_full_expanded_00002.dat
 python train_auto.py llda_train_input/planetary_full_expanded_00002.dat.gz 2.5 0.1 20 500 model_planetary_full_expanded_00002_500it
 rm llda_train_input/planetary_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/planetary_full_expanded_00010.dat
 python train_auto.py llda_train_input/planetary_full_expanded_00010.dat.gz 2.5 0.1 20 500 model_planetary_full_expanded_00010_500it
 rm llda_train_input/planetary_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/planetary_full_expanded_00200.dat
+python train_auto.py llda_train_input/planetary_full_expanded_00200.dat.gz 2.5 0.1 20 500 model_planetary_full_expanded_00200_500it
+rm llda_train_input/planetary_full_expanded_00200.dat.gz
 ##################### DARK CLOUDS #####################
 :'
 gzip -k llda_train_input/dark_clouds_tr.dat
@@ -103,11 +115,14 @@ rm llda_train_input/dark_clouds_full.dat.gz
 gzip -k llda_train_input/dark_clouds_full_expanded_00002.dat
 python train_auto.py llda_train_input/dark_clouds_full_expanded_00002.dat.gz 0.9 0.1 58 500 model_dark_clouds_full_expanded_00002_500it
 rm llda_train_input/dark_clouds_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/dark_clouds_full_expanded_00010.dat
 python train_auto.py llda_train_input/dark_clouds_full_expanded_00010.dat.gz 0.9 0.1 58 500 model_dark_clouds_full_expanded_00010_500it
 rm llda_train_input/dark_clouds_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/dark_clouds_full_expanded_00200.dat
+python train_auto.py llda_train_input/dark_clouds_full_expanded_00200.dat.gz 0.9 0.1 58 500 model_dark_clouds_full_expanded_00200_500it
+rm llda_train_input/dark_clouds_full_expanded_00200.dat.gz
 ##################### DIFFUSE CLOUDS #####################
 :'
 gzip -k llda_train_input/diffuse_clouds_tr.dat
@@ -125,11 +140,14 @@ rm llda_train_input/diffuse_clouds_full.dat.gz
 gzip -k llda_train_input/diffuse_clouds_full_expanded_00002.dat
 python train_auto.py llda_train_input/diffuse_clouds_full_expanded_00002.dat.gz 2.1 0.1 24 500 model_diffuse_clouds_full_expanded_00002_500it
 rm llda_train_input/diffuse_clouds_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/diffuse_clouds_full_expanded_00010.dat
 python train_auto.py llda_train_input/diffuse_clouds_full_expanded_00010.dat.gz 2.1 0.1 24 500 model_diffuse_clouds_full_expanded_00010_500it
 rm llda_train_input/diffuse_clouds_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/diffuse_clouds_full_expanded_00200.dat
+python train_auto.py llda_train_input/diffuse_clouds_full_expanded_00200.dat.gz 2.1 0.1 24 500 model_diffuse_clouds_full_expanded_00200_500it
+rm llda_train_input/diffuse_clouds_full_expanded_00200.dat.gz
 ##################### COMETS #####################
 :'
 gzip -k llda_train_input/comets_tr.dat
@@ -147,11 +165,14 @@ rm llda_train_input/comets_full.dat.gz
 gzip -k llda_train_input/comets_full_expanded_00002.dat
 python train_auto.py llda_train_input/comets_full_expanded_00002.dat.gz 1.7 0.1 30 500 model_comets_full_expanded_00002_500it
 rm llda_train_input/comets_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/comets_full_expanded_00010.dat
 python train_auto.py llda_train_input/comets_full_expanded_00010.dat.gz 1.7 0.1 30 500 model_comets_full_expanded_00010_500it
 rm llda_train_input/comets_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/comets_full_expanded_00200.dat
+python train_auto.py llda_train_input/comets_full_expanded_00200.dat.gz 1.7 0.1 30 500 model_comets_full_expanded_00200_500it
+rm llda_train_input/comets_full_expanded_00200.dat.gz
 ##################### EXTRAGALACTIC #####################
 :'
 gzip -k llda_train_input/extragalactic_tr.dat
@@ -169,8 +190,11 @@ rm llda_train_input/extragalactic_full.dat.gz
 gzip -k llda_train_input/extragalactic_full_expanded_00002.dat
 python train_auto.py llda_train_input/extragalactic_full_expanded_00002.dat.gz 1.4 0.1 36 500 model_extragalactic_full_expanded_00002_500it
 rm llda_train_input/extragalactic_full_expanded_00002.dat.gz
-'
 
 gzip -k llda_train_input/extragalactic_full_expanded_00010.dat
 python train_auto.py llda_train_input/extragalactic_full_expanded_00010.dat.gz 1.4 0.1 36 500 model_extragalactic_full_expanded_00010_500it
 rm llda_train_input/extragalactic_full_expanded_00010.dat.gz
+'
+gzip -k llda_train_input/extragalactic_full_expanded_00200.dat
+python train_auto.py llda_train_input/extragalactic_full_expanded_00200.dat.gz 1.4 0.1 36 500 model_extragalactic_full_expanded_00200_500it
+rm llda_train_input/extragalactic_full_expanded_00200.dat.gz

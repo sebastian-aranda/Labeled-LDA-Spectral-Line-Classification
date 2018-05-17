@@ -18,6 +18,7 @@ if model_name == 'hot_cores':
         ,(5,'llda_models/model_hot_cores_full_500it/','llda_train_input/hot_cores_full_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
         ,(5,'llda_models/model_hot_cores_full_expanded_00002_500it','llda_train_input/hot_cores_full_expanded_00002_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
         ,(5,'llda_models/model_hot_cores_full_expanded_00010_500it','llda_train_input/hot_cores_full_expanded_00010_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
+        ,(5,'llda_models/model_hot_cores_full_expanded_00200_500it','llda_train_input/hot_cores_full_expanded_00200_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
         ]
 elif model_name == 'alma_band_6':
         models_array = [
@@ -26,6 +27,7 @@ elif model_name == 'alma_band_6':
         ,(5,'llda_models/model_alma_band_6_full_500it/','llda_train_input/alma_band_6_full_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
         ,(5,'llda_models/model_alma_band_6_full_expanded_00002_500it','llda_train_input/alma_band_6_full_expanded_00002_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
         ,(5,'llda_models/model_alma_band_6_full_expanded_00010_500it','llda_train_input/alma_band_6_full_expanded_00010_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
+        ,(5,'llda_models/model_alma_band_6_full_expanded_00200_500it','llda_train_input/alma_band_6_full_expanded_00200_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
         ]
 elif model_name == 'agb_ppn_pn':
         models_array = [
@@ -34,6 +36,7 @@ elif model_name == 'agb_ppn_pn':
         ,(5,'llda_models/model_agb_ppn_pn_full_500it/','llda_train_input/agb_ppn_pn_full_features.dat','llda_train_input/agb_ppn_pn_full_labelmap.sub')
         ,(5,'llda_models/model_agb_ppn_pn_full_expanded_00002_500it','llda_train_input/agb_ppn_pn_full_expanded_00002_features.dat','llda_train_input/agb_ppn_pn_full_labelmap.sub')
         ,(5,'llda_models/model_agb_ppn_pn_full_expanded_00010_500it','llda_train_input/agb_ppn_pn_full_expanded_00010_features.dat','llda_train_input/agb_ppn_pn_full_labelmap.sub')
+        ,(5,'llda_models/model_agb_ppn_pn_full_expanded_00200_500it','llda_train_input/agb_ppn_pn_full_expanded_00200_features.dat','llda_train_input/agb_ppn_pn_full_labelmap.sub')
         ]        
 elif model_name == 'planetary':
         models_array = [
@@ -42,6 +45,7 @@ elif model_name == 'planetary':
         ,(5,'llda_models/model_planetary_full_500it/','llda_train_input/planetary_full_features.dat','llda_train_input/planetary_full_labelmap.sub')
         ,(5,'llda_models/model_planetary_full_expanded_00002_500it','llda_train_input/planetary_full_expanded_00002_features.dat','llda_train_input/planetary_full_labelmap.sub')
         ,(5,'llda_models/model_planetary_full_expanded_00010_500it','llda_train_input/planetary_full_expanded_00010_features.dat','llda_train_input/planetary_full_labelmap.sub')
+        ,(5,'llda_models/model_planetary_full_expanded_00200_500it','llda_train_input/planetary_full_expanded_00200_features.dat','llda_train_input/planetary_full_labelmap.sub')
         ]
 elif model_name == 'dark_clouds':
         models_array = [
@@ -50,6 +54,7 @@ elif model_name == 'dark_clouds':
         ,(5,'llda_models/model_dark_clouds_full_500it/','llda_train_input/dark_clouds_full_features.dat','llda_train_input/dark_clouds_full_labelmap.sub')
         ,(5,'llda_models/model_dark_clouds_full_expanded_00002_500it','llda_train_input/dark_clouds_full_expanded_00002_features.dat','llda_train_input/dark_clouds_full_labelmap.sub')
         ,(5,'llda_models/model_dark_clouds_full_expanded_00010_500it','llda_train_input/dark_clouds_full_expanded_00010_features.dat','llda_train_input/dark_clouds_full_labelmap.sub')
+        ,(5,'llda_models/model_dark_clouds_full_expanded_00200_500it','llda_train_input/dark_clouds_full_expanded_00200_features.dat','llda_train_input/dark_clouds_full_labelmap.sub')
         ]
 elif model_name == 'diffuse_clouds':
         models_array = [
@@ -58,6 +63,7 @@ elif model_name == 'diffuse_clouds':
         ,(5,'llda_models/model_diffuse_clouds_full_500it/','llda_train_input/diffuse_clouds_full_features.dat','llda_train_input/diffuse_clouds_full_labelmap.sub')
         ,(5,'llda_models/model_diffuse_clouds_full_expanded_00002_500it','llda_train_input/diffuse_clouds_full_expanded_00002_features.dat','llda_train_input/diffuse_clouds_full_labelmap.sub')
         ,(5,'llda_models/model_diffuse_clouds_full_expanded_00010_500it','llda_train_input/diffuse_clouds_full_expanded_00010_features.dat','llda_train_input/diffuse_clouds_full_labelmap.sub')
+        ,(5,'llda_models/model_diffuse_clouds_full_expanded_00200_500it','llda_train_input/diffuse_clouds_full_expanded_00200_features.dat','llda_train_input/diffuse_clouds_full_labelmap.sub')
         ]
 elif model_name == 'comets':
         models_array = [
@@ -66,6 +72,7 @@ elif model_name == 'comets':
         ,(5,'llda_models/model_comets_full_500it/','llda_train_input/comets_full_features.dat','llda_train_input/comets_full_labelmap.sub')
         ,(5,'llda_models/model_comets_full_expanded_00002_500it','llda_train_input/comets_full_expanded_00002_features.dat','llda_train_input/comets_full_labelmap.sub')
         ,(5,'llda_models/model_comets_full_expanded_00010_500it','llda_train_input/comets_full_expanded_00010_features.dat','llda_train_input/comets_full_labelmap.sub')
+        ,(5,'llda_models/model_comets_full_expanded_00200_500it','llda_train_input/comets_full_expanded_00200_features.dat','llda_train_input/comets_full_labelmap.sub')
         ]
 elif model_name == 'extragalactic':
         models_array = [
@@ -74,6 +81,14 @@ elif model_name == 'extragalactic':
         ,(5,'llda_models/model_extragalactic_full_500it/','llda_train_input/extragalactic_full_features.dat','llda_train_input/extragalactic_full_labelmap.sub')
         ,(5,'llda_models/model_extragalactic_full_expanded_00002_500it','llda_train_input/extragalactic_full_expanded_00002_features.dat','llda_train_input/extragalactic_full_labelmap.sub')
         ,(5,'llda_models/model_extragalactic_full_expanded_00010_500it','llda_train_input/extragalactic_full_expanded_00010_features.dat','llda_train_input/extragalactic_full_labelmap.sub')
+        ,(5,'llda_models/model_extragalactic_full_expanded_00200_500it','llda_train_input/extragalactic_full_expanded_00200_features.dat','llda_train_input/extragalactic_full_labelmap.sub')
+        ]
+elif model_name == 'water':
+        models_array = [
+        (0,'llda_models/model_water_tr_500it/','llda_train_input/water_tr_features.dat','llda_train_input/water_tr_labelmap.sub')
+        ,(2,'llda_models/model_water_2_500it/','llda_train_input/water_2_features.dat','llda_train_input/water_2_labelmap.sub')
+        ,(5,'llda_models/model_water_full_500it/','llda_train_input/water_full_features.dat','llda_train_input/water_full_labelmap.sub')
+        ,(5,'llda_models/model_water_full_expanded_00200_500it','llda_train_input/water_full_expanded_00200_features.dat','llda_train_input/water_full_labelmap.sub')
         ]
 else:
         print("Model not found")

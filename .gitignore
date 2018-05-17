@@ -1,7 +1,8 @@
 catalogo_raw/
 codes/
-
+spectrum_documents/
 test_data/
+
 results*
 
 llda_train_input/*.dat
