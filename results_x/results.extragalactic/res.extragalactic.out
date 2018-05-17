@@ -1,0 +1,175 @@
+TWHydra_HCOplusline.image;model_extragalactic_tr_500it;1;9 Methyliumylidene;0.521484375
+TWHydra_HCOplusline.image;model_extragalactic_tr_500it;2;0 Methylidyne;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_tr_500it;3;1 1,3-Butadiynyl radical;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_tr_500it;4;2 Formaldehyde;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_tr_500it;5;3 Sulfur dioxide;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_2_500it;1;9 Methyliumylidene;0.521484375
+TWHydra_HCOplusline.image;model_extragalactic_2_500it;2;0 Methylidyne;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_2_500it;3;1 1,3-Butadiynyl radical;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_2_500it;4;2 Formaldehyde;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_2_500it;5;3 Sulfur dioxide;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_500it;1;12 Carbonyl Sulfide;0.51171875
+TWHydra_HCOplusline.image;model_extragalactic_full_500it;2;18 Cyclopropenylidene;0.023437499999999997
+TWHydra_HCOplusline.image;model_extragalactic_full_500it;3;0 Methylidyne;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_500it;4;1 1,3-Butadiynyl radical;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_500it;5;2 Formaldehyde;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00002_500it;1;34 Formylium;0.51171875
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00002_500it;2;16 Nitric oxide;0.023437499999999997
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00002_500it;3;0 Methylidyne;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00002_500it;4;1 1,3-Butadiynyl radical;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00002_500it;5;2 Formaldehyde;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00010_500it;1;9 Methyliumylidene;0.51171875
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00010_500it;2;34 Formylium;0.023437499999999997
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00010_500it;3;0 Methylidyne;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00010_500it;4;1 1,3-Butadiynyl radical;0.013671874999999998
+TWHydra_HCOplusline.image;model_extragalactic_full_expanded_00010_500it;5;2 Formaldehyde;0.013671874999999998
+Orion.HNC.cbc.contsub.image;model_extragalactic_tr_500it;1;9 Methyliumylidene;0.8374253483742535
+Orion.HNC.cbc.contsub.image;model_extragalactic_tr_500it;2;0 Methylidyne;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_tr_500it;3;1 1,3-Butadiynyl radical;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_tr_500it;4;2 Formaldehyde;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_tr_500it;5;3 Sulfur dioxide;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_2_500it;1;9 Methyliumylidene;0.794293297942933
+Orion.HNC.cbc.contsub.image;model_extragalactic_2_500it;2;26 Silicon Monoxide;0.047777040477770406
+Orion.HNC.cbc.contsub.image;model_extragalactic_2_500it;3;0 Methylidyne;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_2_500it;4;1 1,3-Butadiynyl radical;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_2_500it;5;2 Formaldehyde;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_500it;1;9 Methyliumylidene;0.8374253483742535
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_500it;2;0 Methylidyne;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_500it;3;1 1,3-Butadiynyl radical;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_500it;4;2 Formaldehyde;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_500it;5;3 Sulfur dioxide;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;1;6 Carbon Monoxide Ion;0.8374253483742535
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;2;0 Methylidyne;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;3;1 1,3-Butadiynyl radical;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;4;2 Formaldehyde;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;5;3 Sulfur dioxide;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;1;9 Methyliumylidene;0.8374253483742535
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;2;0 Methylidyne;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;3;1 1,3-Butadiynyl radical;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;4;2 Formaldehyde;0.0046449900464499
+Orion.HNC.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;5;3 Sulfur dioxide;0.0046449900464499
+DMTau.CS_5-4.image;model_extragalactic_tr_500it;1;26 Silicon Monoxide;0.3232044198895027
+DMTau.CS_5-4.image;model_extragalactic_tr_500it;2;0 Methylidyne;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_tr_500it;3;1 1,3-Butadiynyl radical;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_tr_500it;4;2 Formaldehyde;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_tr_500it;5;3 Sulfur dioxide;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_2_500it;1;26 Silicon Monoxide;0.3232044198895027
+DMTau.CS_5-4.image;model_extragalactic_2_500it;2;0 Methylidyne;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_2_500it;3;1 1,3-Butadiynyl radical;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_2_500it;4;2 Formaldehyde;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_2_500it;5;3 Sulfur dioxide;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_500it;1;9 Methyliumylidene;0.3232044198895027
+DMTau.CS_5-4.image;model_extragalactic_full_500it;2;0 Methylidyne;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_500it;3;1 1,3-Butadiynyl radical;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_500it;4;2 Formaldehyde;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_500it;5;3 Sulfur dioxide;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00002_500it;1;26 Silicon Monoxide;0.29558011049723754
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00002_500it;2;1 1,3-Butadiynyl radical;0.03314917127071823
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00002_500it;3;30 Carbon Monosulfide;0.03314917127071823
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00002_500it;4;0 Methylidyne;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00002_500it;5;2 Formaldehyde;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00010_500it;1;30 Carbon Monosulfide;0.29558011049723754
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00010_500it;2;25 Sodium Chloride;0.04696132596685083
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00010_500it;3;0 Methylidyne;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00010_500it;4;1 1,3-Butadiynyl radical;0.01933701657458563
+DMTau.CS_5-4.image;model_extragalactic_full_expanded_00010_500it;5;2 Formaldehyde;0.01933701657458563
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_tr_500it;1;9 Methyliumylidene;0.8933391380060949
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_tr_500it;2;0 Methylidyne;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_tr_500it;3;1 1,3-Butadiynyl radical;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_tr_500it;4;2 Formaldehyde;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_tr_500it;5;3 Sulfur dioxide;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_2_500it;1;9 Methyliumylidene;0.7932085328689595
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_2_500it;2;33 Hydrogen Isocyanide;0.10100130605137135
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_2_500it;3;12 Carbonyl Sulfide;0.00522420548541576
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_2_500it;4;0 Methylidyne;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_2_500it;5;1 1,3-Butadiynyl radical;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_500it;1;9 Methyliumylidene;0.8933391380060949
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_500it;2;0 Methylidyne;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_500it;3;1 1,3-Butadiynyl radical;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_500it;4;2 Formaldehyde;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_500it;5;3 Sulfur dioxide;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00002_500it;1;26 Silicon Monoxide;0.891162385720505
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00002_500it;2;15 Thioxoethenylidene;0.00522420548541576
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00002_500it;3;0 Methylidyne;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00002_500it;4;1 1,3-Butadiynyl radical;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00002_500it;5;2 Formaldehyde;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00010_500it;1;25 Sodium Chloride;0.891162385720505
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00010_500it;2;15 Thioxoethenylidene;0.00522420548541576
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00010_500it;3;0 Methylidyne;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00010_500it;4;1 1,3-Butadiynyl radical;0.0030474531998258597
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_extragalactic_full_expanded_00010_500it;5;2 Formaldehyde;0.0030474531998258597
+TWHydra_CO3_2line.image;model_extragalactic_tr_500it;1;26 Silicon Monoxide;0.5716783216783217
+TWHydra_CO3_2line.image;model_extragalactic_tr_500it;2;0 Methylidyne;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_tr_500it;3;1 1,3-Butadiynyl radical;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_tr_500it;4;2 Formaldehyde;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_tr_500it;5;3 Sulfur dioxide;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_2_500it;1;26 Silicon Monoxide;0.5716783216783217
+TWHydra_CO3_2line.image;model_extragalactic_2_500it;2;0 Methylidyne;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_2_500it;3;1 1,3-Butadiynyl radical;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_2_500it;4;2 Formaldehyde;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_2_500it;5;3 Sulfur dioxide;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_500it;1;9 Methyliumylidene;0.4405594405594405
+TWHydra_CO3_2line.image;model_extragalactic_full_500it;2;33 Hydrogen Isocyanide;0.14335664335664333
+TWHydra_CO3_2line.image;model_extragalactic_full_500it;3;0 Methylidyne;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_500it;4;1 1,3-Butadiynyl radical;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_500it;5;2 Formaldehyde;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00002_500it;1;15 Thioxoethenylidene;0.5629370629370629
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00002_500it;2;4 Carbon Monoxide;0.020979020979020976
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00002_500it;3;0 Methylidyne;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00002_500it;4;1 1,3-Butadiynyl radical;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00002_500it;5;2 Formaldehyde;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00010_500it;1;21 Thioformaldehyde;0.5629370629370629
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00010_500it;2;25 Sodium Chloride;0.020979020979020976
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00010_500it;3;0 Methylidyne;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00010_500it;4;1 1,3-Butadiynyl radical;0.012237762237762236
+TWHydra_CO3_2line.image;model_extragalactic_full_expanded_00010_500it;5;2 Formaldehyde;0.012237762237762236
+Orion.methanol.cbc.contsub.image;model_extragalactic_tr_500it;1;26 Silicon Monoxide;0.6826424870466321
+Orion.methanol.cbc.contsub.image;model_extragalactic_tr_500it;2;0 Methylidyne;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_tr_500it;3;1 1,3-Butadiynyl radical;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_tr_500it;4;2 Formaldehyde;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_tr_500it;5;3 Sulfur dioxide;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_2_500it;1;9 Methyliumylidene;0.6826424870466321
+Orion.methanol.cbc.contsub.image;model_extragalactic_2_500it;2;0 Methylidyne;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_2_500it;3;1 1,3-Butadiynyl radical;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_2_500it;4;2 Formaldehyde;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_2_500it;5;3 Sulfur dioxide;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_500it;1;26 Silicon Monoxide;0.6826424870466321
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_500it;2;0 Methylidyne;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_500it;3;1 1,3-Butadiynyl radical;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_500it;4;2 Formaldehyde;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_500it;5;3 Sulfur dioxide;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;1;25 Sodium Chloride;0.6826424870466321
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;2;0 Methylidyne;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;3;1 1,3-Butadiynyl radical;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;4;2 Formaldehyde;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00002_500it;5;3 Sulfur dioxide;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;1;14 Diazenylium;0.6826424870466321
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;2;0 Methylidyne;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;3;1 1,3-Butadiynyl radical;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;4;2 Formaldehyde;0.009067357512953367
+Orion.methanol.cbc.contsub.image;model_extragalactic_full_expanded_00010_500it;5;3 Sulfur dioxide;0.009067357512953367
+HD163296_CO_2_1.image;model_extragalactic_tr_500it;1;26 Silicon Monoxide;0.76374156219865
+HD163296_CO_2_1.image;model_extragalactic_tr_500it;2;0 Methylidyne;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_tr_500it;3;1 1,3-Butadiynyl radical;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_tr_500it;4;2 Formaldehyde;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_tr_500it;5;3 Sulfur dioxide;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_2_500it;1;26 Silicon Monoxide;0.76374156219865
+HD163296_CO_2_1.image;model_extragalactic_2_500it;2;0 Methylidyne;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_2_500it;3;1 1,3-Butadiynyl radical;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_2_500it;4;2 Formaldehyde;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_2_500it;5;3 Sulfur dioxide;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_500it;1;9 Methyliumylidene;0.76374156219865
+HD163296_CO_2_1.image;model_extragalactic_full_500it;2;0 Methylidyne;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_500it;3;1 1,3-Butadiynyl radical;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_500it;4;2 Formaldehyde;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_500it;5;3 Sulfur dioxide;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00002_500it;1;15 Thioxoethenylidene;0.76374156219865
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00002_500it;2;0 Methylidyne;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00002_500it;3;1 1,3-Butadiynyl radical;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00002_500it;4;2 Formaldehyde;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00002_500it;5;3 Sulfur dioxide;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00010_500it;1;12 Carbonyl Sulfide;0.76374156219865
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00010_500it;2;0 Methylidyne;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00010_500it;3;1 1,3-Butadiynyl radical;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00010_500it;4;2 Formaldehyde;0.006750241080038572
+HD163296_CO_2_1.image;model_extragalactic_full_expanded_00010_500it;5;3 Sulfur dioxide;0.006750241080038572

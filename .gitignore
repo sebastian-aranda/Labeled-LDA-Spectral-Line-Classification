@@ -3,8 +3,6 @@ codes/
 spectrum_documents/
 test_data/
 
-results*
-
 llda_train_input/*.dat
 
 README_MarceloMendoza.txt

@@ -1,0 +1,175 @@
+TWHydra_HCOplusline.image;model_hot_cores_tr_500it;1;61 Fluoromethyliumylidene;0.29014084507042254
+TWHydra_HCOplusline.image;model_hot_cores_tr_500it;2;0 Isocyanic Acid;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_tr_500it;3;1 Propenal;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_tr_500it;4;2 Ketene;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_tr_500it;5;3 Oxonium hydride;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_2_500it;1;45 Cyanobutadiyne;0.29014084507042254
+TWHydra_HCOplusline.image;model_hot_cores_2_500it;2;0 Isocyanic Acid;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_2_500it;3;1 Propenal;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_2_500it;4;2 Ketene;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_2_500it;5;3 Oxonium hydride;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_500it;1;24 Formylium;0.21971830985915491
+TWHydra_HCOplusline.image;model_hot_cores_full_500it;2;61 Fluoromethyliumylidene;0.07887323943661971
+TWHydra_HCOplusline.image;model_hot_cores_full_500it;3;0 Isocyanic Acid;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_500it;4;1 Propenal;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_500it;5;2 Ketene;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00002_500it;1;24 Formylium;0.27605633802816903
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00002_500it;2;79 Formic Acid;0.022535211267605635
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00002_500it;3;0 Isocyanic Acid;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00002_500it;4;1 Propenal;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00002_500it;5;2 Ketene;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00010_500it;1;24 Formylium;0.247887323943662
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00010_500it;2;75 Hydrogen Isocyanide;0.036619718309859155
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00010_500it;3;9 Iminomethylium;0.022535211267605635
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00010_500it;4;0 Isocyanic Acid;0.008450704225352112
+TWHydra_HCOplusline.image;model_hot_cores_full_expanded_00010_500it;5;1 Propenal;0.008450704225352112
+TWHydra_CO3_2line.image;model_hot_cores_tr_500it;1;61 Fluoromethyliumylidene;0.30133333333333334
+TWHydra_CO3_2line.image;model_hot_cores_tr_500it;2;33 Aminoacetonitrile;0.034666666666666665
+TWHydra_CO3_2line.image;model_hot_cores_tr_500it;3;0 Isocyanic Acid;0.008
+TWHydra_CO3_2line.image;model_hot_cores_tr_500it;4;1 Propenal;0.008
+TWHydra_CO3_2line.image;model_hot_cores_tr_500it;5;2 Ketene;0.008
+TWHydra_CO3_2line.image;model_hot_cores_2_500it;1;71 Diazenylium;0.328
+TWHydra_CO3_2line.image;model_hot_cores_2_500it;2;0 Isocyanic Acid;0.008
+TWHydra_CO3_2line.image;model_hot_cores_2_500it;3;1 Propenal;0.008
+TWHydra_CO3_2line.image;model_hot_cores_2_500it;4;2 Ketene;0.008
+TWHydra_CO3_2line.image;model_hot_cores_2_500it;5;3 Oxonium hydride;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_500it;1;8 Methyliumylidene;0.328
+TWHydra_CO3_2line.image;model_hot_cores_full_500it;2;0 Isocyanic Acid;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_500it;3;1 Propenal;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_500it;4;2 Ketene;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_500it;5;3 Oxonium hydride;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00002_500it;1;68 Carbon Monoxide;0.328
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00002_500it;2;0 Isocyanic Acid;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00002_500it;3;1 Propenal;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00002_500it;4;2 Ketene;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00002_500it;5;3 Oxonium hydride;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00010_500it;1;68 Carbon Monoxide;0.328
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00010_500it;2;0 Isocyanic Acid;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00010_500it;3;1 Propenal;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00010_500it;4;2 Ketene;0.008
+TWHydra_CO3_2line.image;model_hot_cores_full_expanded_00010_500it;5;3 Oxonium hydride;0.008
+HD163296_CO_2_1.image;model_hot_cores_tr_500it;1;61 Fluoromethyliumylidene;0.48041237113402063
+HD163296_CO_2_1.image;model_hot_cores_tr_500it;2;0 Isocyanic Acid;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_tr_500it;3;1 Propenal;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_tr_500it;4;2 Ketene;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_tr_500it;5;3 Oxonium hydride;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_2_500it;1;8 Methyliumylidene;0.48041237113402063
+HD163296_CO_2_1.image;model_hot_cores_2_500it;2;0 Isocyanic Acid;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_2_500it;3;1 Propenal;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_2_500it;4;2 Ketene;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_2_500it;5;3 Oxonium hydride;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_full_500it;1;8 Methyliumylidene;0.1814432989690722
+HD163296_CO_2_1.image;model_hot_cores_full_500it;2;61 Fluoromethyliumylidene;0.1711340206185567
+HD163296_CO_2_1.image;model_hot_cores_full_500it;3;22 Sulfur Monoxide ion;0.08865979381443298
+HD163296_CO_2_1.image;model_hot_cores_full_500it;4;9 Iminomethylium;0.057731958762886594
+HD163296_CO_2_1.image;model_hot_cores_full_500it;5;0 Isocyanic Acid;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00002_500it;1;29 Propadienylidene;0.43917525773195876
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00002_500it;2;31 Ketenimine;0.026804123711340208
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00002_500it;3;2 Ketene;0.016494845360824743
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00002_500it;4;44 Formamide;0.016494845360824743
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00002_500it;5;0 Isocyanic Acid;0.006185567010309278
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00010_500it;1;11 2-Propynal;0.40824742268041236
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00010_500it;2;24 Formylium;0.04742268041237113
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00010_500it;3;33 Aminoacetonitrile;0.026804123711340208
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00010_500it;4;68 Carbon Monoxide;0.016494845360824743
+HD163296_CO_2_1.image;model_hot_cores_full_expanded_00010_500it;5;0 Isocyanic Acid;0.006185567010309278
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_tr_500it;1;8 Methyliumylidene;0.8046511627906977
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_tr_500it;2;0 Isocyanic Acid;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_tr_500it;3;1 Propenal;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_tr_500it;4;2 Ketene;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_tr_500it;5;3 Oxonium hydride;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_2_500it;1;8 Methyliumylidene;0.8046511627906977
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_2_500it;2;0 Isocyanic Acid;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_2_500it;3;1 Propenal;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_2_500it;4;2 Ketene;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_2_500it;5;3 Oxonium hydride;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_500it;1;9 Iminomethylium;0.5720930232558139
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_500it;2;76 Carbon Monosulfide;0.15348837209302327
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_500it;3;60 Hydrogen Cyanide;0.08372093023255814
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_500it;4;0 Isocyanic Acid;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_500it;5;1 Propenal;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00002_500it;1;12 Carbon Monosulfide;0.8046511627906977
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00002_500it;2;0 Isocyanic Acid;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00002_500it;3;1 Propenal;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00002_500it;4;2 Ketene;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00002_500it;5;3 Oxonium hydride;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00010_500it;1;63 Thioxoethenylidene;0.8007751937984496
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00010_500it;2;65 Silicon Monoxide;0.006201550387596899
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00010_500it;3;0 Isocyanic Acid;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00010_500it;4;1 Propenal;0.002325581395348837
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_hot_cores_full_expanded_00010_500it;5;2 Ketene;0.002325581395348837
+DMTau.CS_5-4.image;model_hot_cores_tr_500it;1;8 Methyliumylidene;0.800790513833992
+DMTau.CS_5-4.image;model_hot_cores_tr_500it;2;0 Isocyanic Acid;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_tr_500it;3;1 Propenal;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_tr_500it;4;2 Ketene;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_tr_500it;5;3 Oxonium hydride;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_2_500it;1;8 Methyliumylidene;0.800790513833992
+DMTau.CS_5-4.image;model_hot_cores_2_500it;2;0 Isocyanic Acid;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_2_500it;3;1 Propenal;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_2_500it;4;2 Ketene;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_2_500it;5;3 Oxonium hydride;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_full_500it;1;9 Iminomethylium;0.41739130434782606
+DMTau.CS_5-4.image;model_hot_cores_full_500it;2;8 Methyliumylidene;0.3857707509881423
+DMTau.CS_5-4.image;model_hot_cores_full_500it;3;0 Isocyanic Acid;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_full_500it;4;1 Propenal;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_full_500it;5;2 Ketene;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00002_500it;1;75 Hydrogen Isocyanide;0.7928853754940711
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00002_500it;2;48 Nitric sulfide;0.006324110671936759
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00002_500it;3;81 Cyanoacetylene;0.006324110671936759
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00002_500it;4;0 Isocyanic Acid;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00002_500it;5;1 Propenal;0.0023715415019762843
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00010_500it;1;74 Vinyl Alcohol;0.7691699604743083
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00010_500it;2;11 2-Propynal;0.014229249011857709
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00010_500it;3;27 Methanimine;0.006324110671936759
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00010_500it;4;48 Nitric sulfide;0.006324110671936759
+DMTau.CS_5-4.image;model_hot_cores_full_expanded_00010_500it;5;49 Methylene;0.006324110671936759
+Orion.methanol.cbc.contsub.image;model_hot_cores_tr_500it;1;25 Fulminic acid;0.496
+Orion.methanol.cbc.contsub.image;model_hot_cores_tr_500it;2;0 Isocyanic Acid;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_tr_500it;3;1 Propenal;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_tr_500it;4;2 Ketene;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_tr_500it;5;3 Oxonium hydride;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_2_500it;1;8 Methyliumylidene;0.406
+Orion.methanol.cbc.contsub.image;model_hot_cores_2_500it;2;4 Thioformylium;0.096
+Orion.methanol.cbc.contsub.image;model_hot_cores_2_500it;3;0 Isocyanic Acid;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_2_500it;4;1 Propenal;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_2_500it;5;2 Ketene;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_500it;1;60 Hydrogen Cyanide;0.29600000000000004
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_500it;2;25 Fulminic acid;0.20600000000000002
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_500it;3;0 Isocyanic Acid;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_500it;4;1 Propenal;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_500it;5;2 Ketene;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;1;10 Hydroxymethylium ion;0.496
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;2;0 Isocyanic Acid;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;3;1 Propenal;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;4;2 Ketene;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;5;3 Oxonium hydride;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;1;8 Methyliumylidene;0.486
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;2;28 Nitrous Oxide;0.016
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;3;0 Isocyanic Acid;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;4;1 Propenal;0.006
+Orion.methanol.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;5;2 Ketene;0.006
+Orion.HNC.cbc.contsub.image;model_hot_cores_tr_500it;1;57 Protonate 2-proynenitrile;0.7215469613259669
+Orion.HNC.cbc.contsub.image;model_hot_cores_tr_500it;2;0 Isocyanic Acid;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_tr_500it;3;1 Propenal;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_tr_500it;4;2 Ketene;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_tr_500it;5;3 Oxonium hydride;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_2_500it;1;4 Thioformylium;0.7215469613259669
+Orion.HNC.cbc.contsub.image;model_hot_cores_2_500it;2;0 Isocyanic Acid;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_2_500it;3;1 Propenal;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_2_500it;4;2 Ketene;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_2_500it;5;3 Oxonium hydride;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_500it;1;8 Methyliumylidene;0.461878453038674
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_500it;2;60 Hydrogen Cyanide;0.16353591160220995
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_500it;3;57 Protonate 2-proynenitrile;0.05303867403314917
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_500it;4;4 Thioformylium;0.036464088397790057
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_500it;5;75 Hydrogen Isocyanide;0.01988950276243094
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;1;83 ortho-Oxidaniumyl;0.7104972375690607
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;2;15 2-Butynenitrile;0.008839779005524863
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;3;46 Sulfur Dioxide;0.008839779005524863
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;4;0 Isocyanic Acid;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00002_500it;5;1 Propenal;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;1;73 Isothiocyanic acid;0.7160220994475138
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;2;48 Nitric sulfide;0.008839779005524863
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;3;0 Isocyanic Acid;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;4;1 Propenal;0.0033149171270718232
+Orion.HNC.cbc.contsub.image;model_hot_cores_full_expanded_00010_500it;5;2 Ketene;0.0033149171270718232

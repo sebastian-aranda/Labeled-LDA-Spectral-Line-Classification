@@ -1,0 +1,175 @@
+Orion.methanol.cbc.contsub.image;model_alma_band_6_tr_500it;1;15 Aluminum monoxide;0.712378640776699
+Orion.methanol.cbc.contsub.image;model_alma_band_6_tr_500it;2;52 Ketenimine;0.00849514563106796
+Orion.methanol.cbc.contsub.image;model_alma_band_6_tr_500it;3;0 Dimethyl ether;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_tr_500it;4;1 Butatrienylidene;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_tr_500it;5;2 Trihydrogen ion;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_2_500it;1;76 Sulfur Monoxide ion;0.7184466019417476
+Orion.methanol.cbc.contsub.image;model_alma_band_6_2_500it;2;0 Dimethyl ether;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_2_500it;3;1 Butatrienylidene;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_2_500it;4;2 Trihydrogen ion;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_2_500it;5;3 Nitrous Oxide;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_500it;1;83 Silicon Monocarbide;0.2512135922330097
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_500it;2;76 Sulfur Monoxide ion;0.19053398058252424
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_500it;3;3 Nitrous Oxide;0.16626213592233008
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_500it;4;115 Isothiocyanic acid;0.06310679611650485
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_500it;5;97 Ethynyl;0.050970873786407765
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;1;7 Thioformylium;0.7063106796116505
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;2;37 Carbon Monoxide;0.00849514563106796
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;3;104 Amidogen;0.00849514563106796
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;4;0 Dimethyl ether;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;5;1 Butatrienylidene;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;1;37 Carbon Monoxide;0.7063106796116505
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;2;78 Sulfur Dioxide;0.00849514563106796
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;3;113 Hydroxymethylium ion;0.00849514563106796
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;4;0 Dimethyl ether;0.0024271844660194173
+Orion.methanol.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;5;1 Butatrienylidene;0.0024271844660194173
+DMTau.CS_5-4.image;model_alma_band_6_tr_500it;1;3 Nitrous Oxide;0.8688959660297239
+DMTau.CS_5-4.image;model_alma_band_6_tr_500it;2;7 Thioformylium;0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_tr_500it;3;17 Nitrosyl hydride;0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_tr_500it;4;34 Aluminum Isocyanitrile;0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_tr_500it;5;0 Dimethyl ether;0.0010615711252653928
+DMTau.CS_5-4.image;model_alma_band_6_2_500it;1;83 Silicon Monocarbide;0.8768577494692144
+DMTau.CS_5-4.image;model_alma_band_6_2_500it;2;0 Dimethyl ether;0.0010615711252653928
+DMTau.CS_5-4.image;model_alma_band_6_2_500it;3;1 Butatrienylidene;0.0010615711252653928
+DMTau.CS_5-4.image;model_alma_band_6_2_500it;4;2 Trihydrogen ion;0.0010615711252653928
+DMTau.CS_5-4.image;model_alma_band_6_2_500it;5;3 Nitrous Oxide;0.0010615711252653928
+DMTau.CS_5-4.image;model_alma_band_6_full_500it;1;63 Silicon monoxide (global fit);0.36730360934182593
+DMTau.CS_5-4.image;model_alma_band_6_full_500it;2;75 Carbon Monophosphide;0.23195329087048833
+DMTau.CS_5-4.image;model_alma_band_6_full_500it;3;58 Methylidyne;0.18152866242038218
+DMTau.CS_5-4.image;model_alma_band_6_full_500it;4;22 Chloronium;0.09394904458598725
+DMTau.CS_5-4.image;model_alma_band_6_full_500it;5;96 2-Propynal;0.006369426751592356
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00002_500it;1;47 Thioxoethenylidene;0.8609341825902335
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00002_500it;2;51 Acetaldehyde;0.006369426751592356
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00002_500it;3;96 2-Propynal;0.006369426751592356
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00002_500it;4;25 Cyclopropenone;0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00002_500it;5;99 Magnesium hydride isocyanide;0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00010_500it;1;47 Thioxoethenylidene;0.8662420382165604
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00010_500it;2;17 Nitrosyl hydride;0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00010_500it;3;40 Aluminum Monofluoride;0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00010_500it;4;63 Silicon monoxide (global fit);0.0037154989384288743
+DMTau.CS_5-4.image;model_alma_band_6_full_expanded_00010_500it;5;68 Carbon Monosulfide;0.0037154989384288743
+TWHydra_CO3_2line.image;model_alma_band_6_tr_500it;1;81 Silicon Isocyanide;0.6811594202898551
+TWHydra_CO3_2line.image;model_alma_band_6_tr_500it;2;19 Magnesium Cyanide;0.009222661396574438
+TWHydra_CO3_2line.image;model_alma_band_6_tr_500it;3;116 Cyanic acid;0.009222661396574438
+TWHydra_CO3_2line.image;model_alma_band_6_tr_500it;4;0 Dimethyl ether;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_tr_500it;5;1 Butatrienylidene;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_2_500it;1;84 Phosphaethyne;0.69433465085639
+TWHydra_CO3_2line.image;model_alma_band_6_2_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_2_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_2_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_2_500it;5;3 Nitrous Oxide;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_500it;1;31 Sodium Chloride;0.69433465085639
+TWHydra_CO3_2line.image;model_alma_band_6_full_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_500it;5;3 Nitrous Oxide;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00002_500it;1;14 Iminomethylium;0.69433465085639
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00002_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00002_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00002_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00002_500it;5;3 Nitrous Oxide;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00010_500it;1;34 Aluminum Isocyanitrile;0.69433465085639
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00010_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00010_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00010_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_CO3_2line.image;model_alma_band_6_full_expanded_00010_500it;5;3 Nitrous Oxide;0.002635046113306983
+HD163296_CO_2_1.image;model_alma_band_6_tr_500it;1;40 Aluminum Monofluoride;0.7919227392449517
+HD163296_CO_2_1.image;model_alma_band_6_tr_500it;2;58 Methylidyne;0.006145741878841088
+HD163296_CO_2_1.image;model_alma_band_6_tr_500it;3;0 Dimethyl ether;0.001755926251097454
+HD163296_CO_2_1.image;model_alma_band_6_tr_500it;4;1 Butatrienylidene;0.001755926251097454
+HD163296_CO_2_1.image;model_alma_band_6_tr_500it;5;2 Trihydrogen ion;0.001755926251097454
+HD163296_CO_2_1.image;model_alma_band_6_2_500it;1;31 Sodium Chloride;0.7963125548726954
+HD163296_CO_2_1.image;model_alma_band_6_2_500it;2;0 Dimethyl ether;0.001755926251097454
+HD163296_CO_2_1.image;model_alma_band_6_2_500it;3;1 Butatrienylidene;0.001755926251097454
+HD163296_CO_2_1.image;model_alma_band_6_2_500it;4;2 Trihydrogen ion;0.001755926251097454
+HD163296_CO_2_1.image;model_alma_band_6_2_500it;5;3 Nitrous Oxide;0.001755926251097454
+HD163296_CO_2_1.image;model_alma_band_6_full_500it;1;37 Carbon Monoxide;0.2651448639157155
+HD163296_CO_2_1.image;model_alma_band_6_full_500it;2;58 Methylidyne;0.16417910447761191
+HD163296_CO_2_1.image;model_alma_band_6_full_500it;3;75 Carbon Monophosphide;0.12028094820017558
+HD163296_CO_2_1.image;model_alma_band_6_full_500it;4;95 Cyanide anion;0.10272168568920104
+HD163296_CO_2_1.image;model_alma_band_6_full_500it;5;98 Phosphorous nitride;0.0851624231782265
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00002_500it;1;109 Cyanoethynylide ion;0.7611940298507462
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00002_500it;2;73 Ethylene Oxide;0.010535557506584723
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00002_500it;3;14 Iminomethylium;0.006145741878841088
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00002_500it;4;17 Nitrosyl hydride;0.006145741878841088
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00002_500it;5;40 Aluminum Monofluoride;0.006145741878841088
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00010_500it;1;11 Cyanide Radical;0.7480245829675154
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00010_500it;2;0 Dimethyl ether;0.006145741878841088
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00010_500it;3;7 Thioformylium;0.006145741878841088
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00010_500it;4;13 Nitric sulfide;0.006145741878841088
+HD163296_CO_2_1.image;model_alma_band_6_full_expanded_00010_500it;5;23 Silicon monosulfide;0.006145741878841088
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_tr_500it;1;15 Aluminum monoxide;0.9310344827586208
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_tr_500it;2;0 Dimethyl ether;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_tr_500it;3;1 Butatrienylidene;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_tr_500it;4;2 Trihydrogen ion;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_tr_500it;5;3 Nitrous Oxide;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_2_500it;1;93 Hydroxyl;0.9310344827586208
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_2_500it;2;0 Dimethyl ether;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_2_500it;3;1 Butatrienylidene;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_2_500it;4;2 Trihydrogen ion;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_2_500it;5;3 Nitrous Oxide;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_500it;1;26 Carbon Monoxide Ion;0.2934007134363853
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_500it;2;58 Methylidyne;0.210166468489893
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_500it;3;83 Silicon Monocarbide;0.18935790725326992
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_500it;4;31 Sodium Chloride;0.09571938168846612
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_500it;5;34 Aluminum Isocyanitrile;0.08085612366230678
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00002_500it;1;72 Formylium;0.9265755053507729
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00002_500it;2;32 Cyanoacetylene;0.002080856123662307
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00002_500it;3;82 Methylene amidogen;0.002080856123662307
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00002_500it;4;96 2-Propynal;0.002080856123662307
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00002_500it;5;0 Dimethyl ether;0.0005945303210463734
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00010_500it;1;109 Cyanoethynylide ion;0.9102259215219977
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00010_500it;2;32 Cyanoacetylene;0.0035671819262782403
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00010_500it;3;14 Iminomethylium;0.002080856123662307
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00010_500it;4;22 Chloronium;0.002080856123662307
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_alma_band_6_full_expanded_00010_500it;5;25 Cyclopropenone;0.002080856123662307
+TWHydra_HCOplusline.image;model_alma_band_6_tr_500it;1;98 Phosphorous nitride;0.6877470355731226
+TWHydra_HCOplusline.image;model_alma_band_6_tr_500it;2;64 Cyclopropenylidene;0.009222661396574438
+TWHydra_HCOplusline.image;model_alma_band_6_tr_500it;3;0 Dimethyl ether;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_tr_500it;4;1 Butatrienylidene;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_tr_500it;5;2 Trihydrogen ion;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_2_500it;1;37 Carbon Monoxide;0.69433465085639
+TWHydra_HCOplusline.image;model_alma_band_6_2_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_2_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_2_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_2_500it;5;3 Nitrous Oxide;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_500it;1;18 Propynylidynium;0.69433465085639
+TWHydra_HCOplusline.image;model_alma_band_6_full_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_500it;5;3 Nitrous Oxide;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00002_500it;1;36 Silicon Mononitride;0.69433465085639
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00002_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00002_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00002_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00002_500it;5;3 Nitrous Oxide;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00010_500it;1;39 Methanimine;0.69433465085639
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00010_500it;2;0 Dimethyl ether;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00010_500it;3;1 Butatrienylidene;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00010_500it;4;2 Trihydrogen ion;0.002635046113306983
+TWHydra_HCOplusline.image;model_alma_band_6_full_expanded_00010_500it;5;3 Nitrous Oxide;0.002635046113306983
+Orion.HNC.cbc.contsub.image;model_alma_band_6_tr_500it;1;22 Chloronium;0.8514426028238182
+Orion.HNC.cbc.contsub.image;model_alma_band_6_tr_500it;2;19 Magnesium Cyanide;0.004297114794352363
+Orion.HNC.cbc.contsub.image;model_alma_band_6_tr_500it;3;94 Glycolaldehyde;0.004297114794352363
+Orion.HNC.cbc.contsub.image;model_alma_band_6_tr_500it;4;0 Dimethyl ether;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_tr_500it;5;1 Butatrienylidene;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_2_500it;1;8 para-Oxidaniumyl;0.6335174953959485
+Orion.HNC.cbc.contsub.image;model_alma_band_6_2_500it;2;31 Sodium Chloride;0.22529158993247392
+Orion.HNC.cbc.contsub.image;model_alma_band_6_2_500it;3;0 Dimethyl ether;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_2_500it;4;1 Butatrienylidene;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_2_500it;5;2 Trihydrogen ion;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_500it;1;56 Hydrogen cyanide;0.5230202578268877
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_500it;2;3 Nitrous Oxide;0.1761817065684469
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_500it;3;34 Aluminum Isocyanitrile;0.06261510128913443
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_500it;4;84 Phosphaethyne;0.047268262737875995
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_500it;5;14 Iminomethylium;0.04112952731737262
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;1;17 Nitrosyl hydride;0.8514426028238182
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;2;10 Titanium monoxide;0.004297114794352363
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;3;114 Thioformaldehyde;0.004297114794352363
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;4;0 Dimethyl ether;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00002_500it;5;1 Butatrienylidene;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;1;11 Cyanide Radical;0.8575813382443216
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;2;0 Dimethyl ether;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;3;1 Butatrienylidene;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;4;2 Trihydrogen ion;0.0012277470841006754
+Orion.HNC.cbc.contsub.image;model_alma_band_6_full_expanded_00010_500it;5;3 Nitrous Oxide;0.0012277470841006754

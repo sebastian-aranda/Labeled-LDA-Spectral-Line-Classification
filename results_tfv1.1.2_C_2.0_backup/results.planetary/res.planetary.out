@@ -1,0 +1,125 @@
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_tr_500it;1;0 Methanol;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_tr_500it;2;1 Hydrogen fluoride;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_tr_500it;3;2 Nitric oxide;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_tr_500it;4;3 Formylium;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_tr_500it;5;4 Sodium Chloride;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_2_500it;1;3 Formylium;0.007583965330444204
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_2_500it;2;0 Methanol;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_2_500it;3;1 Hydrogen fluoride;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_2_500it;4;2 Nitric oxide;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_2_500it;5;4 Sodium Chloride;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_500it;1;1 Hydrogen fluoride;0.04008667388949079
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_500it;2;0 Methanol;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_500it;3;2 Nitric oxide;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_500it;4;3 Formylium;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_500it;5;4 Sodium Chloride;0.005417118093174431
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00002_500it;1;16 Iminomethylium;0.8965141612200436
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00002_500it;2;0 Methanol;0.0054466230936819175
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00002_500it;3;1 Hydrogen fluoride;0.0054466230936819175
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00002_500it;4;2 Nitric oxide;0.0054466230936819175
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00002_500it;5;3 Formylium;0.0054466230936819175
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00010_500it;1;19 Hydrogen Cyanide;0.8943355119825708
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00010_500it;2;3 Formylium;0.007625272331154684
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00010_500it;3;0 Methanol;0.0054466230936819175
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00010_500it;4;1 Hydrogen fluoride;0.0054466230936819175
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_planetary_full_expanded_00010_500it;5;2 Nitric oxide;0.0054466230936819175
+Orion.methanol.cbc.contsub.image;model_planetary_tr_500it;1;0 Methanol;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_tr_500it;2;1 Hydrogen fluoride;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_tr_500it;3;2 Nitric oxide;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_tr_500it;4;3 Formylium;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_tr_500it;5;4 Sodium Chloride;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_2_500it;1;0 Methanol;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_2_500it;2;1 Hydrogen fluoride;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_2_500it;3;2 Nitric oxide;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_2_500it;4;3 Formylium;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_2_500it;5;4 Sodium Chloride;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_full_500it;1;0 Methanol;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_full_500it;2;1 Hydrogen fluoride;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_full_500it;3;2 Nitric oxide;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_full_500it;4;3 Formylium;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_full_500it;5;4 Sodium Chloride;0.01597444089456869
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00002_500it;1;1 Hydrogen fluoride;0.6915584415584416
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00002_500it;2;0 Methanol;0.016233766233766232
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00002_500it;3;2 Nitric oxide;0.016233766233766232
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00002_500it;4;3 Formylium;0.016233766233766232
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00002_500it;5;4 Sodium Chloride;0.016233766233766232
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00010_500it;1;19 Hydrogen Cyanide;0.6915584415584416
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00010_500it;2;0 Methanol;0.016233766233766232
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00010_500it;3;1 Hydrogen fluoride;0.016233766233766232
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00010_500it;4;2 Nitric oxide;0.016233766233766232
+Orion.methanol.cbc.contsub.image;model_planetary_full_expanded_00010_500it;5;3 Formylium;0.016233766233766232
+HD163296_CO_2_1.image;model_planetary_tr_500it;1;0 Methanol;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_tr_500it;2;1 Hydrogen fluoride;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_tr_500it;3;2 Nitric oxide;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_tr_500it;4;3 Formylium;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_tr_500it;5;4 Sodium Chloride;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_2_500it;1;0 Methanol;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_2_500it;2;1 Hydrogen fluoride;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_2_500it;3;2 Nitric oxide;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_2_500it;4;3 Formylium;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_2_500it;5;4 Sodium Chloride;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_full_500it;1;0 Methanol;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_full_500it;2;1 Hydrogen fluoride;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_full_500it;3;2 Nitric oxide;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_full_500it;4;3 Formylium;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_full_500it;5;4 Sodium Chloride;0.011933174224343675
+HD163296_CO_2_1.image;model_planetary_full_expanded_00002_500it;1;17 Hydrochloric acid;0.7705314009661836
+HD163296_CO_2_1.image;model_planetary_full_expanded_00002_500it;2;0 Methanol;0.012077294685990338
+HD163296_CO_2_1.image;model_planetary_full_expanded_00002_500it;3;1 Hydrogen fluoride;0.012077294685990338
+HD163296_CO_2_1.image;model_planetary_full_expanded_00002_500it;4;2 Nitric oxide;0.012077294685990338
+HD163296_CO_2_1.image;model_planetary_full_expanded_00002_500it;5;3 Formylium;0.012077294685990338
+HD163296_CO_2_1.image;model_planetary_full_expanded_00010_500it;1;16 Iminomethylium;0.7705314009661836
+HD163296_CO_2_1.image;model_planetary_full_expanded_00010_500it;2;0 Methanol;0.012077294685990338
+HD163296_CO_2_1.image;model_planetary_full_expanded_00010_500it;3;1 Hydrogen fluoride;0.012077294685990338
+HD163296_CO_2_1.image;model_planetary_full_expanded_00010_500it;4;2 Nitric oxide;0.012077294685990338
+HD163296_CO_2_1.image;model_planetary_full_expanded_00010_500it;5;3 Formylium;0.012077294685990338
+TWHydra_CO3_2line.image;model_planetary_tr_500it;1;0 Methanol;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_tr_500it;2;1 Hydrogen fluoride;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_tr_500it;3;2 Nitric oxide;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_tr_500it;4;3 Formylium;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_tr_500it;5;4 Sodium Chloride;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_2_500it;1;0 Methanol;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_2_500it;2;1 Hydrogen fluoride;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_2_500it;3;2 Nitric oxide;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_2_500it;4;3 Formylium;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_2_500it;5;4 Sodium Chloride;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_full_500it;1;0 Methanol;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_full_500it;2;1 Hydrogen fluoride;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_full_500it;3;2 Nitric oxide;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_full_500it;4;3 Formylium;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_full_500it;5;4 Sodium Chloride;0.02145922746781116
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00002_500it;1;10 Nitrous Oxide;0.5833333333333334
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00002_500it;2;0 Methanol;0.021929824561403508
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00002_500it;3;1 Hydrogen fluoride;0.021929824561403508
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00002_500it;4;2 Nitric oxide;0.021929824561403508
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00002_500it;5;3 Formylium;0.021929824561403508
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00010_500it;1;9 Carbon Monoxide;0.5833333333333334
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00010_500it;2;0 Methanol;0.021929824561403508
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00010_500it;3;1 Hydrogen fluoride;0.021929824561403508
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00010_500it;4;2 Nitric oxide;0.021929824561403508
+TWHydra_CO3_2line.image;model_planetary_full_expanded_00010_500it;5;3 Formylium;0.021929824561403508
+TWHydra_HCOplusline.image;model_planetary_tr_500it;1;0 Methanol;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_tr_500it;2;1 Hydrogen fluoride;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_tr_500it;3;2 Nitric oxide;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_tr_500it;4;3 Formylium;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_tr_500it;5;4 Sodium Chloride;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_2_500it;1;0 Methanol;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_2_500it;2;1 Hydrogen fluoride;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_2_500it;3;2 Nitric oxide;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_2_500it;4;3 Formylium;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_2_500it;5;4 Sodium Chloride;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_full_500it;1;0 Methanol;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_full_500it;2;1 Hydrogen fluoride;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_full_500it;3;2 Nitric oxide;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_full_500it;4;3 Formylium;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_full_500it;5;4 Sodium Chloride;0.023923444976076555
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00002_500it;1;3 Formylium;0.5343137254901961
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00002_500it;2;0 Methanol;0.024509803921568627
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00002_500it;3;1 Hydrogen fluoride;0.024509803921568627
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00002_500it;4;2 Nitric oxide;0.024509803921568627
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00002_500it;5;4 Sodium Chloride;0.024509803921568627
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00010_500it;1;3 Formylium;0.5343137254901961
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00010_500it;2;0 Methanol;0.024509803921568627
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00010_500it;3;1 Hydrogen fluoride;0.024509803921568627
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00010_500it;4;2 Nitric oxide;0.024509803921568627
+TWHydra_HCOplusline.image;model_planetary_full_expanded_00010_500it;5;4 Sodium Chloride;0.024509803921568627

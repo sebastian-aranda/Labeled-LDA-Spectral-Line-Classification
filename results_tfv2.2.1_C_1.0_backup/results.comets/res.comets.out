@@ -1,0 +1,30 @@
+Orion.methanol.cbc.contsub.image;model_comets_tr_500it;1;29 Formylium;0.5891666666666667
+Orion.methanol.cbc.contsub.image;model_comets_tr_500it;2;0 Methylidyne;0.014166666666666666
+Orion.methanol.cbc.contsub.image;model_comets_tr_500it;3;1 Formaldehyde;0.014166666666666666
+Orion.methanol.cbc.contsub.image;model_comets_tr_500it;4;2 Sulfur dioxide;0.014166666666666666
+Orion.methanol.cbc.contsub.image;model_comets_tr_500it;5;3 Carbon Monoxide;0.014166666666666666
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_comets_tr_500it;1;13 Methyliumylidene;0.816044776119403
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_comets_tr_500it;2;0 Methylidyne;0.006343283582089552
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_comets_tr_500it;3;1 Formaldehyde;0.006343283582089552
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_comets_tr_500it;4;2 Sulfur dioxide;0.006343283582089552
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_comets_tr_500it;5;3 Carbon Monoxide;0.006343283582089552
+TWHydra_HCOplusline.image;model_comets_tr_500it;1;29 Formylium;0.33378378378378376
+TWHydra_HCOplusline.image;model_comets_tr_500it;2;0 Methylidyne;0.02297297297297297
+TWHydra_HCOplusline.image;model_comets_tr_500it;3;1 Formaldehyde;0.02297297297297297
+TWHydra_HCOplusline.image;model_comets_tr_500it;4;2 Sulfur dioxide;0.02297297297297297
+TWHydra_HCOplusline.image;model_comets_tr_500it;5;3 Carbon Monoxide;0.02297297297297297
+Orion.HNC.cbc.contsub.image;model_comets_tr_500it;1;13 Methyliumylidene;0.772811059907834
+Orion.HNC.cbc.contsub.image;model_comets_tr_500it;2;0 Methylidyne;0.00783410138248848
+Orion.HNC.cbc.contsub.image;model_comets_tr_500it;3;1 Formaldehyde;0.00783410138248848
+Orion.HNC.cbc.contsub.image;model_comets_tr_500it;4;2 Sulfur dioxide;0.00783410138248848
+Orion.HNC.cbc.contsub.image;model_comets_tr_500it;5;3 Carbon Monoxide;0.00783410138248848
+TWHydra_CO3_2line.image;model_comets_tr_500it;1;13 Methyliumylidene;0.3381578947368421
+TWHydra_CO3_2line.image;model_comets_tr_500it;2;24 Cyanoacetylene;0.035526315789473684
+TWHydra_CO3_2line.image;model_comets_tr_500it;3;0 Methylidyne;0.02236842105263158
+TWHydra_CO3_2line.image;model_comets_tr_500it;4;1 Formaldehyde;0.02236842105263158
+TWHydra_CO3_2line.image;model_comets_tr_500it;5;2 Sulfur dioxide;0.02236842105263158
+HD163296_CO_2_1.image;model_comets_tr_500it;1;28 Hydrogen Isocyanide;0.4698924731182796
+HD163296_CO_2_1.image;model_comets_tr_500it;2;0 Methylidyne;0.01827956989247312
+HD163296_CO_2_1.image;model_comets_tr_500it;3;1 Formaldehyde;0.01827956989247312
+HD163296_CO_2_1.image;model_comets_tr_500it;4;2 Sulfur dioxide;0.01827956989247312
+HD163296_CO_2_1.image;model_comets_tr_500it;5;3 Carbon Monoxide;0.01827956989247312

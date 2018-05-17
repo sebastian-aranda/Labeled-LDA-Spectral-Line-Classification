@@ -1,0 +1,30 @@
+HD163296_CO_2_1.image;model_diffuse_clouds_tr_500it;1;16 Silicon Monoxide;0.8093922651933702
+HD163296_CO_2_1.image;model_diffuse_clouds_tr_500it;2;0 Methylidyne;0.008287292817679558
+HD163296_CO_2_1.image;model_diffuse_clouds_tr_500it;3;1 Butyronitrile;0.008287292817679558
+HD163296_CO_2_1.image;model_diffuse_clouds_tr_500it;4;2 Formaldehyde;0.008287292817679558
+HD163296_CO_2_1.image;model_diffuse_clouds_tr_500it;5;3 Sulfur dioxide;0.008287292817679558
+TWHydra_HCOplusline.image;model_diffuse_clouds_tr_500it;1;11 Methyliumylidene;0.7062043795620437
+TWHydra_HCOplusline.image;model_diffuse_clouds_tr_500it;2;0 Methylidyne;0.012773722627737226
+TWHydra_HCOplusline.image;model_diffuse_clouds_tr_500it;3;1 Butyronitrile;0.012773722627737226
+TWHydra_HCOplusline.image;model_diffuse_clouds_tr_500it;4;2 Formaldehyde;0.012773722627737226
+TWHydra_HCOplusline.image;model_diffuse_clouds_tr_500it;5;3 Sulfur dioxide;0.012773722627737226
+TWHydra_CO3_2line.image;model_diffuse_clouds_tr_500it;1;17 Hydrogen Cyanide;0.7062043795620437
+TWHydra_CO3_2line.image;model_diffuse_clouds_tr_500it;2;0 Methylidyne;0.012773722627737226
+TWHydra_CO3_2line.image;model_diffuse_clouds_tr_500it;3;1 Butyronitrile;0.012773722627737226
+TWHydra_CO3_2line.image;model_diffuse_clouds_tr_500it;4;2 Formaldehyde;0.012773722627737226
+TWHydra_CO3_2line.image;model_diffuse_clouds_tr_500it;5;3 Sulfur dioxide;0.012773722627737226
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_diffuse_clouds_tr_500it;1;11 Methyliumylidene;0.9435351882160393
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_diffuse_clouds_tr_500it;2;0 Methylidyne;0.0024549918166939444
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_diffuse_clouds_tr_500it;3;1 Butyronitrile;0.0024549918166939444
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_diffuse_clouds_tr_500it;4;2 Formaldehyde;0.0024549918166939444
+uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor;model_diffuse_clouds_tr_500it;5;3 Sulfur dioxide;0.0024549918166939444
+Orion.HNC.cbc.contsub.image;model_diffuse_clouds_tr_500it;1;11 Methyliumylidene;0.8828806983511155
+Orion.HNC.cbc.contsub.image;model_diffuse_clouds_tr_500it;2;0 Methylidyne;0.005092143549951504
+Orion.HNC.cbc.contsub.image;model_diffuse_clouds_tr_500it;3;1 Butyronitrile;0.005092143549951504
+Orion.HNC.cbc.contsub.image;model_diffuse_clouds_tr_500it;4;2 Formaldehyde;0.005092143549951504
+Orion.HNC.cbc.contsub.image;model_diffuse_clouds_tr_500it;5;3 Sulfur dioxide;0.005092143549951504
+DMTau.CS_5-4.image;model_diffuse_clouds_tr_500it;1;11 Methyliumylidene;0.8799701789264415
+DMTau.CS_5-4.image;model_diffuse_clouds_tr_500it;2;0 Methylidyne;0.00521868787276342
+DMTau.CS_5-4.image;model_diffuse_clouds_tr_500it;3;1 Butyronitrile;0.00521868787276342
+DMTau.CS_5-4.image;model_diffuse_clouds_tr_500it;4;2 Formaldehyde;0.00521868787276342
+DMTau.CS_5-4.image;model_diffuse_clouds_tr_500it;5;3 Sulfur dioxide;0.00521868787276342
