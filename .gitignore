@@ -1,7 +1,6 @@
 catalogo_raw/
 codes/
 spectrum_documents/
-test_data/
 
 llda_train_input/*.dat
 
