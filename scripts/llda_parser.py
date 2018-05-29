@@ -185,14 +185,14 @@ words = []
 data_list = zip(casted_freq_list, energy_list)
 #data_list = zip(channeled_freq_list, energy_list)
 for freq, energy in data_list:
-        tf = int(np.log2(math.ceil(energy))) if energy > 0 else 0 #TF v1.1.1 OK: 2.0
+        #tf = int(np.log2(math.ceil(energy))) if energy > 0 else 0 #TF v1.1.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))) if energy > 0 else 1 #TF v1.1.2 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))) if energy > energy_std*sigma_thresshold else 0 #TF v1.2.1 OK: 2.0 
         #tf = int(np.log2(math.ceil(energy))) if energy > energy_std*sigma_thresshold else 1 #TF v1.2.2 OK: 2.0
 
         #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 0  #TF v2.1.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 1  #TF v2.1.2 OK: 2.0
-        #tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 0  #TF v2.2.1 OK: 1.0,2.0,3.0
+        tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 0  #TF v2.2.1 OK: 1.0,2.0,3.0
         #tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 1  #TF v2.2.2 OK: 2.0
         
         #tf = int(np.log2(math.ceil(energy))+1) if energy > 0 else 0 #TF v3.1.1 OK: 2.0
