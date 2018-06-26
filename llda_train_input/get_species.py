@@ -1,5 +1,9 @@
 import sys
 
+if len(sys.argv) != 4:
+	print("eg. python get_species.py hot_cores_tr_labelmap.sub hot_cores_tr.dat 623")
+	sys.exit(1)
+
 species = []
 with open(sys.argv[2]) as f:
 	for line in f:

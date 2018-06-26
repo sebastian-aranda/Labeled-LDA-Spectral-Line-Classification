@@ -7,22 +7,32 @@ sio;silicon monoxide
 cii;atomic carbon
 nii;atomic nitrogen
 h2;atomic hydrogen
+h_2s;
 h39;atomic hydrogen
 h41;atomic hydrogen
 c32;atomic carbon
-ch3oh;methanol
-ch3cn;methyl cyanide
+ch_3oh;methanol
+ch_3ocho;methyl formate
+ch_3cn;methyl cyanide
 ci;atomic carbon
-h2o;water
+h_2o;water
 h13co;formylium
 oh;hydroxyl
 co;carbon monoxide
 so;sulfur monoxide
-hc3n;hydrogen isocyanide
+so_2;sulfur dioxide
 c18o;carbon monoxide
 hcn;hydrogen cyanide
-h13cn;hydrogen cyanide
 dco;formylium
-h2co;formaldehyde
-h2cs;Thioformaldehyde
+h_2co;formaldehyde
+h_2cs;thioformaldehyde
 n2h;diazenylium
+hcl;hydrochloric acid
+hcs;Thioformylium
+no;nitric oxide
+ns;nitric sulfide
+cn;cyanide radical
+cch;ethynyl
+nh2d;ammonia
+hnco;isocyanic acid
+ch_3och_3;dimethyl ether

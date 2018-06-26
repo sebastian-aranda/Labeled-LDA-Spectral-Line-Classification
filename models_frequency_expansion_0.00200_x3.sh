@@ -1,14 +1,20 @@
-cp ./llda_train_input/hot_cores_full.dat .
-python ./scripts/frequency_expander.py hot_cores_full.dat 3 0.00200
-mv hot_cores_full_expanded.dat ./llda_train_input/hot_cores_full_expanded_00200_x3.dat
-rm hot_cores_full.dat
-python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_full_expanded_00200_x3.dat > ./llda_train_input/hot_cores_full_expanded_00200_x3_features.dat
-
 cp ./llda_train_input/alma_band_6_full.dat .
 python ./scripts/frequency_expander.py alma_band_6_full.dat 3 0.00200
 mv alma_band_6_full_expanded.dat ./llda_train_input/alma_band_6_full_expanded_00200_x3.dat
 rm alma_band_6_full.dat
 python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_6_full_expanded_00200_x3.dat > ./llda_train_input/alma_band_6_full_expanded_00200_x3_features.dat
+
+cp ./llda_train_input/alma_band_7_full.dat .
+python ./scripts/frequency_expander.py alma_band_7_full.dat 3 0.00200
+mv alma_band_7_full_expanded.dat ./llda_train_input/alma_band_7_full_expanded_00200_x3.dat
+rm alma_band_7_full.dat
+python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_7_full_expanded_00200_x3.dat > ./llda_train_input/alma_band_7_full_expanded_00200_x3_features.dat
+
+cp ./llda_train_input/hot_cores_full.dat .
+python ./scripts/frequency_expander.py hot_cores_full.dat 3 0.00200
+mv hot_cores_full_expanded.dat ./llda_train_input/hot_cores_full_expanded_00200_x3.dat
+rm hot_cores_full.dat
+python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_full_expanded_00200_x3.dat > ./llda_train_input/hot_cores_full_expanded_00200_x3_features.dat
 
 cp ./llda_train_input/planetary_full.dat .
 python ./scripts/frequency_expander.py planetary_full.dat 3 0.00200

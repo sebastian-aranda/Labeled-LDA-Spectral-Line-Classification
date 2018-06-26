@@ -1,21 +1,25 @@
-import astropy.units as u
 import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.ticker import FormatStrFormatter
+
+import astropy.units as u
 from astropy.io import fits
+
+from sklearn.cluster import DBSCAN
 
 import math
 import os
 import operator
 import sys
-
-from sklearn.cluster import DBSCAN
+import time
 
 from bisect import bisect_left
+from random import randint
 
 ############ FUNCTION DEFINITIONS ################
-def takeClosest(myList, myNumber):
+def takeClosest(myList, myNumber, thresshold = 200000):
     """
     Assumes myList is sorted. Returns closest value to myNumber.
-
     If two numbers are equally close, return the smallest number.
     """
     pos = bisect_left(myList, myNumber)
@@ -25,10 +29,14 @@ def takeClosest(myList, myNumber):
         return myList[-1]
     before = myList[pos - 1]
     after = myList[pos]
-    if after - myNumber < myNumber - before:
-       return after
+    after_delta = after - myNumber
+    before_delta = myNumber - before
+    if after_delta < before_delta and after_delta < thresshold:
+        return after
+    elif before_delta < after_delta and before_delta < thresshold:
+        return before
     else:
-       return before
+        return before
 
 def collapseImage(args):
        lenX = args[0]
@@ -52,9 +60,13 @@ fileName = sys.argv[1]
 channeling = int(sys.argv[2])
 features = sys.argv[3]
 
+plot = True
+
+timer = time.time()*1000
+
 spectral_file_out = "./spectrum_document.dat"
 c = 299792458
-sigma_thresshold = 3.0
+sigma_thresshold = 6.0
 
 print("Parsing Fits: "+fileName)
 hdulist = fits.open(fileName)
@@ -70,20 +82,31 @@ naxis3 = hdu_header['NAXIS3'] #Frequency
 rest_freq = hdu_header['RESTFRQ'] #Rest freq
 
 #Determining regions of interest
-list_of_args = [(naxis1,naxis2,naxis3,data_array)]
-collapsedImages = [collapseImage(args) for args in list_of_args]
-rms = np.sqrt(np.mean(np.square(collapsedImages[0])))
-#print("RMS of Collapsed Cube "+str(rms))
+list_of_args = (naxis1,naxis2,naxis3,data_array)
+collapsedImage = collapseImage(list_of_args)
+rms = np.sqrt(np.mean(np.square(collapsedImage)))
+print("RMS of Collapsed Cube "+str(rms))
 
 negValues = []
 regionPoints = []
+values = np.ndarray((naxis1,naxis2),float)
+
 for i in range(naxis1):
     for j in range(naxis2):
-        value = collapsedImages[0][i][j]
-        if value < sigma_thresshold*rms:
+        value = collapsedImage[i][j]
+        if value < 3.0*rms:
             negValues.append(value)
+            values[i][j] = 0
         else:
             regionPoints.append([i,j])
+            values[i][j] = value
+
+if (plot):
+    plt.figure(1)
+    plt.subplot(121)
+    plt.imshow(values, cmap="magma")
+    plt.colorbar()
+    plt.gca().invert_yaxis()
 
 db = DBSCAN(eps=int(0.1*naxis1), min_samples=4).fit(regionPoints)
 result_labels = db.labels_
@@ -153,20 +176,24 @@ for n_chan in range(len(data_array)):
 hdulist.close()
 
 data_list = zip(freq_list, energy_list)
+data_list_aux = zip(freq_list, energy_list)
 
 #Frequency Red-Shiftting
-freq_max, energy_max = max(data_list,key=operator.itemgetter(1))
+freq_max, energy_max = max(data_list_aux,key=operator.itemgetter(1))
+#freq_max, energy_max = data_list[int(len(data_list)/2)]
+print("\nFreq/Energy Max: "+str(freq_max)+"/"+str(energy_max))
+
 redshift = (rest_freq-freq_max)/freq_max
-print("Redshift: "+str(redshift)+" Restfreq of spectral line: "+str(rest_freq))
+
+print("\nRedshift: "+str(redshift)+" Restfreq of spectral line: "+str(rest_freq))
 shifted_freq_list = [freq*(1+redshift) for freq in freq_list]
 
-print("Freq/Energy Max: "+str(freq_max)+"/"+str(energy_max))
-
 #Channeling
-channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in shifted_freq_list]
+#channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in shifted_freq_list]
+#channeled_freq_list = [int(math.ceil(freq/10**(9-channeling))) for freq in shifted_freq_list]
+channeled_freq_list = [int(round(freq/10**(9-channeling))) for freq in shifted_freq_list]
 
 #Frequency Casting
-words = set()
 with open(features) as f:
     tokens = f.readline().split()
     vocabulary = [int(token) for token in tokens]
@@ -174,17 +201,38 @@ with open(features) as f:
 #Not compatible with TF vX.X.2
 casted_freq_list = [takeClosest(vocabulary,freq) for freq in channeled_freq_list]
 
+
 #Calculating Mean & Standard Deviation
 energy_array = np.array(energy_list)
-energy_mean = np.mean(energy_list)
+energy_mean = np.mean(energy_array)
 energy_std = np.std(energy_array)
-print("Sigma: "+str(sigma_thresshold)+"x"+str(energy_std))
+energy_thresshold = sigma_thresshold*energy_std
+print("\nMean: "+str(energy_mean))
+print("\nSigma: "+str(energy_thresshold))
+
+#Plotting Spectrum
+if plot:
+    plt.figure(1)
+    plt.subplot(122)
+    plt.plot(energy_array)
+    xarray = [x for x in range(0,len(energy_array))]
+    k = int(len(energy_list)/4)
+    plt.xticks(xarray[::k],channeled_freq_list[::k],rotation=45)
+
+    #Plotting Thresshold
+    plt.plot([xarray[0],xarray[-1]], [energy_thresshold,energy_thresshold])
+
+    #ax = plt.gca()
+    #plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%.2f'))
+    plt.tight_layout()
+
+    #plt.plot(energy_thresshold)
+    plt.show()
 
 #TF Representation
 words = []
-data_list = zip(casted_freq_list, energy_list)
-#data_list = zip(channeled_freq_list, energy_list)
-for freq, energy in data_list:
+data_list = zip(casted_freq_list, channeled_freq_list, energy_list)
+for freq_casted, freq_chan, energy in data_list:
         #tf = int(np.log2(math.ceil(energy))) if energy > 0 else 0 #TF v1.1.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))) if energy > 0 else 1 #TF v1.1.2 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))) if energy > energy_std*sigma_thresshold else 0 #TF v1.2.1 OK: 2.0 
@@ -192,15 +240,24 @@ for freq, energy in data_list:
 
         #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 0  #TF v2.1.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 1  #TF v2.1.2 OK: 2.0
+        
         tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 0  #TF v2.2.1 OK: 1.0,2.0,3.0
+        #if freq_chan == 24493555:
+        #    tf = 50  
         #tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 1  #TF v2.2.2 OK: 2.0
         
         #tf = int(np.log2(math.ceil(energy))+1) if energy > 0 else 0 #TF v3.1.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))+1) if energy > 0 else 1 #TF v3.1.2 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))+1) if energy > energy_std*sigma_thresshold else 0 #TF v3.2.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))+1) if energy > energy_std*sigma_thresshold else 1 #TF v3.2.2 OK: 2.0
-        
-        words.extend([str(freq) for i in range(tf)])
+            
+        #words.extend([str(freq_casted) for i in range(tf)])
+        words.extend([str(freq_chan) for i in range(tf)])
+
+words.sort()
+#words.extend([str('24493') for i in range(30)]) #CS:HotCores_2(12):20/3008 | AlmaBand6_2(68): 5/90
+#words.extend([str('32122') for i in range(23000)]) #Water:HotCores2(20):22/55230
+#words.extend([str('18180') for i in range(300)]) #Protonate2-proynenitrile:HotCores2(57):35/808
 
 mFile_out = open(spectral_file_out,'w')
 print("Generated File:")
