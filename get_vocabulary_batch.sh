@@ -1,10 +1,20 @@
 #python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_6_tr.dat > ./llda_train_input/alma_band_6_tr_features.dat
 #python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_6_2.dat > ./llda_train_input/alma_band_6_2_features.dat
+#python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_6_3.dat > ./llda_train_input/alma_band_6_3_features.dat
+#python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_6_4.dat > ./llda_train_input/alma_band_6_4_features.dat
 #python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_6_full.dat > ./llda_train_input/alma_band_6_full_features.dat
 #python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_6_full_expanded_00002.dat > ./llda_train_input/alma_band_6_full_expanded_00002_features.dat
 
+# python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_7_tr.dat > ./llda_train_input/alma_band_7_tr_features.dat
+# python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_7_2.dat > ./llda_train_input/alma_band_7_2_features.dat
+# python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_7_3.dat > ./llda_train_input/alma_band_7_3_features.dat
+# python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_7_4.dat > ./llda_train_input/alma_band_7_4_features.dat
+# python ./scripts/get_vocabulary.py ./llda_train_input/alma_band_7_full.dat > ./llda_train_input/alma_band_7_full_features.dat
+
 #python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_tr.dat > ./llda_train_input/hot_cores_tr_features.dat
 #python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_2.dat > ./llda_train_input/hot_cores_2_features.dat
+#python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_3.dat > ./llda_train_input/hot_cores_3_features.dat
+#python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_4.dat > ./llda_train_input/hot_cores_4_features.dat
 #python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_full.dat > ./llda_train_input/hot_cores_full_features.dat
 #python ./scripts/get_vocabulary.py ./llda_train_input/hot_cores_full_expanded_00002.dat > ./llda_train_input/hot_cores_full_expanded_00002_features.dat
 

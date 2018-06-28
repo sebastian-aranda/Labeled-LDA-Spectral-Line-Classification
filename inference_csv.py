@@ -3,9 +3,9 @@ import gzip
 import shutil
 import os
 
-if (len(sys.argv) != 7):
-	print("You must give 6 parameters: model_path, features_path, labels_path, channeling, fits_path, species_no")
-	print("e.g. python inference.py llda_models/model_hot_cores_full_500it/ llda_train_input/hot_cores_full_features.dat llda_train_input/hot_cores_full_labelmap.sub 5 ../FITS/DMTau.CS_5-4.image.fits 12")
+if (len(sys.argv) != 8):
+	print("You must give 6 parameters: model_path, features_path, labels_path, channeling, fits_path, 'spectral_window,spectral_window_size' , species_no")
+	print("e.g. python inference_csv.py llda_models/model_hot_cores_full_500it/ llda_train_input/hot_cores_full_features.dat llda_train_input/hot_cores_full_labelmap.sub 5 ../FITS/DMTau.CS_5-4.image.fits 1,100 12")
 	sys.exit(1)
 
 model = os.path.basename(os.path.normpath(sys.argv[1]))
@@ -13,7 +13,8 @@ features = os.path.basename(os.path.normpath(sys.argv[2]))
 labels = os.path.basename(os.path.normpath(sys.argv[3]))
 channeling = sys.argv[4]
 fits_path = sys.argv[5]
-species_no = sys.argv[6].split(',')
+spectral_window_options = sys.argv[6]
+species_no = sys.argv[7].split(',')
 
 #filename = os.path.basename(os.path.normpath(fits_path))
 filename = fits_path
@@ -22,17 +23,7 @@ temp_filename = "spectrum_document_csv"
 #shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
 
-#Fix1.2
-"""
-if ("alma_band_6" in model):
-	print("Aplying Fix1.2")
-	os.system("python llda_parser.fix1.2.py "+filename+" "+channeling)
-else:
-	os.system("python llda_parser.py "+filename+" "+channeling)
-"""
-
-#os.system("python llda_parser.py "+filename+" "+channeling+" "+"../llda_train_input/"+features)
-os.system("python csv2spectrum.py ../Schilke_OrionSurvey.csv "+channeling+" "+"../llda_train_input/"+features+" 1,200")
+os.system("python csv2spectrum.py "+filename+" "+channeling+" "+"../llda_train_input/"+features+" "+spectral_window_options)
 
 print("Used model")
 print(model)
@@ -55,7 +46,7 @@ os.rename(temp_filename+".dat."+model+".theta.gz", "../../scripts/"+temp_filenam
 #Parsing llda output
 os.chdir("../../scripts/")
 shutil.copyfile("../llda_train_input/"+labels,labels)
-os.system("python llda_output_theta_parser.py "+temp_filename+".dat."+model+".theta.gz "+labels+" > ../output.dat")
+os.system("python llda_output_theta_parser.py "+temp_filename+".dat."+model+".theta.gz "+labels+" > ../output_csv.dat")
 os.remove(labels)
 os.remove(temp_filename+".dat."+model+".theta.gz")
 
@@ -63,7 +54,7 @@ os.chdir("../")
 #Evaluate Prediction
 match = False
 #os.system("cat output.dat")
-with open('output.dat') as f:
+with open('output_csv.dat') as f:
 	last_pos = f.tell()
 	last_line = f.readlines()[-1]
 	f.seek(last_pos)

@@ -3,7 +3,7 @@ import gzip
 import shutil
 import os
 
-if (len(sys.argv) != 7):
+if (len(sys.argv) < 6):
 	print("You must give 6 parameters: model_path, features_path, labels_path, channeling, fits_path, species_no")
 	print("e.g. python inference.py llda_models/model_hot_cores_full_500it/ llda_train_input/hot_cores_full_features.dat llda_train_input/hot_cores_full_labelmap.sub 5 ../FITS/DMTau.CS_5-4.image.fits 12")
 	sys.exit(1)
@@ -14,6 +14,7 @@ labels = os.path.basename(os.path.normpath(sys.argv[3]))
 channeling = sys.argv[4]
 fits_path = sys.argv[5]
 species_no = sys.argv[6].split(',')
+plot = sys.argv[7] if len(sys.argv) > 7 else ''
 
 #filename = os.path.basename(os.path.normpath(fits_path))
 filename = fits_path
@@ -22,7 +23,7 @@ temp_filename = "spectrum_document"
 #shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
 
-os.system("python llda_parser.py "+filename+" "+channeling+" "+"../llda_train_input/"+features)
+os.system("python llda_parser.py "+filename+" "+channeling+" "+"../llda_train_input/"+features+" "+plot)
 #os.system("python csv2spectrum.py ../Schilke_OrionSurvey.csv "+channeling+" "+"../llda_train_input/"+features+" 1,100")
 
 print("Used model")

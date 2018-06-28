@@ -58,7 +58,8 @@ with open(fileName) as csvfile:
         for token in row:
             pairs = token.split(':')
             frequency = float(pairs[0])/(10**4) #Transform to GHz
-            frequency_ch = int(math.floor(frequency*10**channeling)) #Frequency in GHz
+            #frequency_ch = int(math.floor(frequency*10**channeling)) #Frequency in GHz
+            frequency_ch = int(round(frequency*10**channeling)) #Frequency in GHz
             energy = float(pairs[1])
             #spectrum.append((frequency, energy))
             spectrum.append((frequency, takeClosest(vocabulary,frequency_ch),energy))

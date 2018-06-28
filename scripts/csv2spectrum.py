@@ -85,9 +85,9 @@ with open(fileName) as csvfile:
 			continue
 		energy = float(row[4].replace(',','.'))
 		frequency = float(row[3].replace(',','.'))		
-		frequency_ch = int(math.floor(frequency*10**channeling)) #Frequency in GHz		
+		#frequency_ch = int(math.floor(frequency*10**channeling)) #Frequency in GHz
+		frequency_ch = int(round(frequency*10**channeling)) #Frequency in GHz
 		spectrum.append((frequency, takeClosest(vocabulary,frequency_ch),energy))
-		#spectrum.append((frequency, takeClosest(vocabulary,frequency_ch,2*10**channeling),energy))
 		#spectrum.append((frequency, frequency_ch, energy))
 
 spectrum.sort(key=itemgetter(0))

@@ -51,22 +51,20 @@ def collapseImage(args):
 
 ##################################################
 
-if len(sys.argv) != 4:
+if len(sys.argv) < 4:
         print("e.g. python llda_parser.py fits_file.fits 2 features.dat")
         sys.exit(0)
 
 fileName = sys.argv[1]
-#fileName = os.path.basename(os.path.normpath(sys.argv[1]))
+fitsName = os.path.basename(os.path.normpath(sys.argv[1]))
 channeling = int(sys.argv[2])
 features = sys.argv[3]
+plot = True if len(sys.argv) > 4 and sys.argv[4] == '-p' else False
 
-plot = True
-
-timer = time.time()*1000
+start_time = time.time()
 
 spectral_file_out = "./spectrum_document.dat"
 c = 299792458
-sigma_thresshold = 6.0
 
 print("Parsing Fits: "+fileName)
 hdulist = fits.open(fileName)
@@ -80,6 +78,8 @@ naxis1 = hdu_header['NAXIS1'] #Ra
 naxis2 = hdu_header['NAXIS2'] #Dec
 naxis3 = hdu_header['NAXIS3'] #Frequency
 rest_freq = hdu_header['RESTFRQ'] #Rest freq
+
+sigma_thresshold = 3.0 if naxis3 > 200 and naxis3 < 400 else 1.5
 
 #Determining regions of interest
 list_of_args = (naxis1,naxis2,naxis3,data_array)
@@ -157,7 +157,8 @@ intensitiy_values = clusters_intensity[cluster_index_selected]
 freq_list = []
 energy_list = []
 
-for n_chan in range(len(data_array)):
+#for n_chan in range(len(data_array)):
+for n_chan in range(0,len(data_array),int(len(data_array)/30)):
     freq = float(hdu_header['CRVAL3']+hdu_header['CDELT3']*n_chan)
     
     mLambda = c/freq
@@ -165,9 +166,6 @@ for n_chan in range(len(data_array)):
     intensity = intensitiy_values[n_chan]
     #intensity = int(np.sum(data_array[n_chan])) if np.sum(data_array[n_chan]) > 0 else 0 #Revisar
     energy_kelvin = 1.36*((mLambda*100)**2)/(theta_square*3600**2)*(intensity*1000)
-    
-    #Amplify energy
-    #energy_kelvin = energy_kelvin*1e2
 
     #print("F:"+str(freq)+" - I:"+str(intensity)+" - K:"+str(energy_kelvin))
     freq_list.append(freq)
@@ -227,6 +225,7 @@ if plot:
     plt.tight_layout()
 
     #plt.plot(energy_thresshold)
+    plt.title(fitsName)
     plt.show()
 
 #TF Representation

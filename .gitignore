@@ -4,6 +4,7 @@ codes/
 results_casted_beta/
 _spectrum_documents/
 llda_train_input/*.dat
+llda_train_input/*.sub
 
 Schilke_OrionSurvey.csv
 
