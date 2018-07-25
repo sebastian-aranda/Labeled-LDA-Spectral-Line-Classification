@@ -80,7 +80,8 @@ int main(int argc, char** argv) {
 		   fint = doc_it->first;
 		   tf_st = doc_it->second;
 		   int tf = stoi(tf_st);
-		   tf = (int)floor(log2(tf)) + 1;
+		   //tf = (int)floor(log2(tf)) + 1; //original
+		   tf = (int)floor(log2(tf+1)); //fixed
 		   //tf = (int)floor(log2(tf+100));
 		   while (tf > 0) {
 		      cout << fint << " ";

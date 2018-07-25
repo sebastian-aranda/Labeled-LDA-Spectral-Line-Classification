@@ -1,21 +1,12 @@
 casa_spectrums/
 catalogo_sql/
 codes/
-results_casted_beta/
-_spectrum_documents/
 llda_train_input/*.dat
 llda_train_input/*.sub
 
-Schilke_OrionSurvey.csv
+output*.dat
+matches*.out
 
-dict_molecules.dat
-
-output.dat
-matches.out
-matches_csv.out
-
-consolidate_batch.sh
-get_features_lenght.sh
 inference_schilke.sh
 inference_examples.sh
 inference_all.sh
@@ -23,6 +14,9 @@ get_vocabulary_batch.sh
 get_features_lenght.sh
 
 models_frequency_expansion_*.sh
+
+*results_casted*
+*results_shifted*
 
 *resultados*
 *test*

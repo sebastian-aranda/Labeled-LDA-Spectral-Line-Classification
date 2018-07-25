@@ -19,7 +19,7 @@ channeling = int(sys.argv[2])
 featuresFile = sys.argv[3]
 choosen_line = int(sys.argv[4])
 
-sigma_thresshold = 3.5
+sigma_thresshold = 2.0
 
 def takeClosest(myList, myNumber, thresshold = 200000):
     """
@@ -76,7 +76,7 @@ print("Sigma: "+str(sigma_thresshold)+"x"+str(energy_std))
 
 spectrum_document = list()
 for freq, freq_ch, energy in spectrum:
-	tf = int(np.log2(math.ceil(energy+1))) if energy+1 > energy_std*sigma_thresshold else 0 #TF v2.2
+	tf = int(math.ceil(np.log2(energy+1))) if energy > energy_std*sigma_thresshold else 0 #TF v2.2
 	spectrum_document.extend([str(freq_ch) for i in range(tf)])
 
 #Saving file
@@ -85,17 +85,3 @@ print("Generated File:")
 print(" ".join(spectrum_document)+"\n")
 mFile_out.write(" ".join(spectrum_document)+"\n")
 mFile_out.close()
-
-
-#plt.plot([freq for freq, energy in spectrum],[energy for freq, energy in spectrum])
-#plt.show()
-
-#Calculating Mean & Standard Deviation
-#ALL TRANSITIONS TODO: INCLUDE NOISE / SIMULTED SIGNAL
-#energy_array = np.array(energy_list)
-#energy_mean = np.mean(energy_list)
-#print("\nMean: "+str(energy_mean))
-#energy_std = np.std(energy_array)
-#print("\nSigma: "+str(sigma_thresshold)+"x"+str(energy_std))
-
-#print(spectrum[:10])

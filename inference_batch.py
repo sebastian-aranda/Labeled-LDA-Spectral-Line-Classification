@@ -15,13 +15,13 @@ mData = sys.argv[2]
 
 if model_name == 'hot_cores':
         models_array = [
-        # (0,'llda_models/model_hot_cores_tr_500it/','llda_train_input/hot_cores_tr_features.dat','llda_train_input/hot_cores_tr_labelmap.sub')
-        # ,(2,'llda_models/model_hot_cores_2_500it/','llda_train_input/hot_cores_2_features.dat','llda_train_input/hot_cores_2_labelmap.sub')
-        # ,(3,'llda_models/model_hot_cores_3_500it/','llda_train_input/hot_cores_3_features.dat','llda_train_input/hot_cores_3_labelmap.sub')
-        # ,(4,'llda_models/model_hot_cores_4_500it/','llda_train_input/hot_cores_4_features.dat','llda_train_input/hot_cores_4_labelmap.sub')
-        # ,(5,'llda_models/model_hot_cores_full_500it/','llda_train_input/hot_cores_full_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
-        # ,(5,'llda_models/model_hot_cores_full_expanded_00120_x3_500it','llda_train_input/hot_cores_full_expanded_00120_x3_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
-        (5,'llda_models/model_hot_cores_full_expanded_00200_x3v2_500it','llda_train_input/hot_cores_full_expanded_00200_x3v2_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
+        (0,'llda_models/model_hot_cores_tr_500it/','llda_train_input/hot_cores_tr_features.dat','llda_train_input/hot_cores_tr_labelmap.sub')
+        ,(2,'llda_models/model_hot_cores_2_500it/','llda_train_input/hot_cores_2_features.dat','llda_train_input/hot_cores_2_labelmap.sub')
+        ,(3,'llda_models/model_hot_cores_3_500it/','llda_train_input/hot_cores_3_features.dat','llda_train_input/hot_cores_3_labelmap.sub')
+        ,(4,'llda_models/model_hot_cores_4_500it/','llda_train_input/hot_cores_4_features.dat','llda_train_input/hot_cores_4_labelmap.sub')
+        ,(5,'llda_models/model_hot_cores_full_500it/','llda_train_input/hot_cores_full_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
+        ,(5,'llda_models/model_hot_cores_full_expanded_00120_x3_500it','llda_train_input/hot_cores_full_expanded_00120_x3_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
+        ,(5,'llda_models/model_hot_cores_full_expanded_00200_x3v2_500it','llda_train_input/hot_cores_full_expanded_00200_x3v2_features.dat','llda_train_input/hot_cores_full_labelmap.sub')
         ]
 elif model_name == 'alma_band_6':
         models_array = [

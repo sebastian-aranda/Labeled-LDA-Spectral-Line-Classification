@@ -1,3 +1,9 @@
+wc -w llda_train_input/alma_band_3_tr_features.dat
+wc -w llda_train_input/alma_band_3_2_features.dat
+wc -w llda_train_input/alma_band_3_3_features.dat
+wc -w llda_train_input/alma_band_3_4_features.dat
+wc -w llda_train_input/alma_band_3_full_features.dat
+
 wc -w llda_train_input/alma_band_6_tr_features.dat
 wc -w llda_train_input/alma_band_6_2_features.dat
 wc -w llda_train_input/alma_band_6_3_features.dat
@@ -13,6 +19,18 @@ wc -w llda_train_input/alma_band_7_4_features.dat
 wc -w llda_train_input/alma_band_7_full_features.dat
 wc -w llda_train_input/alma_band_7_full_expanded_00002_features.dat
 wc -w llda_train_input/alma_band_7_full_expanded_00010_features.dat
+
+wc -w llda_train_input/alma_band_8_tr_features.dat
+wc -w llda_train_input/alma_band_8_2_features.dat
+wc -w llda_train_input/alma_band_8_3_features.dat
+wc -w llda_train_input/alma_band_8_4_features.dat
+wc -w llda_train_input/alma_band_8_full_features.dat
+
+wc -w llda_train_input/alma_band_9_tr_features.dat
+wc -w llda_train_input/alma_band_9_2_features.dat
+wc -w llda_train_input/alma_band_9_3_features.dat
+wc -w llda_train_input/alma_band_9_4_features.dat
+wc -w llda_train_input/alma_band_9_full_features.dat
 
 wc -w llda_train_input/hot_cores_tr_features.dat
 wc -w llda_train_input/hot_cores_2_features.dat

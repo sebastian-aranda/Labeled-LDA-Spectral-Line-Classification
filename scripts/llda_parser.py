@@ -17,7 +17,7 @@ from bisect import bisect_left
 from random import randint
 
 ############ FUNCTION DEFINITIONS ################
-def takeClosest(myList, myNumber, thresshold = 200000):
+def takeClosest(myList, myNumber):
     """
     Assumes myList is sorted. Returns closest value to myNumber.
     If two numbers are equally close, return the smallest number.
@@ -31,9 +31,9 @@ def takeClosest(myList, myNumber, thresshold = 200000):
     after = myList[pos]
     after_delta = after - myNumber
     before_delta = myNumber - before
-    if after_delta < before_delta and after_delta < thresshold:
+    if after_delta < before_delta:
         return after
-    elif before_delta < after_delta and before_delta < thresshold:
+    elif before_delta < after_delta:
         return before
     else:
         return before
@@ -80,6 +80,8 @@ naxis3 = hdu_header['NAXIS3'] #Frequency
 rest_freq = hdu_header['RESTFRQ'] #Rest freq
 
 sigma_thresshold = 3.0 if naxis3 > 200 and naxis3 < 400 else 1.5
+if (naxis3 > 1000):
+    sigma_thresshold = 4.0
 
 #Determining regions of interest
 list_of_args = (naxis1,naxis2,naxis3,data_array)
@@ -240,9 +242,10 @@ for freq_casted, freq_chan, energy in data_list:
         #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 0  #TF v2.1.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy+1))) if energy > 0 else 1  #TF v2.1.2 OK: 2.0
         
-        tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 0  #TF v2.2.1 OK: 1.0,2.0,3.0
-        #if freq_chan == 24493555:
-        #    tf = 50  
+        tf = int(math.ceil(np.log2(energy+1))) if energy > energy_std*sigma_thresshold else 0  #TF v2.2.1 OK: 1.0,2.0,3.0
+
+        if freq_chan == 32122568:
+            tf = 50  
         #tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 1  #TF v2.2.2 OK: 2.0
         
         #tf = int(np.log2(math.ceil(energy))+1) if energy > 0 else 0 #TF v3.1.1 OK: 2.0

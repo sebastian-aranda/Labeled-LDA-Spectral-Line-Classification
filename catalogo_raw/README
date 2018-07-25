@@ -1,1 +1,2 @@
 get_species_transitions.py: get transitions of species that contains a specific word
+e.g. python get_species_transitions.py hot_cores_full.raw "carbon monosulfide

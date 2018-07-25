@@ -21,7 +21,7 @@ featuresFile = sys.argv[3]
 spectrum_chunk = int(sys.argv[4].split(',')[0]) if len(sys.argv) == 5 else None
 spectrum_chunks_size = int(sys.argv[4].split(',')[1]) if len(sys.argv) == 5 else None
 
-def takeClosest(myList, myNumber, thresshold = 200000):
+def takeClosest(myList, myNumber):
     """
     Assumes myList is sorted. Returns closest value to myNumber.
 
@@ -36,9 +36,9 @@ def takeClosest(myList, myNumber, thresshold = 200000):
     after = myList[pos]
     after_delta = after - myNumber
     before_delta = myNumber - before
-    if after_delta < before_delta and after_delta < thresshold:
+    if after_delta < before_delta:
         return after
-    elif before_delta < after_delta and before_delta < thresshold:
+    elif before_delta < after_delta:
         return before
     else:
         return before
@@ -58,11 +58,11 @@ def takeClosest_v2(myList, myNumber, thresshold = 200000):
     after = myList[pos]
     after_delta = after - myNumber
     before_delta = myNumber - before
-    if after_delta < before_delta and after_delta < thresshold:
+    if after_delta < before_delta and after_delta <= thresshold:
         return after
-    elif before_delta < after_delta and before_delta < thresshold:
+    elif before_delta < after_delta and before_delta <= thresshold:
         return before
-    elif after_delta == before_delta:
+    elif after_delta == before_delta and after_delta <= thresshold:
         return before
     else:
         return myNumber
@@ -83,11 +83,17 @@ with open(fileName) as csvfile:
 	for i, row in enumerate(spamreader):
 		if i == 0:
 			continue
+	        
 		energy = float(row[4].replace(',','.'))
-		frequency = float(row[3].replace(',','.'))		
+		frequency = float(row[3].replace(',','.'))
+
+		# if not (frequency > 625 and frequency < 626):
+		# 	continue
+
 		#frequency_ch = int(math.floor(frequency*10**channeling)) #Frequency in GHz
 		frequency_ch = int(round(frequency*10**channeling)) #Frequency in GHz
 		spectrum.append((frequency, takeClosest(vocabulary,frequency_ch),energy))
+		#spectrum.append((frequency, takeClosest_v2(vocabulary,frequency_ch,20000000),energy))
 		#spectrum.append((frequency, frequency_ch, energy))
 
 spectrum.sort(key=itemgetter(0))
@@ -97,7 +103,7 @@ print("From: "+str(spectrum[0])+" To: "+str(spectrum[-1]))
 
 spectrum_document = list()
 for freq, freq_ch, energy in spectrum:
-	tf = int(np.log2(math.ceil(energy+1))) #TF v2.2
+	tf = int(math.ceil(np.log2(energy+1))) #TF v2.2
 	spectrum_document.extend([str(freq_ch) for i in range(tf)])
 
 #Saving file

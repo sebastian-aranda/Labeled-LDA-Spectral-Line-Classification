@@ -20,6 +20,9 @@ species_no = sys.argv[7].split(',')
 filename = fits_path
 temp_filename = "spectrum_document_csv"
 
+#get list of species
+#TODO
+
 #shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
 
@@ -59,8 +62,8 @@ with open('output_csv.dat') as f:
 	last_line = f.readlines()[-1]
 	f.seek(last_pos)
 	for i,line in enumerate(f):
-		#if i>=10:
-		#	break
+		# if i>=5:
+		# 	break
 		no = line.split()[0].split(';')[1]
 		transition_name = " ".join(line.split(';')[1].split()[1:])
 		prob = line.split()[-1].split(';')[1]

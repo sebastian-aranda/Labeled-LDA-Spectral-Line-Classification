@@ -1,3 +1,93 @@
+##################### ALMA BAND 3 #####################
+
+# gzip -k llda_train_input/alma_band_3_tr.dat
+# python train_auto.py llda_train_input/alma_band_3_tr.dat.gz 0.4 4.1 134 500 model_alma_band_3_tr_500it
+# rm llda_train_input/alma_band_3_tr.dat.gz
+
+# gzip -k llda_train_input/alma_band_3_2.dat
+# python train_auto.py llda_train_input/alma_band_3_2.dat.gz 0.4 0.04 134 500 model_alma_band_3_2_500it
+# rm llda_train_input/alma_band_3_2.dat.gz
+
+# gzip -k llda_train_input/alma_band_3_3.dat
+# python train_auto.py llda_train_input/alma_band_3_3.dat.gz 0.4 0.008 134 500 model_alma_band_3_3_500it
+# rm llda_train_input/alma_band_3_3.dat.gz
+
+# gzip -k llda_train_input/alma_band_3_4.dat
+# python train_auto.py llda_train_input/alma_band_3_4.dat.gz 0.4 0.005 134 500 model_alma_band_3_4_500it
+# rm llda_train_input/alma_band_3_4.dat.gz
+
+# gzip -k llda_train_input/alma_band_3_full.dat
+# python train_auto.py llda_train_input/alma_band_3_full.dat.gz 0.4 0.005 134 500 model_alma_band_3_full_500it
+# rm llda_train_input/alma_band_3_full.dat.gz
+
+# gzip -k llda_train_input/alma_band_3_full_expanded_00120_x3.dat
+# python train_auto.py llda_train_input/alma_band_3_full_expanded_00120_x3.dat.gz 0.4 0.1 133 500 model_alma_band_3_full_expanded_00120_x3_500it
+# rm llda_train_input/alma_band_3_full_expanded_00120_x3.dat.gz
+
+# gzip -k llda_train_input/alma_band_3_full_expanded_00200_x3.dat
+# python train_auto.py llda_train_input/alma_band_3_full_expanded_00200_x3.dat.gz 0.4 0.1 133 500 model_alma_band_3_full_expanded_00200_x3_500it
+# rm llda_train_input/alma_band_3_full_expanded_00200_x3.dat.gz
+
+##################### ALMA BAND 4 #####################
+
+gzip -k llda_train_input/alma_band_4_tr.dat
+python train_auto.py llda_train_input/alma_band_4_tr.dat.gz 0.4 3.4 133 500 model_alma_band_4_tr_500it
+rm llda_train_input/alma_band_4_tr.dat.gz
+
+gzip -k llda_train_input/alma_band_4_2.dat
+python train_auto.py llda_train_input/alma_band_4_2.dat.gz 0.4 0.035 133 500 model_alma_band_4_2_500it
+rm llda_train_input/alma_band_4_2.dat.gz
+
+gzip -k llda_train_input/alma_band_4_3.dat
+python train_auto.py llda_train_input/alma_band_4_3.dat.gz 0.4 0.007 133 500 model_alma_band_4_4_500it
+rm llda_train_input/alma_band_4_3.dat.gz
+
+# gzip -k llda_train_input/alma_band_4_4.dat
+# python train_auto.py llda_train_input/alma_band_4_4.dat.gz 0.4 X 133 500 model_alma_band_4_4_500it
+# rm llda_train_input/alma_band_4_4.dat.gz
+
+gzip -k llda_train_input/alma_band_4_full.dat
+python train_auto.py llda_train_input/alma_band_4_full.dat.gz 0.4 0.004 133 500 model_alma_band_4_full_500it
+rm llda_train_input/alma_band_4_full.dat.gz
+
+# gzip -k llda_train_input/alma_band_4_full_expanded_00120_x3.dat
+# python train_auto.py llda_train_input/alma_band_4_full_expanded_00120_x3.dat.gz 0.4 0.1 133 500 model_alma_band_4_full_expanded_00120_x3_500it
+# rm llda_train_input/alma_band_4_full_expanded_00120_x3.dat.gz
+
+# gzip -k llda_train_input/alma_band_4_full_expanded_00200_x3.dat
+# python train_auto.py llda_train_input/alma_band_4_full_expanded_00200_x3.dat.gz 0.4 0.1 133 500 model_alma_band_4_full_expanded_00200_x3_500it
+# rm llda_train_input/alma_band_4_full_expanded_00200_x3.dat.gz
+
+##################### ALMA BAND 5 #####################
+
+gzip -k llda_train_input/alma_band_5_tr.dat
+python train_auto.py llda_train_input/alma_band_5_tr.dat.gz 0.4 2.735 134 500 model_alma_band_5_tr_500it
+rm llda_train_input/alma_band_5_tr.dat.gz
+
+gzip -k llda_train_input/alma_band_5_2.dat
+python train_auto.py llda_train_input/alma_band_5_2.dat.gz 0.4 0.028 134 500 model_alma_band_5_2_500it
+rm llda_train_input/alma_band_5_2.dat.gz
+
+gzip -k llda_train_input/alma_band_5_3.dat
+python train_auto.py llda_train_input/alma_band_5_3.dat.gz 0.4 0.005 134 500 model_alma_band_5_4_500it
+rm llda_train_input/alma_band_5_3.dat.gz
+
+# gzip -k llda_train_input/alma_band_5_4.dat
+# python train_auto.py llda_train_input/alma_band_5_4.dat.gz 0.4 X 134 500 model_alma_band_5_4_500it
+# rm llda_train_input/alma_band_5_4.dat.gz
+
+gzip -k llda_train_input/alma_band_5_full.dat
+python train_auto.py llda_train_input/alma_band_5_full.dat.gz 0.4 0.003 134 500 model_alma_band_5_full_500it
+rm llda_train_input/alma_band_5_full.dat.gz
+
+# gzip -k llda_train_input/alma_band_5_full_expanded_00120_x3.dat
+# python train_auto.py llda_train_input/alma_band_5_full_expanded_00120_x3.dat.gz 0.4 0.1 134 500 model_alma_band_5_full_expanded_00120_x3_500it
+# rm llda_train_input/alma_band_5_full_expanded_00120_x3.dat.gz
+
+# gzip -k llda_train_input/alma_band_5_full_expanded_00200_x3.dat
+# python train_auto.py llda_train_input/alma_band_5_full_expanded_00200_x3.dat.gz 0.4 0.1 134 500 model_alma_band_5_full_expanded_00200_x3_500it
+# rm llda_train_input/alma_band_5_full_expanded_00200_x3.dat.gz
+
 ##################### ALMA BAND 6 #####################
 
 # gzip -k llda_train_input/alma_band_6_tr.dat
@@ -57,6 +147,96 @@
 # gzip -k llda_train_input/alma_band_7_full_expanded_00200_x3.dat
 # python train_auto.py llda_train_input/alma_band_7_full_expanded_00200_x3.dat.gz 0.4 0.1 127 500 model_alma_band_7_full_expanded_00200_x3_500it
 # rm llda_train_input/alma_band_7_full_expanded_00200_x3.dat.gz
+
+##################### ALMA BAND 8 #####################
+
+# gzip -k llda_train_input/alma_band_8_tr.dat
+# python train_auto.py llda_train_input/alma_band_8_tr.dat.gz 0.4 2.4 122 500 model_alma_band_8_tr_500it
+# rm llda_train_input/alma_band_8_tr.dat.gz
+
+# gzip -k llda_train_input/alma_band_8_2.dat
+# python train_auto.py llda_train_input/alma_band_8_2.dat.gz 0.4 0.03 122 500 model_alma_band_8_2_500it
+# rm llda_train_input/alma_band_8_2.dat.gz
+
+# gzip -k llda_train_input/alma_band_8_3.dat
+# python train_auto.py llda_train_input/alma_band_8_3.dat.gz 0.4 0.005 122 500 model_alma_band_8_3_500it
+# rm llda_train_input/alma_band_8_3.dat.gz
+
+# gzip -k llda_train_input/alma_band_8_4.dat
+# python train_auto.py llda_train_input/alma_band_8_4.dat.gz 0.4 0.003 122 500 model_alma_band_8_4_500it
+# rm llda_train_input/alma_band_8_4.dat.gz
+
+# gzip -k llda_train_input/alma_band_8_full.dat
+# python train_auto.py llda_train_input/alma_band_8_full.dat.gz 0.4 0.003 122 500 model_alma_band_8_full_500it
+# rm llda_train_input/alma_band_8_full.dat.gz
+
+# gzip -k llda_train_input/alma_band_8_full_expanded_00120_x3.dat
+# python train_auto.py llda_train_input/alma_band_8_full_expanded_00120_x3.dat.gz 0.4 0.1 122 500 model_alma_band_8_full_expanded_00120_x3_500it
+# rm llda_train_input/alma_band_8_full_expanded_00120_x3.dat.gz
+
+# gzip -k llda_train_input/alma_band_8_full_expanded_00200_x3.dat
+# python train_auto.py llda_train_input/alma_band_8_full_expanded_00200_x3.dat.gz 0.4 0.1 122 500 model_alma_band_8_full_expanded_00200_x3_500it
+# rm llda_train_input/alma_band_8_full_expanded_00200_x3.dat.gz
+
+##################### ALMA BAND 9 #####################
+
+# gzip -k llda_train_input/alma_band_9_tr.dat
+# python train_auto.py llda_train_input/alma_band_9_tr.dat.gz 0.4 1.8 114 500 model_alma_band_9_tr_500it
+# rm llda_train_input/alma_band_9_tr.dat.gz
+
+# gzip -k llda_train_input/alma_band_9_2.dat
+# python train_auto.py llda_train_input/alma_band_9_2.dat.gz 0.4 0.02 114 500 model_alma_band_9_2_500it
+# rm llda_train_input/alma_band_9_2.dat.gz
+
+# gzip -k llda_train_input/alma_band_9_3.dat
+# python train_auto.py llda_train_input/alma_band_9_3.dat.gz 0.4 0.004 114 500 model_alma_band_9_3_500it
+# rm llda_train_input/alma_band_9_3.dat.gz
+
+# gzip -k llda_train_input/alma_band_9_4.dat
+# python train_auto.py llda_train_input/alma_band_9_4.dat.gz 0.4 0.003 114 500 model_alma_band_9_4_500it
+# rm llda_train_input/alma_band_9_4.dat.gz
+
+# gzip -k llda_train_input/alma_band_9_full.dat
+# python train_auto.py llda_train_input/alma_band_9_full.dat.gz 0.4 0.002 114 500 model_alma_band_9_full_500it
+# rm llda_train_input/alma_band_9_full.dat.gz
+
+# gzip -k llda_train_input/alma_band_9_full_expanded_00120_x3.dat
+# python train_auto.py llda_train_input/alma_band_9_full_expanded_00120_x3.dat.gz 0.4 0.1 122 500 model_alma_band_9_full_expanded_00120_x3_500it
+# rm llda_train_input/alma_band_9_full_expanded_00120_x3.dat.gz
+
+# gzip -k llda_train_input/alma_band_9_full_expanded_00200_x3.dat
+# python train_auto.py llda_train_input/alma_band_9_full_expanded_00200_x3.dat.gz 0.4 0.1 122 500 model_alma_band_9_full_expanded_00200_x3_500it
+# rm llda_train_input/alma_band_9_full_expanded_00200_x3.dat.gz
+
+##################### ALMA BAND 10 #####################
+
+gzip -k llda_train_input/alma_band_10_tr.dat
+python train_auto.py llda_train_input/alma_band_10_tr.dat.gz 0.4 1.425 114 500 model_alma_band_10_tr_500it
+rm llda_train_input/alma_band_10_tr.dat.gz
+
+gzip -k llda_train_input/alma_band_10_2.dat
+python train_auto.py llda_train_input/alma_band_10_2.dat.gz 0.4 0.015 114 500 model_alma_band_10_2_500it
+rm llda_train_input/alma_band_10_2.dat.gz
+
+gzip -k llda_train_input/alma_band_10_3.dat
+python train_auto.py llda_train_input/alma_band_10_3.dat.gz 0.4 0.004 114 500 model_alma_band_10_3_500it
+rm llda_train_input/alma_band_10_3.dat.gz
+
+# gzip -k llda_train_input/alma_band_10_4.dat
+# python train_auto.py llda_train_input/alma_band_10_4.dat.gz 0.4 0.003 114 500 model_alma_band_10_4_500it
+# rm llda_train_input/alma_band_10_4.dat.gz
+
+gzip -k llda_train_input/alma_band_10_full.dat
+python train_auto.py llda_train_input/alma_band_10_full.dat.gz 0.4 0.002 114 500 model_alma_band_10_full_500it
+rm llda_train_input/alma_band_10_full.dat.gz
+
+# gzip -k llda_train_input/alma_band_10_full_expanded_00120_x3.dat
+# python train_auto.py llda_train_input/alma_band_10_full_expanded_00120_x3.dat.gz 0.4 0.1 114 500 model_alma_band_10_full_expanded_00120_x3_500it
+# rm llda_train_input/alma_band_10_full_expanded_00120_x3.dat.gz
+
+# gzip -k llda_train_input/alma_band_10_full_expanded_00200_x3.dat
+# python train_auto.py llda_train_input/alma_band_10_full_expanded_00200_x3.dat.gz 0.4 0.1 114 500 model_alma_band_10_full_expanded_00200_x3_500it
+# rm llda_train_input/alma_band_10_full_expanded_00200_x3.dat.gz
 
 ##################### HOT CORES #####################
 
