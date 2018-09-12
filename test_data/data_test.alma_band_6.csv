@@ -1,10 +1,16 @@
 #root path: ./scripts/
-../../FITS/DMTau.CS_5-4.image.fits;77
+
 ../../FITS/HD163296_CO_2_1.image.fits;42
-../../FITS/Orion.HNC.cbc.contsub.image.v2.fits;93
-../../FITS/uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor.v2.fits;85
-#../../FITS/Orion.methanol.cbc.contsub.image.v2.fits;90 #Low energy cube
+../../FITS/uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor.fits;85
+../../FITS/Orion.HNC.cbc.contsub.image.fits;93
+##../../FITS/Orion.HNC.cbc.contsub.image.v2.fits;93
+../../FITS/DMTau.CS_5-4.image.fits;77
+
+../../FITS/Orion.methanol.cbc.contsub.image.fits;90 #Low energy cube
+##../../FITS/Orion.methanol.cbc.contsub.image.v2.fits;90 #Low energy cube
 #../../FITS/TWHydra_CO3_2line.image.fits;-2
 #../../FITS/TWHydra_HCOplusline.image.fits;-2
-#../../FITS/h2o_fits/Xa3a_ori_spw0.image.fits;-2
-#../../FITS/h2o_fits/Xa91_ori_spw0.image.fits;-2
+###../../FITS/TWHydra_HCOplusline.image.v2.fits;-2
+
+####../../FITS/h2o_fits/Xa3a_ori_spw0.image.fits;-2
+####../../FITS/h2o_fits/Xa91_ori_spw0.image.fits;-2

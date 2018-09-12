@@ -1,23 +1,21 @@
-casa_spectrums/
-catalogo_sql/
-codes/
-llda_train_input/*.dat
-llda_train_input/*.sub
+_casa_spectrums/
+casa_inference.py
+casa_inference_batch.py
+
+_backup_results/
+
+catalogo_raw/
+catalogo_splat/
+
+*hot_cores*
+*boost_1_67_0*
+
+llda_train_input/
+_llda_models_basic/
 
 output*.dat
 matches*.out
 
-inference_schilke.sh
-inference_examples.sh
-inference_all.sh
-get_vocabulary_batch.sh
-get_features_lenght.sh
+test_data/
 
-models_frequency_expansion_*.sh
-
-*results_casted*
-*results_shifted*
-
-*resultados*
-*test*
 *backup*

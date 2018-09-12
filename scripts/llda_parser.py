@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
 from matplotlib.ticker import FormatStrFormatter
 
 import astropy.units as u
@@ -16,8 +17,14 @@ import time
 from bisect import bisect_left
 from random import randint
 
+font = {'family' : 'sans-serif',
+        #'weight' : 'bold',
+        'size'   : 16}
+
+matplotlib.rc('font', **font)
+
 ############ FUNCTION DEFINITIONS ################
-def takeClosest(myList, myNumber):
+def takeClosest(myList, myNumber, thresshold = 100000):
     """
     Assumes myList is sorted. Returns closest value to myNumber.
     If two numbers are equally close, return the smallest number.
@@ -31,12 +38,14 @@ def takeClosest(myList, myNumber):
     after = myList[pos]
     after_delta = after - myNumber
     before_delta = myNumber - before
-    if after_delta < before_delta:
+    if after_delta < before_delta and after_delta <= thresshold:
         return after
-    elif before_delta < after_delta:
+    elif before_delta < after_delta and before_delta <= thresshold:
+        return before
+    elif after_delta == before_delta and after_delta <= thresshold:
         return before
     else:
-        return before
+        return myNumber
 
 def collapseImage(args):
        lenX = args[0]
@@ -67,6 +76,7 @@ spectral_file_out = "./spectrum_document.dat"
 c = 299792458
 
 print("Parsing Fits: "+fileName)
+
 hdulist = fits.open(fileName)
 hdu_primary = hdulist[0]
 hdu_header = hdu_primary.header
@@ -74,29 +84,46 @@ hdu_data = hdu_primary.data
 
 data_array = hdu_data[0,:,:,:] if hdu_header['NAXIS'] == 4 else hdu_data 
 
-naxis1 = hdu_header['NAXIS1'] #Ra
-naxis2 = hdu_header['NAXIS2'] #Dec
+naxis1 = hdu_header['NAXIS1'] #RA
+naxis2 = hdu_header['NAXIS2'] #DEC
 naxis3 = hdu_header['NAXIS3'] #Frequency
 rest_freq = hdu_header['RESTFRQ'] #Rest freq
 
-sigma_thresshold = 3.0 if naxis3 > 200 and naxis3 < 400 else 1.5
-if (naxis3 > 1000):
-    sigma_thresshold = 4.0
+crval1 = hdu_header['CRVAL1'] #RA[0]
+crval2 = hdu_header['CRVAL2'] #DEC[0]
+cdelt1 = hdu_header['CDELT1'] #RA delta
+cdelt2 = hdu_header['CDELT2'] #DEC delta
+
+# ra_pos = [crval1*cdelt1*i for i in range(naxis1)]
+# dec_pos = [crval2*cdelt2*i for i in range(naxis2)]
+
+#Umbral adaptivo
+sigma_thresshold = 4.5 if naxis3 >= 1000 else 3.5 if naxis3 >= 500 else 2.5 if naxis3 >= 100 else 1.5
+print("sigma_thresshold: " + str(sigma_thresshold))
 
 #Determining regions of interest
 list_of_args = (naxis1,naxis2,naxis3,data_array)
 collapsedImage = collapseImage(list_of_args)
 rms = np.sqrt(np.mean(np.square(collapsedImage)))
-print("RMS of Collapsed Cube "+str(rms))
+# print("RMS of Collapsed Cube "+str(rms))
+
+# if (plot):
+#     plt.figure(figsize=(2,10))
+#     plt.subplot(121)
+#     plt.imshow(collapsedImage, cmap="magma")
+#     plt.colorbar()
+#     plt.gca().invert_yaxis()
+#     plt.xlabel("RA")
+#     plt.ylabel("DEC")
+#     plt.title(hdu_header['OBJECT'])
 
 negValues = []
 regionPoints = []
 values = np.ndarray((naxis1,naxis2),float)
-
 for i in range(naxis1):
     for j in range(naxis2):
         value = collapsedImage[i][j]
-        if value < 3.0*rms:
+        if value < sigma_thresshold*rms:
             negValues.append(value)
             values[i][j] = 0
         else:
@@ -109,6 +136,10 @@ if (plot):
     plt.imshow(values, cmap="magma")
     plt.colorbar()
     plt.gca().invert_yaxis()
+    plt.xlabel("RA")
+    plt.ylabel("DEC")
+    plt.title(hdu_header['OBJECT'])
+    
 
 db = DBSCAN(eps=int(0.1*naxis1), min_samples=4).fit(regionPoints)
 result_labels = db.labels_
@@ -181,12 +212,11 @@ data_list_aux = zip(freq_list, energy_list)
 #Frequency Red-Shiftting
 freq_max, energy_max = max(data_list_aux,key=operator.itemgetter(1))
 #freq_max, energy_max = data_list[int(len(data_list)/2)]
-print("\nFreq/Energy Max: "+str(freq_max)+"/"+str(energy_max))
-
 redshift = (rest_freq-freq_max)/freq_max
-
-print("\nRedshift: "+str(redshift)+" Restfreq of spectral line: "+str(rest_freq))
 shifted_freq_list = [freq*(1+redshift) for freq in freq_list]
+
+print("\nFreq/Energy Max: "+str(freq_max)+"/"+str(energy_max))
+print("\nRedshift: "+str(redshift)+" Restfreq of spectral line: "+str(rest_freq))
 
 #Channeling
 #channeled_freq_list = [int(math.floor(freq/10**(9-channeling))) for freq in shifted_freq_list]
@@ -207,8 +237,8 @@ energy_array = np.array(energy_list)
 energy_mean = np.mean(energy_array)
 energy_std = np.std(energy_array)
 energy_thresshold = sigma_thresshold*energy_std
-print("\nMean: "+str(energy_mean))
-print("\nSigma: "+str(energy_thresshold))
+# print("\nMean: "+str(energy_mean))
+# print("\nSigma: "+str(energy_thresshold))
 
 #Plotting Spectrum
 if plot:
@@ -217,17 +247,17 @@ if plot:
     plt.plot(energy_array)
     xarray = [x for x in range(0,len(energy_array))]
     k = int(len(energy_list)/4)
-    plt.xticks(xarray[::k],channeled_freq_list[::k],rotation=45)
+    plt.xticks(xarray[::k],[int(ch/100) for ch in channeled_freq_list[::k]])
 
     #Plotting Thresshold
     plt.plot([xarray[0],xarray[-1]], [energy_thresshold,energy_thresshold])
 
     #ax = plt.gca()
     #plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%.2f'))
+    plt.xlabel("Frequency [MHz]")
+    plt.ylabel("Intensity [T]")
     plt.tight_layout()
-
-    #plt.plot(energy_thresshold)
-    plt.title(fitsName)
+    plt.title(hdu_header['OBJECT'])
     plt.show()
 
 #TF Representation
@@ -244,8 +274,6 @@ for freq_casted, freq_chan, energy in data_list:
         
         tf = int(math.ceil(np.log2(energy+1))) if energy > energy_std*sigma_thresshold else 0  #TF v2.2.1 OK: 1.0,2.0,3.0
 
-        if freq_chan == 32122568:
-            tf = 50  
         #tf = int(np.log2(math.ceil(energy+1))) if energy > energy_std*sigma_thresshold else 1  #TF v2.2.2 OK: 2.0
         
         #tf = int(np.log2(math.ceil(energy))+1) if energy > 0 else 0 #TF v3.1.1 OK: 2.0
@@ -253,16 +281,21 @@ for freq_casted, freq_chan, energy in data_list:
         #tf = int(np.log2(math.ceil(energy))+1) if energy > energy_std*sigma_thresshold else 0 #TF v3.2.1 OK: 2.0
         #tf = int(np.log2(math.ceil(energy))+1) if energy > energy_std*sigma_thresshold else 1 #TF v3.2.2 OK: 2.0
             
-        #words.extend([str(freq_casted) for i in range(tf)])
-        words.extend([str(freq_chan) for i in range(tf)])
-
+        words.extend([str(freq_casted) for i in range(tf)]) #Channeled + Casted Version
+        #words.extend([str(freq_chan) for i in range(tf)]) #Only Channeled Version
 words.sort()
-#words.extend([str('24493') for i in range(30)]) #CS:HotCores_2(12):20/3008 | AlmaBand6_2(68): 5/90
-#words.extend([str('32122') for i in range(23000)]) #Water:HotCores2(20):22/55230
-#words.extend([str('18180') for i in range(300)]) #Protonate2-proynenitrile:HotCores2(57):35/808
 
-mFile_out = open(spectral_file_out,'w')
+#words.extend([str('24493') for i in range(30)]) #CarbonMonosulfide:HotCores_2(12):20/3008 | AlmaBand6_2(68): 5/90
+#words.extend([str('18180') for i in range(300)]) #Protonate2-proynenitrile:HotCores2(57):35/808
+#words.extend([str('22975876') for i in range(1)]) #Methanol:HotCoresFull(34):7/17636
+#words.extend([str('32122568') for i in range(1)]) #Water:HotCoresFull(20):x/x
+
 print("Generated File:")
 print(" ".join(words)+"\n")
+
+mFile_out = open(spectral_file_out,'w')
 mFile_out.write(" ".join(words)+"\n")
 mFile_out.close()
+
+end_time = time.time()
+print("Parsing time: "+str(end_time-start_time)+" seconds")

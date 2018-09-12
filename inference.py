@@ -2,6 +2,7 @@ import sys
 import gzip
 import shutil
 import os
+import time
 
 if (len(sys.argv) < 6):
 	print("You must give 6 parameters: model_path, features_path, labels_path, channeling, fits_path, species_no")
@@ -20,14 +21,16 @@ plot = sys.argv[7] if len(sys.argv) > 7 else ''
 filename = fits_path
 temp_filename = "spectrum_document"
 
+start_time = time.time()
+
 #shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
 
 os.system("python llda_parser.py "+filename+" "+channeling+" "+"../llda_train_input/"+features+" "+plot)
 #os.system("python csv2spectrum.py ../Schilke_OrionSurvey.csv "+channeling+" "+"../llda_train_input/"+features+" 1,100")
 
-print("Used model")
-print(model)
+start_time_lda = time.time()
+print("Used model: "+model)
 with open(temp_filename+".dat", 'rb') as f_in, gzip.open(temp_filename+".dat.gz", 'wb') as f_out: #Must copy to "./llda_models/models/" beacause of some rules that read files in JGibbLabeledLDA
     shutil.copyfileobj(f_in, f_out)
 os.remove(temp_filename+".dat")
@@ -70,7 +73,7 @@ with open('output.dat') as f:
 		
 		if no in species_no and prob != last_prob:
 			print("Prob: "+str(prob)+" Last Prob: "+str(last_prob))
-			response = "¡MATCH! For "+transition_name+"("+str(no)+")"+" Model["+model+"] FITS["+filename+"]: "+prob+"\n"
+			response = "¡MATCH in TOP@"+str(i+1)+"! For "+transition_name+"("+str(no)+")"+" Model["+model+"] FITS["+filename+"]: "+prob+"\n"
 			with open("matches.out","a") as fileMatch:
 				fileMatch.write(response)
 			print(response)
@@ -78,4 +81,9 @@ with open('output.dat') as f:
 if (not match):
 	print("Transition not found")
 
+end_time_lda = time.time()
+print("L-LDA inference time: "+str(end_time_lda-start_time_lda)+" seconds")
 
+end_time = time.time()
+
+print("Total execution time: "+str(end_time-start_time)+" seconds\n")

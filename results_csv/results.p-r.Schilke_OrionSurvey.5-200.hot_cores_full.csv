@@ -1,10 +1,20 @@
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.25,0.357142857143
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.4,0.571428571429
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.15,0.214285714286
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.15,0.214285714286
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.2,0.285714285714
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.2,0.285714285714
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.2,0.285714285714
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.15,0.214285714286
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.1,0.142857142857
-Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.25,0.357142857143
+TP: 5 FP: 4 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.555555555556,0.357142857143
+TP: 7 FP: 3 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.7,0.5
+TP: 3 FP: 7 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.3,0.214285714286
+TP: 2 FP: 8 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.2,0.142857142857
+TP: 4 FP: 3 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.571428571429,0.285714285714
+TP: 4 FP: 4 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.5,0.285714285714
+TP: 4 FP: 1 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.8,0.285714285714
+TP: 3 FP: 6 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.333333333333,0.214285714286
+TP: 2 FP: 3 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.4,0.142857142857
+TP: 5 FP: 3 Relevant: 14
+Schilke_OrionSurvey.5-200.model_hot_cores_full_500it.output,0.625,0.357142857143

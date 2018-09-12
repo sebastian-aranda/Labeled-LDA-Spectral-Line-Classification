@@ -61,8 +61,7 @@ with open(fileName) as csvfile:
             #frequency_ch = int(math.floor(frequency*10**channeling)) #Frequency in GHz
             frequency_ch = int(round(frequency*10**channeling)) #Frequency in GHz
             energy = float(pairs[1])
-            #spectrum.append((frequency, energy))
-            spectrum.append((frequency, takeClosest(vocabulary,frequency_ch),energy))
+            spectrum.append((frequency_ch, takeClosest(vocabulary,frequency_ch),energy))
 
 spectrum.sort(key=itemgetter(0))
 print("From: "+str(spectrum[0])+" To: "+str(spectrum[-1]))
@@ -71,13 +70,15 @@ print("From: "+str(spectrum[0])+" To: "+str(spectrum[-1]))
 energy_array = np.array([e for f,fc,e in spectrum])
 energy_mean = np.mean(energy_array)
 energy_std = np.std(energy_array)
+print("Max Frequency: "+str(spectrum[np.argmax(energy_array)][0]))
 print("Mean: "+str(energy_mean))
 print("Sigma: "+str(sigma_thresshold)+"x"+str(energy_std))
 
 spectrum_document = list()
-for freq, freq_ch, energy in spectrum:
+for freq_channeled, freq_casted, energy in spectrum:
 	tf = int(math.ceil(np.log2(energy+1))) if energy > energy_std*sigma_thresshold else 0 #TF v2.2
-	spectrum_document.extend([str(freq_ch) for i in range(tf)])
+	#spectrum_document.extend([str(freq_channeled) for i in range(tf)])
+	spectrum_document.extend([str(freq_casted) for i in range(tf)])
 
 #Saving file
 mFile_out = open(spectral_file_out,'w')

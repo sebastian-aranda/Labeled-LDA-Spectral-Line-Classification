@@ -71,7 +71,7 @@ with open('output_csv.dat') as f:
 		
 		if no in species_no and prob != last_prob:
 			print("Prob: "+str(prob)+" Last Prob: "+str(last_prob))
-			response = "¡MATCH! For "+transition_name+"("+str(no)+")"+" Model["+model+"] FITS["+filename+"]: "+prob+"\n"
+			response = "¡MATCH in TOP@"+str(i+1)+"! For "+transition_name+"("+str(no)+")"+" Model["+model+"] FITS["+filename+"]: "+prob+"\n"
 			with open("matches_csv.out","a") as fileMatch:
 				fileMatch.write(response)
 			print(response)

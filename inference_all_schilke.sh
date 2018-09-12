@@ -19,9 +19,6 @@ python inference_csv.py llda_models/model_hot_cores_full_500it/ llda_train_input
 # python inference_csv.py llda_models/model_hot_cores_full_500it/ llda_train_input/hot_cores_full_features.dat llda_train_input/hot_cores_full_labelmap.sub 5 Schilke_OrionSurvey.csv 8,200 35,76,12,68,52,66,17,58,55,24,50,60,75,21,0,34,37,16,6,53,48,65,46,56,22,70,20
 
 
-
-
-
 # python inference_csv.py llda_models/model_hot_cores_tr_500it/ llda_train_input/hot_cores_tr_features.dat llda_train_input/hot_cores_tr_labelmap.sub 0 Schilke_OrionSurvey.csv 35,76,12,68,52,66,17,58,55,24,50,60,75,21,0,34,37,16,6,53,48,65,46,56,22,70,20
 # python inference_csv.py llda_models/model_hot_cores_2_500it/ llda_train_input/hot_cores_2_features.dat llda_train_input/hot_cores_2_labelmap.sub 2 Schilke_OrionSurvey.csv 35,76,12,68,52,66,17,58,55,24,50,60,75,21,0,34,37,16,6,53,48,65,46,56,22,70,20
 # python inference_csv.py llda_models/model_hot_cores_2_b01_500it/ llda_train_input/hot_cores_2_features.dat llda_train_input/hot_cores_2_labelmap.sub 2 Schilke_OrionSurvey.csv 35,76,12,68,52,66,17,58,55,24,50,60,75,21,0,34,37,16,6,53,48,65,46,56,22,70,20
