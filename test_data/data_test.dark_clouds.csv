@@ -1,16 +1,12 @@
 #root path: ./scripts/
-
 ../../FITS/HD163296_CO_2_1.image.fits;46
 ../../FITS/uid___A002_Xa916fc_X668__IRS43_HCO32.final.image.pbcor.fits;17
 ../../FITS/Orion.HNC.cbc.contsub.image.fits;50
-##../../FITS/Orion.HNC.cbc.contsub.image.v2.fits;50
-../../FITS/DMTau.CS_5-4.image.fits;6
-
-../../FITS/Orion.methanol.cbc.contsub.image.fits;22 #Low energy cube
-##../../FITS/Orion.methanol.cbc.contsub.image.v2.fits;22 #Low energy cube
+../../FITS/DMTau.CS_5-4.image.fits;6,51
+../../FITS/Orion.methanol.cbc.contsub.image.fits;22
 ../../FITS/TWHydra_CO3_2line.image.fits;46
 ../../FITS/TWHydra_HCOplusline.image.fits;17
-##../../FITS/TWHydra_HCOplusline.image.v2.fits;17
-
-####../../FITS/h2o_fits/Xa3a_ori_spw0.image.fits;12
-####../../FITS/h2o_fits/Xa91_ori_spw0.image.fits;12
+../../FITS/B335_CS67.2freq.fits;6,51
+../../FITS/B335_HCOp43.2freq.fits;17
+../../FITS/CH3OH_Map_X44c7.fits;22
+../../FITS/B335_HCN43.2freq.fits;38

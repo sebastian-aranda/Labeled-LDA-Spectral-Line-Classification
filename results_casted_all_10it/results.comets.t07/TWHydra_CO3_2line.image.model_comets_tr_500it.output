@@ -1,25 +1,25 @@
-1;4 Acetaldehyde;0.1984375
-2;10 Formic Acid;0.0421875
-3;21 Methanol;0.0421875
-4;0 Methylidyne;0.0265625
-5;1 Formaldehyde;0.0265625
-6;2 Sulfur dioxide;0.0265625
-7;3 Carbon Monoxide;0.0265625
-8;5 Water;0.0265625
-9;6 Imidogen;0.0265625
-10;7 Carbon Monoxide Ion;0.0265625
-11;8 Nitric sulfide;0.0265625
-12;9 Isocyanic Acid;0.0265625
+1;13 Methyliumylidene;0.2296875
+2;0 Methylidyne;0.0265625
+3;1 Formaldehyde;0.0265625
+4;2 Sulfur dioxide;0.0265625
+5;3 Carbon Monoxide;0.0265625
+6;4 Acetaldehyde;0.0265625
+7;5 Water;0.0265625
+8;6 Imidogen;0.0265625
+9;7 Carbon Monoxide Ion;0.0265625
+10;8 Nitric sulfide;0.0265625
+11;9 Isocyanic Acid;0.0265625
+12;10 Formic Acid;0.0265625
 13;11 Amidogen;0.0265625
 14;12 Ethylene Glycol;0.0265625
-15;13 Methyliumylidene;0.0265625
-16;14 Cyanide Radical;0.0265625
-17;15 Carbonyl Sulfide;0.0265625
-18;16 Hydroxyl;0.0265625
-19;17 Nitric oxide;0.0265625
-20;18 Methyl Cyanide;0.0265625
-21;19 Cyclopropenylidene;0.0265625
-22;20 Sulfur Monoxide ion;0.0265625
+15;14 Cyanide Radical;0.0265625
+16;15 Carbonyl Sulfide;0.0265625
+17;16 Hydroxyl;0.0265625
+18;17 Nitric oxide;0.0265625
+19;18 Methyl Cyanide;0.0265625
+20;19 Cyclopropenylidene;0.0265625
+21;20 Sulfur Monoxide ion;0.0265625
+22;21 Methanol;0.0265625
 23;22 Thioformaldehyde;0.0265625
 24;23 Ammonia;0.0265625
 25;24 Cyanoacetylene;0.0265625

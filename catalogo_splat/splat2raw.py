@@ -1,13 +1,17 @@
 import sys
 import math
 
+if len(sys.argv) != 3:
+	print("e.g. python splat2raw.py splatalogue_x.csv 5")
+	sys.exit(1)
+
 fileName = sys.argv[1]
 channeling = int(sys.argv[2])
 with open(fileName) as f:
 	for i,line in enumerate(f):
 		if i < 1:
 			continue
-
+		
 		tokens = line.split(':')
 		chemical = tokens[1]
 

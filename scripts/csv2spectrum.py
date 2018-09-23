@@ -60,7 +60,7 @@ def takeClosest_v2(myList, myNumber, thresshold = 200000):
     before_delta = myNumber - before
     if after_delta < before_delta and after_delta <= thresshold:
         return after
-    elif before_delta < after_delta and before_delta <= thresshold:
+    elif after_delta > before_delta and before_delta <= thresshold:
         return before
     elif after_delta == before_delta and after_delta <= thresshold:
         return before
@@ -92,8 +92,9 @@ with open(fileName) as csvfile:
 
 		#frequency_ch = int(math.floor(frequency*10**channeling)) #Frequency in GHz
 		frequency_ch = int(round(frequency*10**channeling)) #Frequency in GHz
-		spectrum.append((frequency_ch, takeClosest(vocabulary,frequency_ch),energy))
-		#spectrum.append((frequency, takeClosest_v2(vocabulary,frequency_ch,20000000),energy))
+		
+		#spectrum.append((frequency_ch, takeClosest(vocabulary,frequency_ch),energy))
+		spectrum.append((frequency_ch, takeClosest_v2(vocabulary,frequency_ch,20),energy))
 		#spectrum.append((frequency, frequency_ch, energy))
 
 spectrum.sort(key=itemgetter(0))
@@ -106,6 +107,8 @@ for freq_channeled, freq_casted, energy in spectrum:
 	tf = int(math.ceil(np.log2(energy+1))) #TF v2.2
 	#spectrum_document.extend([str(freq_channeled) for i in range(tf)])
 	spectrum_document.extend([str(freq_casted) for i in range(tf)])
+
+#spectrum_document.extend([str(61293191) for i in range(1)])
 
 #Saving file
 mFile_out = open(spectral_file_out,'w')

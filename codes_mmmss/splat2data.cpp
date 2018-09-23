@@ -79,14 +79,14 @@ int main(int argc, char** argv) {
 		for (std::list<Entry>::iterator doc_it=doc.begin(); doc_it !=doc.end(); ++doc_it) {
 		   fint = doc_it->first;
 		   tf_st = doc_it->second;
-		   int tf = stoi(tf_st);
+		   //int tf = stoi(tf_st);
+		   float tf = stof(tf_st);
 		   //tf = (int)floor(log2(tf)) + 1; //original
-		   // tf = (int)floor(log2(tf+1)); //fixed
-		   tf = (int)ceil(log2(tf+1)); //fixed v2
+		   int tf_int = (int)ceil(log2(tf+1)); //fixed
 		   //tf = (int)floor(log2(tf+100));
-		   while (tf > 0) {
+		   while (tf_int > 0) {
 		      cout << fint << " ";
-		      tf--;
+		      tf_int--;
 		   }
 		}
 		cout << endl;

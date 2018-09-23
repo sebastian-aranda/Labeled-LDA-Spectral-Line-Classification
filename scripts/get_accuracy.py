@@ -2,9 +2,20 @@ import sys
 import os
 from collections import Counter
 
-if (len(sys.argv) < 2):
-	print("e.g. python get_accuracy.py path/to/results [model_name]")
+if (len(sys.argv) < 3):
+	print("e.g. python get_accuracy.py path/to/results topK [model_name]")
 	sys.exit(1)
+
+topK = int(sys.argv[2])
+
+def checkInTOP(text,n):
+	found = False
+	for i in range(1,n+1):
+		if "MATCH in TOP@"+str(i) in text:
+			found = True
+			break
+	return found
+
 
 # def get_immediate_subdirectories(a_dir):
 #     return [name for name in os.listdir(a_dir) if os.path.isdir(os.path.join(a_dir, name))]
@@ -28,12 +39,15 @@ if not os.path.isfile('matches.out'):
 
 with open('matches.out') as f:
 	for line in f:
-		total_matches += 1 if "MATCH" in line else 0
+		if not checkInTOP(line,topK):
+			continue
+		#total_matches += 1 if checkInTOP(line,topK) else 0
+		total_matches += 1 if "Match" in line else 0
 		for model, total in results_count.most_common():
 			if model in line:
 				match_count[model] += 1
 
-if (len(sys.argv) == 2):
+if (len(sys.argv) == 3):
 	for result_model, total in results_count.most_common():
 		mAccuracy = float(match_count[result_model])/total
 		#print("Accuracy["+result_model+"]: "+str(match_count[result_model])+"/"+str(results_count[result_model])+" = "+str(mAccuracy))

@@ -32,6 +32,16 @@ elif model_name == 'alma_band_6':
          ,(5,'llda_models/model_alma_band_6_full_expanded_00100_x3_500it','llda_train_input/alma_band_6_full_expanded_00100_x3_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
          ,(5,'llda_models/model_alma_band_6_full_expanded_01000_x3_500it','llda_train_input/alma_band_6_full_expanded_01000_x3_features.dat','llda_train_input/alma_band_6_full_labelmap.sub')
         ]
+elif model_name == 'alma_band_7':
+        models_array = [
+         (0,'llda_models/model_alma_band_7_tr_500it/','llda_train_input/alma_band_7_tr_features.dat','llda_train_input/alma_band_7_tr_labelmap.sub')
+         ,(2,'llda_models/model_alma_band_7_2_500it/','llda_train_input/alma_band_7_2_features.dat','llda_train_input/alma_band_7_2_labelmap.sub')
+         ,(5,'llda_models/model_alma_band_7_full_500it/','llda_train_input/alma_band_7_full_features.dat','llda_train_input/alma_band_7_full_labelmap.sub')
+         
+         ,(5,'llda_models/model_alma_band_7_full_expanded_00050_x3_500it','llda_train_input/alma_band_7_full_expanded_00050_x3_features.dat','llda_train_input/alma_band_7_full_labelmap.sub')
+         ,(5,'llda_models/model_alma_band_7_full_expanded_00100_x3_500it','llda_train_input/alma_band_7_full_expanded_00100_x3_features.dat','llda_train_input/alma_band_7_full_labelmap.sub')
+         ,(5,'llda_models/model_alma_band_7_full_expanded_01000_x3_500it','llda_train_input/alma_band_7_full_expanded_01000_x3_features.dat','llda_train_input/alma_band_7_full_labelmap.sub')
+        ]
 elif model_name == 'agb_ppn_pn':
         models_array = [
         (0,'llda_models/model_agb_ppn_pn_tr_500it/','llda_train_input/agb_ppn_pn_tr_features.dat','llda_train_input/agb_ppn_pn_tr_labelmap.sub')

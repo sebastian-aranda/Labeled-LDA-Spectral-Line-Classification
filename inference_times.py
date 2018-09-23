@@ -50,6 +50,7 @@ if not os.path.isfile(pickle_models_filename):
 	    with open('./llda_train_input/'+model+'_features.dat') as f:
 	        line = f.readline()
 	        models_metadata[model]['vocabulary_len'] = len(line.split())
+	
 	#Obtain number of tokens per model
 	for model in model_names:
 	    #model_data = "_".join(model.split('_')[:-1]) if "expanded" not in model else "_".join(model.split('_')[:-3]) 
@@ -110,30 +111,74 @@ for fitsname, modelname, exectime in time_results:
 
 llda_average_times_fits = [(model,fits,sum(times)/float(len(times))) for model, fits_dict in llda_times_dict.items() for fits, times in fits_dict.items()]
 
-# llda_average_times_models = dict()
-# for model in model_names:
-# 	llda_average_times_models[model] = sum([x[2] for x in llda_average_times_fits if model == x[0]])
-# llda_average_times_models = [(model,time) for model, time in llda_average_times_models.items()]
-# llda_average_times_models.sort(key = lambda x: x[1])
+llda_average_times_models = dict()
+for model in model_names:
+	llda_average_times_models[model] = sum([x[2] for x in llda_average_times_fits if model == x[0]])
+llda_average_times_models = [(model,time) for model, time in llda_average_times_models.items()]
+llda_average_times_models.sort(key = lambda x: x[1])
 
-fig = plt.figure(figsize=(20,8))
+fig = plt.figure(figsize=(10,4))
 filters = list(set(['_'.join(model.split('_')[:-1]) if "expanded" not in model else '_'.join(model.split('_')[:-4]) for model in model_names]))
 
 def plotModelsTimes(data,subplot_params):
 	plt.subplot(subplot_params[0],subplot_params[1],subplot_params[2])
-	mPlot, = plt.plot([models_metadata[model]['tokens_len'] for model, time in data],[time for model, time in data])
-	#plt.title("Inference Time for "+pModel)
-	#plt.ylabel("Elapsed time [s]")
+	mPlot, = plt.plot([models_metadata[model]['tokens_len'] for model, time in data],[time for model, time in data], label=mFilter)
+	#mPlot = plt.scatter([models_metadata[model]['tokens_len'] for model, time in data],[time for model, time in data])
+	plt.title(plotTitle)
+	plt.ylabel("Elapsed time [s]")
 	#plt.ylabel("Tiempo transcurrido (elapsed time) [s]")
 	#plt.xticks(range(len(llda_average_times_models)),[model.split("_")[-1] if "expanded" not in model else "e"+model.split("_")[-2]  for model,time in llda_average_times_models], rotation = 'vertical')
-	#plt.xlabel("Number of training words")
+	plt.xlabel("Number of training words")
 	#plt.xlabel("Cantidad de palabras de entrenamiento")
 	#plt.xscale('log')
 
-for i, mFilter in enumerate(filters):
-	dataPlot = [(x[0],x[2]) for x in llda_average_times_fits if mFilter in x[0]]
-	plotModelsTimes(dataPlot,(7,2,i+1))
+	return mPlot
 
+# for i, mFilter in enumerate(filters):
+# 	dataPlot = [(x[0],x[2]) for x in llda_average_times_fits if mFilter in x[0]]
+# 	plotModelsTimes(dataPlot,(7,2,i+1))
 
-# plt.tight_layout()
+print(model_names)
+
+plotTitle = "Inference Time for Standard Models"
+standard_plots = []
+mFilter = 'tr'
+dataPlot = [(x[0],x[1]) for x in llda_average_times_models if x[0].endswith(mFilter)]
+standard_plots.append(plotModelsTimes(dataPlot,(1,2,1)))
+
+mFilter = '2'
+dataPlot = [(x[0],x[1]) for x in llda_average_times_models if x[0].endswith(mFilter)]
+standard_plots.append(plotModelsTimes(dataPlot,(1,2,1)))
+
+mFilter = 'full'
+dataPlot = [(x[0],x[1]) for x in llda_average_times_models if x[0].endswith(mFilter)]
+standard_plots.append(plotModelsTimes(dataPlot,(1,2,1)))
+
+ax = plt.gca()
+ax.get_xaxis().get_major_formatter().set_useOffset(False)
+ax.get_xaxis().get_major_formatter().set_powerlimits((-3,3))
+ax.get_xaxis().get_major_formatter().set_scientific(True)
+plt.legend(handles=standard_plots)
+
+plotTitle = "Inference Time for Expanded Models"
+expanded_plots = []
+mFilter = '00050_x3'
+dataPlot = [(x[0],x[1]) for x in llda_average_times_models if x[0].endswith(mFilter)]
+expanded_plots.append(plotModelsTimes(dataPlot,(1,2,2)))
+
+mFilter = '00100_x3'
+dataPlot = [(x[0],x[1]) for x in llda_average_times_models if x[0].endswith(mFilter)]
+expanded_plots.append(plotModelsTimes(dataPlot,(1,2,2)))
+
+mFilter = '01000_x3'
+dataPlot = [(x[0],x[1]) for x in llda_average_times_models if x[0].endswith(mFilter)]
+expanded_plots.append(plotModelsTimes(dataPlot,(1,2,2)))
+
+ax = plt.gca()
+ax.get_xaxis().get_major_formatter().set_useOffset(False)
+ax.get_xaxis().get_major_formatter().set_powerlimits((-3,3))
+ax.get_xaxis().get_major_formatter().set_scientific(True)
+plt.legend(handles=expanded_plots)
+
+plt.tight_layout()
 plt.show()

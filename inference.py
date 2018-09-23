@@ -25,7 +25,6 @@ start_time = time.time()
 
 #shutil.copyfile(fits_path,"./scripts/"+filename)
 os.chdir("./scripts/")
-
 os.system("python llda_parser.py "+filename+" "+channeling+" "+"../llda_train_input/"+features+" "+plot)
 #os.system("python csv2spectrum.py ../Schilke_OrionSurvey.csv "+channeling+" "+"../llda_train_input/"+features+" 1,100")
 

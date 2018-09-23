@@ -6,7 +6,7 @@ import sys
 
 import pickle
 
-font = {'family' : 'normal',
+font = {'family' : 'sans-serif',
         #'weight' : 'bold',
         'size'   : 12}
 
@@ -136,7 +136,7 @@ def plotScoreBars(results,rows,cols,subplot, title=""):
     mPlot = plt.subplot(rows,cols,subplot,sharex=axes_list[0]) if len(axes_list) > 0 else plt.subplot(rows,cols,subplot)
     axes_list.append(mPlot)
 
-    if subplot < 5:
+    if subplot < 3:
     	plt.setp(mPlot.get_xticklabels(), visible=False)
     	
     # if subplot == 4:
@@ -147,12 +147,12 @@ def plotScoreBars(results,rows,cols,subplot, title=""):
     # 	plt.text(-0.5, .9, r'$\tau = 0.01000 [GHz]$')
 
     plt.bar(x, [i[1] for i in res_sortedby_tokens_len], align='center')
-    if subplot%2 == 1:
-    	plt.ylabel('Accuracy Score')
+    plt.ylabel('Accuracy Score')
     #plt.title(title+'(sorted by n° of tokens)')
     plt.title(title)
     plt.xticks(x, ['_'.join(i[0].split('_')[:-1]) if "expanded" not in i[0] else '_'.join(i[0].split('_')[:-4]) for i in res_sortedby_tokens_len],rotation='vertical')
     plt.ylim(0, 1)
+    plt.yticks(np.arange(0, 1.1, 0.2))
     mPlot.tick_params(axis='both', which='major', labelsize=10)
 
     return axes 
@@ -165,16 +165,16 @@ def plotScoreBars(results,rows,cols,subplot, title=""):
     #plt.ylim(0, 1)
 
 plt.close('all')
-plt.figure(figsize=(6,2))
-# plt.figure()
+plt.figure(figsize=(4,12))
+#plt.figure()
 
-plotScoreBars(results_tr,1,3,1,"Truncated models")
-plotScoreBars(results_2,1,3,2,"Medium models")
-plotScoreBars(results_full,1,3,3,"Full models")
+plotScoreBars(results_tr,3,1,1,"Modelos Channeling 0")
+plotScoreBars(results_2,3,1,2,"Modelos Channeling 2")
+plotScoreBars(results_full,3,1,3,"Modelos Channeling 5")
 
-#plotScoreBars(results_full_ex3_00050,3,2,4,r"Expanded $\tau$"+" = 0.0005 [GHz]")
-#plotScoreBars(results_full_ex3_00100,3,2,5,r"Expanded $\tau$"+" = 0.001 [GHz]")
-#plotScoreBars(results_full_ex3_01000,3,2,6,r"Expanded $\tau$"+" = 0.01 [GHz]")
+#plotScoreBars(results_full_ex3_00050,1,1,1,r"Exp $\tau = 0.0005 [GHz]$, $\chi = 3$")
+#plotScoreBars(results_full_ex3_00100,1,1,1,r"Exp $\tau = 0.0010 [GHz]$, $\chi = 3$")
+#plotScoreBars(results_full_ex3_01000,1,1,1,r"Exp $\tau = 0.0100 [GHz]$, $\chi = 3$")
 
 #left_plots = [x for i,x in enumerate(axes_list) if i%2 == 0]
 #right_plots = [x for i,x in enumerate(axes_list) if not i%2 == 0]

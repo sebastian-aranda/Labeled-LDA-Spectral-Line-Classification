@@ -4,8 +4,8 @@ import shutil
 import os
 
 if (len(sys.argv) != 8):
-	print("You must give 6 parameters: model_path, features_path, labels_path, channeling, fits_path, 'spectral_window,spectral_window_size' , species_no")
-	print("e.g. python inference_csv.py llda_models/model_hot_cores_full_500it/ llda_train_input/hot_cores_full_features.dat llda_train_input/hot_cores_full_labelmap.sub 5 ../FITS/DMTau.CS_5-4.image.fits 1,100 12")
+	print("You must give 6 parameters: model_path, features_path, labels_path, channeling, survey_path, 'spectral_window,spectral_window_size' , species_no")
+	print("e.g. python inference_csv.py llda_models/model_hot_cores_full_500it/ llda_train_input/hot_cores_full_features.dat llda_train_input/hot_cores_full_labelmap.sub 5 ../../Schilke_OrionSurvey.csv 1,100 12")
 	sys.exit(1)
 
 model = os.path.basename(os.path.normpath(sys.argv[1]))
@@ -39,7 +39,7 @@ os.rename(temp_filename+".dat.gz","../llda_models/"+model+"/"+temp_filename+".da
 #Model Inference
 #Labeled LDA in Java Copyright (C) 2008-2013 Myle Ott (Labeled LDA), Xuan-Hieu Phan and Cam-Tu Nguyen (JGibbLDA)
 os.chdir("../JGibbLabeledLDA-master/")
-os.system("java -mx8192M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -inf -dir ../llda_models/"+model+"/ -model "+model+" -niters 100 -twords 10 -dfile "+temp_filename+".dat.gz")
+os.system("java -mx8192M -cp bin:lib/args4j-2.0.6.jar:lib/trove-3.0.3.jar jgibblda.LDA -inf -dir ../llda_models/"+model+"/ -model "+model+" -niters 200 -twords 10 -dfile "+temp_filename+".dat.gz")
 
 os.chdir("../llda_models/"+model+"/")
 os.remove(temp_filename+".dat.gz")

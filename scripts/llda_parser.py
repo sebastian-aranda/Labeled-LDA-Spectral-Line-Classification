@@ -98,7 +98,8 @@ cdelt2 = hdu_header['CDELT2'] #DEC delta
 # dec_pos = [crval2*cdelt2*i for i in range(naxis2)]
 
 #Umbral adaptivo
-sigma_thresshold = 4.5 if naxis3 >= 1000 else 3.5 if naxis3 >= 500 else 2.5 if naxis3 >= 100 else 1.5
+sigma_thresshold = 4.0 if naxis3 >= 1000 else 3.5 if naxis3 >= 500 else 2.5 if naxis3 >= 100 else 1.5
+#sigma_thresshold2 = 2.0 #For water fits
 print("sigma_thresshold: " + str(sigma_thresshold))
 
 #Determining regions of interest
@@ -131,7 +132,7 @@ for i in range(naxis1):
             values[i][j] = value
 
 if (plot):
-    plt.figure(1)
+    plt.figure(figsize=(10,6))
     plt.subplot(121)
     plt.imshow(values, cmap="magma")
     plt.colorbar()
@@ -215,7 +216,7 @@ freq_max, energy_max = max(data_list_aux,key=operator.itemgetter(1))
 redshift = (rest_freq-freq_max)/freq_max
 shifted_freq_list = [freq*(1+redshift) for freq in freq_list]
 
-print("\nFreq/Energy Max: "+str(freq_max)+"/"+str(energy_max))
+#print("\nFreq/Energy Max: "+str(freq_max)+"/"+str(energy_max))
 print("\nRedshift: "+str(redshift)+" Restfreq of spectral line: "+str(rest_freq))
 
 #Channeling
@@ -242,7 +243,6 @@ energy_thresshold = sigma_thresshold*energy_std
 
 #Plotting Spectrum
 if plot:
-    plt.figure(1)
     plt.subplot(122)
     plt.plot(energy_array)
     xarray = [x for x in range(0,len(energy_array))]
@@ -290,8 +290,8 @@ words.sort()
 #words.extend([str('22975876') for i in range(1)]) #Methanol:HotCoresFull(34):7/17636
 #words.extend([str('32122568') for i in range(1)]) #Water:HotCoresFull(20):x/x
 
-print("Generated File:")
-print(" ".join(words)+"\n")
+#print("Generated File:")
+#print(" ".join(words)+"\n")
 
 mFile_out = open(spectral_file_out,'w')
 mFile_out.write(" ".join(words)+"\n")
