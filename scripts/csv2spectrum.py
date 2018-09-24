@@ -94,13 +94,21 @@ with open(fileName) as csvfile:
 		frequency_ch = int(round(frequency*10**channeling)) #Frequency in GHz
 		
 		#spectrum.append((frequency_ch, takeClosest(vocabulary,frequency_ch),energy))
-		spectrum.append((frequency_ch, takeClosest_v2(vocabulary,frequency_ch,20),energy))
+		spectrum.append((frequency_ch, takeClosest_v2(vocabulary,frequency_ch,50),energy))
 		#spectrum.append((frequency, frequency_ch, energy))
 
 spectrum.sort(key=itemgetter(0))
 corpus = list(chunks(spectrum,spectrum_chunks_size))
 spectrum = corpus[spectrum_chunk-1]
 print("From: "+str(spectrum[0])+" To: "+str(spectrum[-1]))
+
+print()
+spectrum_features = set([x[1] for x in spectrum])
+print("Spectrum Features")
+print(sorted(list(spectrum_features)))
+print("Spectrum & Corpus Features ")
+print(sorted(list(spectrum_features.intersection(set(vocabulary)))))
+print()
 
 spectrum_document = list()
 for freq_channeled, freq_casted, energy in spectrum:

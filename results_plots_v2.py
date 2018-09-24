@@ -32,8 +32,9 @@ matplotlib.rc('font', **font)
 #Final results
 #file = "./results_shifted_all_10it/results.accuracy.mean.csv"
 #file = "./results_shifted_expanded_10it/results.accuracy.mean.csv"
-file = "./results_casted_all_10it/results.accuracy.mean.csv"
-#file = "./results_casted_expanded_10it/results.accuracy.mean.csv"
+
+#file = "./results_casted_all_10it/results.accuracy.all.top1.mean.csv"
+file = "./results_casted_alma_10it/results.accuracy.all.top1.mean.csv"
 
 #Obtain models info
 model_names = list()
@@ -145,7 +146,7 @@ def plotScoreBars(results,title=""):
     plt.xticks(x+bar_width, ['_'.join(i[0].split('_')[:-1]) if "expanded" not in i[0] else '_'.join(i[0].split('_')[:-4]) for i in res_sortedby_tokens_len],rotation='vertical')
     plt.ylim(0, 1)
     plt.yticks(np.arange(0, 1.1, 0.2))
-    plt.legend(tuple(bars_list),title, loc=4)
+    plt.legend(tuple(bars_list),title, loc=0)
 
 plt.figure(figsize=(7,5))
 #plotScoreBars([results_tr,results_2,results_full],("truncated","medium","full"))
