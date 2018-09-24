@@ -8,7 +8,7 @@ import pickle
 
 font = {'family' : 'sans-serif',
         #'weight' : 'bold',
-        'size'   : 12}
+        'size'   : 14}
 
 matplotlib.rc('font', **font)
 
@@ -146,7 +146,7 @@ def plotScoreBars(results,title=""):
     plt.xticks(x+bar_width, ['_'.join(i[0].split('_')[:-1]) if "expanded" not in i[0] else '_'.join(i[0].split('_')[:-4]) for i in res_sortedby_tokens_len],rotation='vertical')
     plt.ylim(0, 1)
     plt.yticks(np.arange(0, 1.1, 0.2))
-    plt.legend(tuple(bars_list),title, loc=0)
+    plt.legend(tuple(bars_list),title, loc=4)
 
 plt.figure(figsize=(7,5))
 #plotScoreBars([results_tr,results_2,results_full],("truncated","medium","full"))
